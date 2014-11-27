@@ -1,4 +1,4 @@
-﻿namespace StartMeny
+﻿namespace Gaame
 {
     partial class Form2
     {

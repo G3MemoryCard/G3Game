@@ -1,4 +1,4 @@
-﻿namespace MemoryGame_Endscreen
+﻿namespace Gaame
 {
     partial class Form1
     {
@@ -63,7 +63,7 @@
             this.textBoxPlayerWinner.Enabled = false;
             this.textBoxPlayerWinner.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPlayerWinner.Location = new System.Drawing.Point(95, 58);
-            this.textBoxPlayerWinner.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPlayerWinner.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPlayerWinner.MaxLength = 200;
             this.textBoxPlayerWinner.Name = "textBoxPlayerWinner";
             this.textBoxPlayerWinner.ReadOnly = true;
@@ -74,7 +74,7 @@
             // btnPlayAgain
             // 
             this.btnPlayAgain.Location = new System.Drawing.Point(95, 99);
-            this.btnPlayAgain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPlayAgain.Margin = new System.Windows.Forms.Padding(2);
             this.btnPlayAgain.Name = "btnPlayAgain";
             this.btnPlayAgain.Size = new System.Drawing.Size(66, 26);
             this.btnPlayAgain.TabIndex = 3;
@@ -86,7 +86,7 @@
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(166, 99);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(66, 26);
             this.btnExit.TabIndex = 4;
@@ -118,11 +118,12 @@
             this.Controls.Add(this.labelWon);
             this.Controls.Add(this.labelPlayer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "MEMORYGAME";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
