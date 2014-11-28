@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "Player 1",
             "75"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "Player 2",
             "50"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
             "Player 3",
             "30"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
             "Player 4",
             "20"}, -1);
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -72,8 +72,8 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Panel2MinSize = 200;
-            this.splitContainer1.Size = new System.Drawing.Size(834, 661);
-            this.splitContainer1.SplitterDistance = 623;
+            this.splitContainer1.Size = new System.Drawing.Size(844, 640);
+            this.splitContainer1.SplitterDistance = 630;
             this.splitContainer1.TabIndex = 4;
             // 
             // tableLayoutPanel1
@@ -104,7 +104,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(623, 661);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(630, 640);
             this.tableLayoutPanel1.TabIndex = 8;
             // 
             // splitContainer2
@@ -122,18 +122,19 @@
             // 
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.LightSteelBlue;
             this.splitContainer2.Panel2.Controls.Add(this.button1);
-            this.splitContainer2.Size = new System.Drawing.Size(207, 661);
-            this.splitContainer2.SplitterDistance = 465;
+            this.splitContainer2.Size = new System.Drawing.Size(210, 640);
+            this.splitContainer2.SplitterDistance = 450;
             this.splitContainer2.TabIndex = 0;
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Lime;
             this.button1.Location = new System.Drawing.Point(57, 69);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 50);
             this.button1.TabIndex = 8;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Main Menu";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // listView1
@@ -146,14 +147,14 @@
             this.listView1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.ForeColor = System.Drawing.Color.DodgerBlue;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem5,
-            listViewItem6,
-            listViewItem7,
-            listViewItem8});
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4});
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.MinimumSize = new System.Drawing.Size(200, 465);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(207, 465);
+            this.listView1.Size = new System.Drawing.Size(210, 465);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -172,7 +173,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 661);
+            this.ClientSize = new System.Drawing.Size(844, 640);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form3";
             this.Text = "Form3";
