@@ -82,13 +82,14 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Panel2MinSize = 200;
-            this.splitContainer1.Size = new System.Drawing.Size(844, 640);
-            this.splitContainer1.SplitterDistance = 630;
+            this.splitContainer1.Size = new System.Drawing.Size(858, 640);
+            this.splitContainer1.SplitterDistance = 640;
             this.splitContainer1.TabIndex = 4;
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Black;
+            this.tableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tableLayoutPanel1.ColumnCount = 10;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -118,38 +119,41 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(630, 640);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(640, 640);
             this.tableLayoutPanel1.TabIndex = 8;
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(318, 259);
+            this.pictureBox4.Location = new System.Drawing.Point(323, 259);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(57, 58);
+            this.pictureBox4.Size = new System.Drawing.Size(58, 58);
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox10
             // 
+            this.pictureBox10.BackColor = System.Drawing.Color.White;
             this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(255, 323);
+            this.pictureBox10.Location = new System.Drawing.Point(259, 323);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(57, 58);
+            this.pictureBox10.Size = new System.Drawing.Size(58, 58);
             this.pictureBox10.TabIndex = 9;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // pictureBox13
             // 
+            this.pictureBox13.BackColor = System.Drawing.Color.White;
             this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(318, 323);
+            this.pictureBox13.Location = new System.Drawing.Point(323, 323);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(57, 58);
+            this.pictureBox13.Size = new System.Drawing.Size(58, 58);
             this.pictureBox13.TabIndex = 12;
             this.pictureBox13.TabStop = false;
             this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click);
@@ -167,15 +171,15 @@
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.splitContainer2.Panel2.BackColor = System.Drawing.Color.Black;
             this.splitContainer2.Panel2.Controls.Add(this.button1);
-            this.splitContainer2.Size = new System.Drawing.Size(210, 640);
+            this.splitContainer2.Size = new System.Drawing.Size(214, 640);
             this.splitContainer2.SplitterDistance = 450;
             this.splitContainer2.TabIndex = 0;
             // 
             // listView1
             // 
-            this.listView1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.listView1.BackColor = System.Drawing.Color.Black;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
@@ -190,7 +194,7 @@
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.MinimumSize = new System.Drawing.Size(200, 465);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(210, 465);
+            this.listView1.Size = new System.Drawing.Size(214, 465);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -207,7 +211,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Location = new System.Drawing.Point(57, 69);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 50);
@@ -218,11 +222,12 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(255, 259);
+            this.pictureBox3.Location = new System.Drawing.Point(259, 259);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(57, 58);
+            this.pictureBox3.Size = new System.Drawing.Size(58, 58);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
@@ -231,7 +236,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(844, 640);
+            this.ClientSize = new System.Drawing.Size(858, 640);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form3";
             this.Text = "Form3";
