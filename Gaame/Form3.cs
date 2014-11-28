@@ -22,7 +22,7 @@ namespace Gaame
         private void button1_Click_1(object sender, EventArgs e)
         {
             Form1 frm3 = new Form1();
-            frm3.Show();
+            frm3.ShowDialog();
             this.Hide();
         }
 
@@ -80,6 +80,11 @@ namespace Gaame
                 (sender as PictureBox).Image = Properties.Resources.Backside1;
                 turnstate = false;
             }
+        }
+
+        private void Form3_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
