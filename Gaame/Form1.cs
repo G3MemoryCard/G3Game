@@ -17,13 +17,13 @@ namespace Gaame
             InitializeComponent();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)  // Closes the application on click.
         {
             this.Close();
             Application.Exit();
         }
 
-        private void btnPlayAgain_Click(object sender, EventArgs e)
+        private void btnPlayAgain_Click(object sender, EventArgs e) // Closes the current window and returns to the start window.
         {
             Form2 frm2 = new Form2();
             frm2.Show();
