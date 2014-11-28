@@ -23,5 +23,11 @@ namespace Gaame
             frm3.Show();
             this.Hide();
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            bool turnstate = false;
+            pictureBox5.Image = Properties.Resources.Firefox;
+        }
     }
 }

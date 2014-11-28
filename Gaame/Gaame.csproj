@@ -81,6 +81,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -94,6 +95,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Firefox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flickr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Myspace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pinterest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reddit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skype.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tumblr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TwitterNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TwitterOld.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wordpress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Youtube.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
