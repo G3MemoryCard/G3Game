@@ -85,15 +85,17 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(164, 52);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(48, 20);
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "4";
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(164, 84);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(48, 20);
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 5;
+            this.textBox2.Text = "4";
             // 
             // comboBox1
             // 
@@ -106,8 +108,9 @@
             "Cartoons"});
             this.comboBox1.Location = new System.Drawing.Point(164, 116);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(72, 21);
+            this.comboBox1.Size = new System.Drawing.Size(100, 21);
             this.comboBox1.TabIndex = 6;
+            this.comboBox1.Text = "Internet Icons";
             // 
             // label4
             // 
@@ -133,14 +136,15 @@
             // 
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "Regular",
             "Black & Yellow",
+            "Regular",
             "Blue & White",
             "Yellow & Pink"});
             this.comboBox2.Location = new System.Drawing.Point(164, 144);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(72, 21);
+            this.comboBox2.Size = new System.Drawing.Size(100, 21);
             this.comboBox2.TabIndex = 9;
+            this.comboBox2.Text = "Blue & Yellow";
             // 
             // Form2
             // 

@@ -19,9 +19,9 @@ namespace Gaame
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 frm = new Form3();
-            frm.Show();
-            this.Hide();
+            Form3 frm = new Form3();    //New varibel for Form3 aka. Gameboard.
+            frm.Show();                 //For frm to show.
+            this.Hide();                //Hide the startmeny
         }
 
         private void Form2_Load(object sender, EventArgs e)
