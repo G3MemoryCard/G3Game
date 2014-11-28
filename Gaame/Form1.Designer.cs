@@ -39,44 +39,45 @@
             // labelPlayer
             // 
             this.labelPlayer.AutoSize = true;
-            this.labelPlayer.Location = new System.Drawing.Point(55, 58);
-            this.labelPlayer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelPlayer.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPlayer.Location = new System.Drawing.Point(82, 72);
             this.labelPlayer.Name = "labelPlayer";
-            this.labelPlayer.Size = new System.Drawing.Size(36, 13);
+            this.labelPlayer.Size = new System.Drawing.Size(58, 19);
             this.labelPlayer.TabIndex = 0;
             this.labelPlayer.Text = "Player";
+            this.labelPlayer.Click += new System.EventHandler(this.labelPlayer_Click);
             // 
             // labelWon
             // 
             this.labelWon.AutoSize = true;
-            this.labelWon.Location = new System.Drawing.Point(113, 58);
-            this.labelWon.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelWon.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWon.Location = new System.Drawing.Point(171, 72);
             this.labelWon.Name = "labelWon";
-            this.labelWon.Size = new System.Drawing.Size(55, 13);
+            this.labelWon.Size = new System.Drawing.Size(81, 19);
             this.labelWon.TabIndex = 1;
-            this.labelWon.Text = "Has Won!";
+            this.labelWon.Text = "has won!";
             // 
             // textBoxPlayerWinner
             // 
             this.textBoxPlayerWinner.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPlayerWinner.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBoxPlayerWinner.Enabled = false;
-            this.textBoxPlayerWinner.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPlayerWinner.Location = new System.Drawing.Point(95, 58);
-            this.textBoxPlayerWinner.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPlayerWinner.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPlayerWinner.Location = new System.Drawing.Point(146, 71);
+            this.textBoxPlayerWinner.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxPlayerWinner.MaxLength = 200;
             this.textBoxPlayerWinner.Name = "textBoxPlayerWinner";
             this.textBoxPlayerWinner.ReadOnly = true;
-            this.textBoxPlayerWinner.Size = new System.Drawing.Size(14, 12);
+            this.textBoxPlayerWinner.Size = new System.Drawing.Size(19, 20);
             this.textBoxPlayerWinner.TabIndex = 2;
             this.textBoxPlayerWinner.Text = "1";
             // 
             // btnPlayAgain
             // 
-            this.btnPlayAgain.Location = new System.Drawing.Point(95, 99);
-            this.btnPlayAgain.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPlayAgain.Location = new System.Drawing.Point(127, 122);
+            this.btnPlayAgain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPlayAgain.Name = "btnPlayAgain";
-            this.btnPlayAgain.Size = new System.Drawing.Size(66, 26);
+            this.btnPlayAgain.Size = new System.Drawing.Size(88, 32);
             this.btnPlayAgain.TabIndex = 3;
             this.btnPlayAgain.Text = "&Play Again";
             this.btnPlayAgain.UseVisualStyleBackColor = true;
@@ -85,10 +86,10 @@
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(166, 99);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Location = new System.Drawing.Point(221, 122);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(66, 26);
+            this.btnExit.Size = new System.Drawing.Size(88, 32);
             this.btnExit.TabIndex = 4;
             this.btnExit.Text = "&Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -97,20 +98,20 @@
             // labelCongratulations
             // 
             this.labelCongratulations.AutoSize = true;
-            this.labelCongratulations.Location = new System.Drawing.Point(55, 29);
-            this.labelCongratulations.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCongratulations.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCongratulations.Location = new System.Drawing.Point(72, 30);
             this.labelCongratulations.Name = "labelCongratulations";
-            this.labelCongratulations.Size = new System.Drawing.Size(83, 13);
+            this.labelCongratulations.Size = new System.Drawing.Size(205, 29);
             this.labelCongratulations.TabIndex = 5;
             this.labelCongratulations.Text = "Congratulations!";
             // 
             // Form1
             // 
             this.AcceptButton = this.btnPlayAgain;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(272, 144);
+            this.ClientSize = new System.Drawing.Size(363, 177);
             this.Controls.Add(this.labelCongratulations);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnPlayAgain);
@@ -118,7 +119,7 @@
             this.Controls.Add(this.labelWon);
             this.Controls.Add(this.labelPlayer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";

@@ -34,5 +34,10 @@ namespace Gaame
         {
 
         }
+
+        private void labelPlayer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
