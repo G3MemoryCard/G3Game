@@ -20,7 +20,7 @@ namespace Gaame
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-            this.Dispose();
+            Application.Exit();
         }
 
         private void btnPlayAgain_Click(object sender, EventArgs e)
