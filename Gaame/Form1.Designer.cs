@@ -111,7 +111,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(363, 177);
+            this.ClientSize = new System.Drawing.Size(400, 215);
+            this.ControlBox = false;
             this.Controls.Add(this.labelCongratulations);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnPlayAgain);
@@ -123,7 +124,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "MEMORYGAME";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "G3 Memory";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
