@@ -17,10 +17,10 @@ namespace Gaame
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            Form1 frm = new Form1();
-            frm.Show();
+            Form1 frm3 = new Form1();
+            frm3.Show();
             this.Hide();
         }
     }
