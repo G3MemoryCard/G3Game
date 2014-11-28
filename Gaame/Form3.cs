@@ -12,6 +12,8 @@ namespace Gaame
 {
     public partial class Form3 : Form
     {
+        bool turnstate = false;
+
         public Form3()
         {
             InitializeComponent();
@@ -24,10 +26,60 @@ namespace Gaame
             this.Hide();
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
-            bool turnstate = false;
-            pictureBox5.Image = Properties.Resources.Firefox;
+            if (turnstate == false)
+            {
+                (sender as PictureBox).Image = Properties.Resources.Youtube;
+                turnstate = true;
+            }
+            else
+            {
+                (sender as PictureBox).Image = Properties.Resources.Backside1;
+                turnstate = false;
+            }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            if (turnstate == false)
+            {
+                (sender as PictureBox).Image = Properties.Resources.Firefox;
+                turnstate = true;
+            }
+            else
+            {
+                (sender as PictureBox).Image = Properties.Resources.Backside1;
+                turnstate = false;
+            }
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            if (turnstate == false)
+            {
+                (sender as PictureBox).Image = Properties.Resources.Firefox;
+                turnstate = true;
+            }
+            else
+            {
+                (sender as PictureBox).Image = Properties.Resources.Backside1;
+                turnstate = false;
+            }
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            if (turnstate == false)
+            {
+                (sender as PictureBox).Image = Properties.Resources.Youtube;
+                turnstate = true;
+            }
+            else
+            {
+                (sender as PictureBox).Image = Properties.Resources.Backside1;
+                turnstate = false;
+            }
         }
     }
 }
