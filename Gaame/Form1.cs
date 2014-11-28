@@ -20,11 +20,14 @@ namespace Gaame
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+            this.Dispose();
         }
 
         private void btnPlayAgain_Click(object sender, EventArgs e)
         {
-            
+            Form2 frm2 = new Form2();
+            frm2.Show();
+            this.Hide();
         }
 
         private void Form1_Load(object sender, EventArgs e)
