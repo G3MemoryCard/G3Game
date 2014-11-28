@@ -19,7 +19,7 @@ namespace Gaame
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 frm = new Form1();
+            Form3 frm = new Form3();
             frm.Show();
             this.Hide();
         }
