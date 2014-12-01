@@ -27,6 +27,6 @@ namespace Gaame
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
-        }
+        }   
     }
 }
