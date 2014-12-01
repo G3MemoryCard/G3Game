@@ -27,6 +27,24 @@ namespace Gaame
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox2.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please enter only numbers.");
+                //textBox2.Text.Remove(textBox2.Text.Length - 1);
+                textBox2.Text = "";
+            }
+            else if(textBox2.Text=="")
+            {
+                textBox2.Text = "";
+            }            
+            else if(int.Parse(this.textBox2.Text) > 60)
+            {
+                textBox2.Text = "60";
+            }
         }   
     }
 }
