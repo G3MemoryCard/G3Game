@@ -45,6 +45,24 @@ namespace Gaame
             {
                 textBox2.Text = "60";
             }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBox3.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please enter only numbers.");
+                //textBox2.Text.Remove(textBox2.Text.Length - 1);
+                textBox3.Text = "";
+            }
+            else if (textBox3.Text == "")
+            {
+                textBox3.Text = "";
+            }   
+            else if (int.Parse(textBox3.Text) < 1)
+            {
+                MessageBox.Show("Round timer cannot be set lower than 1.");
+            }
         }   
     }
 }

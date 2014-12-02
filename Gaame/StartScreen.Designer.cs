@@ -49,9 +49,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(320, 295);
+            this.button1.Location = new System.Drawing.Point(427, 363);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 31);
+            this.button1.Size = new System.Drawing.Size(127, 38);
             this.button1.TabIndex = 0;
             this.button1.Text = "Start Game!";
             this.button1.UseVisualStyleBackColor = true;
@@ -61,9 +62,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 196);
+            this.label2.Location = new System.Drawing.Point(13, 241);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(195, 19);
+            this.label2.Size = new System.Drawing.Size(241, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "How many cards (pairs):";
             // 
@@ -71,18 +73,20 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(130, 220);
+            this.label3.Location = new System.Drawing.Point(173, 271);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 19);
+            this.label3.Size = new System.Drawing.Size(81, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Theme:";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(196, 198);
+            this.textBox2.Location = new System.Drawing.Point(261, 244);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.MaxLength = 3;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(132, 22);
             this.textBox2.TabIndex = 5;
             this.textBox2.Text = "4";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -96,9 +100,10 @@
             "Internet Icons",
             "Cars",
             "Cartoons"});
-            this.comboBox1.Location = new System.Drawing.Point(196, 223);
+            this.comboBox1.Location = new System.Drawing.Point(261, 274);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
+            this.comboBox1.Size = new System.Drawing.Size(132, 24);
             this.comboBox1.TabIndex = 6;
             this.comboBox1.Text = "Internet Icons";
             // 
@@ -106,9 +111,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(134, 246);
+            this.label4.Location = new System.Drawing.Point(179, 303);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 19);
+            this.label4.Size = new System.Drawing.Size(75, 24);
             this.label4.TabIndex = 7;
             this.label4.Text = "Decks:";
             // 
@@ -116,9 +122,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(88, 16);
+            this.label5.Location = new System.Drawing.Point(117, 20);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(192, 19);
+            this.label5.Size = new System.Drawing.Size(243, 24);
             this.label5.TabIndex = 8;
             this.label5.Text = "Welcome to G3 Memory!";
             // 
@@ -130,9 +137,10 @@
             "Regular",
             "Blue & White",
             "Yellow & Pink"});
-            this.comboBox2.Location = new System.Drawing.Point(196, 249);
+            this.comboBox2.Location = new System.Drawing.Point(261, 306);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 21);
+            this.comboBox2.Size = new System.Drawing.Size(132, 24);
             this.comboBox2.TabIndex = 9;
             this.comboBox2.Text = "Blue & Yellow";
             // 
@@ -140,21 +148,22 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(86, 271);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(115, 334);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 19);
+            this.label6.Size = new System.Drawing.Size(139, 24);
             this.label6.TabIndex = 10;
             this.label6.Text = "Round Timer:";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(196, 274);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Location = new System.Drawing.Point(261, 337);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox3.MaxLength = 5;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.Size = new System.Drawing.Size(132, 22);
             this.textBox3.TabIndex = 11;
             this.textBox3.Text = "20";
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // listView1
             // 
@@ -162,10 +171,10 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
-            this.listView1.Location = new System.Drawing.Point(91, 72);
-            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listView1.Location = new System.Drawing.Point(121, 89);
+            this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(206, 122);
+            this.listView1.Size = new System.Drawing.Size(273, 149);
             this.listView1.TabIndex = 12;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -188,10 +197,10 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(315, 127);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Location = new System.Drawing.Point(420, 156);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(68, 30);
+            this.button2.Size = new System.Drawing.Size(91, 37);
             this.button2.TabIndex = 13;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = true;
@@ -199,19 +208,19 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(315, 162);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Location = new System.Drawing.Point(420, 199);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(68, 31);
+            this.button3.Size = new System.Drawing.Size(91, 38);
             this.button3.TabIndex = 14;
             this.button3.Text = "Remove";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // StartScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 336);
+            this.ClientSize = new System.Drawing.Size(567, 414);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.listView1);
@@ -226,6 +235,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "StartScreen";
             this.Text = "G3 Memory";
