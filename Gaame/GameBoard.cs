@@ -12,6 +12,7 @@ namespace Gaame
 {
     public partial class GameBoard : Form
     {
+        int timeLeft;
         bool turnstate = false;
 
         public GameBoard()
@@ -35,7 +36,7 @@ namespace Gaame
             }
             else
             {
-                (sender as PictureBox).Image = Properties.Resources.Backside1;
+                (sender as PictureBox).Image = Properties.Resources.CardBackGoldBlue;
                 turnstate = false;
             }
         }
@@ -49,7 +50,7 @@ namespace Gaame
             }
             else
             {
-                (sender as PictureBox).Image = Properties.Resources.Backside1;
+                (sender as PictureBox).Image = Properties.Resources.CardBackGoldBlue;
                 turnstate = false;
             }
         }
@@ -63,7 +64,7 @@ namespace Gaame
             }
             else
             {
-                (sender as PictureBox).Image = Properties.Resources.Backside1;
+                (sender as PictureBox).Image = Properties.Resources.CardBackGoldBlue;
                 turnstate = false;
             }
         }
@@ -77,7 +78,7 @@ namespace Gaame
             }
             else
             {
-                (sender as PictureBox).Image = Properties.Resources.Backside1;
+                (sender as PictureBox).Image = Properties.Resources.CardBackGoldBlue;
                 turnstate = false;
             }
         }
@@ -87,19 +88,30 @@ namespace Gaame
             Application.Exit();
         }
 
-        //private void timer1_Tick(object sender, EventArgs e)
-        //{
-        //    if (timeLeft > 0)
-        //    {
-        //        timeLeft = timeLeft - 1;
-        //        timeLabel.Text = timeLeft + " seconds";
+        private void GameBoard_Load(object sender, EventArgs e)
+        {
+            timeLabel.Text = SaveGameSettings.Timer.ToString() + " seconds";
+        }
 
-        //    }
-        //    else
-        //    {
-        //        timer1.Stop();
-        //        timeLabel.Text = "Time's up!";
-        //    }
-        //}
+        private void button2_Click(object sender, EventArgs e)
+        {
+            timeLeft = SaveGameSettings.Timer;
+            timer1.Start();
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            if (timeLeft > 0)
+            {
+                timeLeft = timeLeft - 1;
+                timeLabel.Text = timeLeft + " seconds";
+
+            }
+            else
+            {
+                timer1.Stop();
+                timeLabel.Text = "Time's up!";
+            }
+        }
     }
 }
