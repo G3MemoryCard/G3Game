@@ -63,56 +63,6 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Backside1 {
-            get {
-                object obj = ResourceManager.GetObject("Backside1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap backside2 {
-            get {
-                object obj = ResourceManager.GetObject("backside2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap backside4 {
-            get {
-                object obj = ResourceManager.GetObject("backside4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap backside5 {
-            get {
-                object obj = ResourceManager.GetObject("backside5", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Backside6 {
-            get {
-                object obj = ResourceManager.GetObject("Backside6", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap bg_darkbrador {
             get {
                 object obj = ResourceManager.GetObject("bg_darkbrador", resourceCulture);
@@ -153,6 +103,16 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CardBackBrownBeige {
+            get {
+                object obj = ResourceManager.GetObject("CardBackBrownBeige", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CardBackGoldBlue {
             get {
                 object obj = ResourceManager.GetObject("CardBackGoldBlue", resourceCulture);
@@ -166,6 +126,16 @@ namespace Gaame.Properties {
         internal static System.Drawing.Bitmap CardBackGoldGrey {
             get {
                 object obj = ResourceManager.GetObject("CardBackGoldGrey", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CardBackPurpleGold {
+            get {
+                object obj = ResourceManager.GetObject("CardBackPurpleGold", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
