@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace Gaame
 {
-    public partial class Form3 : Form
+    public partial class StartMeny : Form
     {
         bool turnstate = false;
 
-        public Form3()
+        public StartMeny()
         {
             InitializeComponent();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form1 frm3 = new Form1();
+            EndScreen frm3 = new EndScreen();
             frm3.ShowDialog();
             this.Hide();
         }

@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Gaame
 {
-    public partial class Form2 : Form
+    public partial class GameBoard : Form
     {
-        public Form2()
+        public GameBoard()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 frm = new Form3();    //New varibel for Form3 aka. Gameboard.'
+            StartMeny frm = new StartMeny();    //New varibel for Form3 aka. Gameboard.'
             frm.Show();                 //For frm to show.
             this.Hide();                //Hide the startmeny
         }

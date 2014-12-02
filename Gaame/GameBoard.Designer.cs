@@ -1,6 +1,6 @@
 ﻿namespace Gaame
 {
-    partial class Form2
+    partial class GameBoard
     {
         /// <summary>
         /// Required designer variable.

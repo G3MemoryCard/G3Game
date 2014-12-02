@@ -1,6 +1,6 @@
 ﻿namespace Gaame
 {
-    partial class Form1
+    partial class EndScreen
     {
         /// <summary>
         /// Required designer variable.

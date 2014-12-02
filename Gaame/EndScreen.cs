@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gaame
 {
-    public partial class Form1 : Form
+    public partial class EndScreen : Form
     {
-        public Form1()
+        public EndScreen()
         {
             InitializeComponent();
         }
@@ -25,7 +25,7 @@ namespace Gaame
 
         private void btnPlayAgain_Click(object sender, EventArgs e) // Closes the current window and returns to the start window.
         {
-            Form2 frm2 = new Form2();
+            GameBoard frm2 = new GameBoard();
             frm2.Show();
             this.Hide();
         }
