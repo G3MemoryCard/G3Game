@@ -19,6 +19,11 @@ namespace Gaame
 
         private void button1_Click(object sender, EventArgs e)
         {
+            SaveGameSettings.Pairs = int.Parse(textBox2.Text);
+            SaveGameSettings.Theme = comboBox1.Text;
+            SaveGameSettings.Deck = comboBox2.Text;
+            SaveGameSettings.Timer = int.Parse(textBox3.Text);
+            //SaveGameSettings(int.Parse(textBox2.Text), comboBox1.Text, comboBox2.Text, int.Parse(textBox3.Text));
             GameBoard frm = new GameBoard();    //New variable for Form3 aka. Gameboard.
             frm.Show();                 //For frm to show.
             this.Hide();                //Hide the startmenu.
@@ -67,6 +72,14 @@ namespace Gaame
             {
                 MessageBox.Show("Round timer cannot be set lower than 1.");
             }
-        }   
+        }
+    }
+
+    public static class SaveGameSettings
+    {
+         public static int Pairs { get; set; }
+         public static string Theme { get; set; }
+         public static string Deck { get; set; }
+         public static int Timer { get; set; }
     }
 }
