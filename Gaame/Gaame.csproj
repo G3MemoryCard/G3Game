@@ -97,48 +97,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Firefox.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Flickr.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Gmail.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Google.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Instagram.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Myspace.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Pinterest.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Reddit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Skype.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Tumblr.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\TwitterNew.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\TwitterOld.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Wordpress.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Youtube.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Backside1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +116,186 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bg_darkbrador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blogger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Del icio us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Digg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Firefox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flickr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Foursquare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hi5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LastFM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linkedin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LiveJournal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Meneame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Myspace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Netvibes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picasa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pinterest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reddit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RSS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skype.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StumbleUpon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Technorati.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tumblr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TwitterNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TwitterOld.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_blogger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_buzz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_delicious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_designbump.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_designfloat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_digg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_evernote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_flickr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_forrst.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_github.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_gmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_googleplus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_lastfm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_linkedin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_myspace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_pinterest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_reddit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_rss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_skype.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_spotify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_stumbleupon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_tumblr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_vimeo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_wordpress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v_youtube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vimeo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wordpress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Youtube.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
