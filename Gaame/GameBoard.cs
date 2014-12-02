@@ -36,7 +36,7 @@ namespace Gaame
             }
             else
             {
-                (sender as PictureBox).Image = Properties.Resources.Backside1;
+                (sender as PictureBox).Image = Properties.Resources.CardBackGoldBlue;
                 turnstate = false;
             }
         }
