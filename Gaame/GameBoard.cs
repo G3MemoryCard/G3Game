@@ -12,39 +12,79 @@ namespace Gaame
 {
     public partial class GameBoard : Form
     {
+        bool turnstate = false;
+
         public GameBoard()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            StartMeny frm = new StartMeny();    //New varibel for Form3 aka. Gameboard.'
-            frm.Show();                 //For frm to show.
-            this.Hide();                //Hide the startmeny
+            EndScreen frm3 = new EndScreen();
+            frm3.ShowDialog();
+            this.Hide();
         }
 
-        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if (turnstate == false)
+            {
+                (sender as PictureBox).Image = Properties.Resources.Youtube;
+                turnstate = true;
+            }
+            else
+            {
+                (sender as PictureBox).Image = Properties.Resources.Backside1;
+                turnstate = false;
+            }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            if (turnstate == false)
+            {
+                (sender as PictureBox).Image = Properties.Resources.Firefox;
+                turnstate = true;
+            }
+            else
+            {
+                (sender as PictureBox).Image = Properties.Resources.Backside1;
+                turnstate = false;
+            }
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            if (turnstate == false)
+            {
+                (sender as PictureBox).Image = Properties.Resources.Firefox;
+                turnstate = true;
+            }
+            else
+            {
+                (sender as PictureBox).Image = Properties.Resources.Backside1;
+                turnstate = false;
+            }
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            if (turnstate == false)
+            {
+                (sender as PictureBox).Image = Properties.Resources.Youtube;
+                turnstate = true;
+            }
+            else
+            {
+                (sender as PictureBox).Image = Properties.Resources.Backside1;
+                turnstate = false;
+            }
+        }
+
+        private void Form3_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            if (System.Text.RegularExpressions.Regex.IsMatch(textBox2.Text, "[^0-9]"))
-            {
-                MessageBox.Show("Please enter only numbers.");
-                //textBox2.Text.Remove(textBox2.Text.Length - 1);
-                textBox2.Text = "";
-            }
-            else if(textBox2.Text=="")
-            {
-                textBox2.Text = "";
-            }            
-            else if(int.Parse(this.textBox2.Text) > 60)
-            {
-                textBox2.Text = "60";
-            }
-        }   
     }
 }

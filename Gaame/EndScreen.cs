@@ -25,7 +25,7 @@ namespace Gaame
 
         private void btnPlayAgain_Click(object sender, EventArgs e) // Closes the current window and returns to the start window.
         {
-            GameBoard frm2 = new GameBoard();
+            StartScreen frm2 = new StartScreen();
             frm2.Show();
             this.Hide();
         }

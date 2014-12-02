@@ -50,28 +50,28 @@
     <Compile Include="EndScreen.Designer.cs">
       <DependentUpon>EndScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="StartScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartScreen.Designer.cs">
+      <DependentUpon>StartScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameBoard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GameBoard.Designer.cs">
       <DependentUpon>GameBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="StartMeny.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StartMeny.Designer.cs">
-      <DependentUpon>StartMeny.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EndScreen.resx">
       <DependentUpon>EndScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StartScreen.resx">
+      <DependentUpon>StartScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameBoard.resx">
       <DependentUpon>GameBoard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StartMeny.resx">
-      <DependentUpon>StartMeny.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
