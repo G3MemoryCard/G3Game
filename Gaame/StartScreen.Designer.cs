@@ -32,13 +32,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBoxPairs = new System.Windows.Forms.TextBox();
+            this.comboBoxTheme = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxDecks = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxTimer = new System.Windows.Forms.TextBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -79,30 +79,30 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Theme:";
             // 
-            // textBox2
+            // textBoxPairs
             // 
-            this.textBox2.Location = new System.Drawing.Point(196, 198);
-            this.textBox2.MaxLength = 3;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.Text = "4";
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBoxPairs.Location = new System.Drawing.Point(196, 198);
+            this.textBoxPairs.MaxLength = 3;
+            this.textBoxPairs.Name = "textBoxPairs";
+            this.textBoxPairs.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPairs.TabIndex = 5;
+            this.textBoxPairs.Text = "4";
+            this.textBoxPairs.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // comboBox1
+            // comboBoxTheme
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxTheme.FormattingEnabled = true;
+            this.comboBoxTheme.Items.AddRange(new object[] {
             "Cats",
             "Dogs",
             "Internet Icons",
             "Cars",
             "Cartoons"});
-            this.comboBox1.Location = new System.Drawing.Point(196, 223);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 6;
-            this.comboBox1.Text = "Internet Icons";
+            this.comboBoxTheme.Location = new System.Drawing.Point(196, 223);
+            this.comboBoxTheme.Name = "comboBoxTheme";
+            this.comboBoxTheme.Size = new System.Drawing.Size(100, 21);
+            this.comboBoxTheme.TabIndex = 6;
+            this.comboBoxTheme.Text = "Internet Icons";
             // 
             // label4
             // 
@@ -124,19 +124,19 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Welcome to G3 Memory!";
             // 
-            // comboBox2
+            // comboBoxDecks
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBoxDecks.FormattingEnabled = true;
+            this.comboBoxDecks.Items.AddRange(new object[] {
             "Black & Yellow",
             "Regular",
             "Blue & White",
             "Yellow & Pink"});
-            this.comboBox2.Location = new System.Drawing.Point(196, 249);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 21);
-            this.comboBox2.TabIndex = 9;
-            this.comboBox2.Text = "Blue & Yellow";
+            this.comboBoxDecks.Location = new System.Drawing.Point(196, 249);
+            this.comboBoxDecks.Name = "comboBoxDecks";
+            this.comboBoxDecks.Size = new System.Drawing.Size(100, 21);
+            this.comboBoxDecks.TabIndex = 9;
+            this.comboBoxDecks.Text = "Blue & Yellow";
             // 
             // label6
             // 
@@ -149,16 +149,16 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Round Timer:";
             // 
-            // textBox3
+            // textBoxTimer
             // 
-            this.textBox3.Location = new System.Drawing.Point(196, 274);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.MaxLength = 5;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 11;
-            this.textBox3.Text = "20";
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.textBoxTimer.Location = new System.Drawing.Point(196, 274);
+            this.textBoxTimer.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxTimer.MaxLength = 5;
+            this.textBoxTimer.Name = "textBoxTimer";
+            this.textBoxTimer.Size = new System.Drawing.Size(100, 20);
+            this.textBoxTimer.TabIndex = 11;
+            this.textBoxTimer.Text = "20";
+            this.textBoxTimer.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // listView1
             // 
@@ -219,13 +219,13 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxTimer);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBoxDecks);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.comboBoxTheme);
+            this.Controls.Add(this.textBoxPairs);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
@@ -244,13 +244,13 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBoxPairs;
+        private System.Windows.Forms.ComboBox comboBoxTheme;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxDecks;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxTimer;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;

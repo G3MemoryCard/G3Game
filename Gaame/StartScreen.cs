@@ -19,11 +19,10 @@ namespace Gaame
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SaveGameSettings.Pairs = int.Parse(textBox2.Text);
-            SaveGameSettings.Theme = comboBox1.Text;
-            SaveGameSettings.Deck = comboBox2.Text;
-            SaveGameSettings.Timer = int.Parse(textBox3.Text);
-            //SaveGameSettings(int.Parse(textBox2.Text), comboBox1.Text, comboBox2.Text, int.Parse(textBox3.Text));
+            SaveGameSettings.Pairs = int.Parse(textBoxPairs.Text);
+            SaveGameSettings.Theme = comboBoxTheme.Text;
+            SaveGameSettings.Deck = comboBoxDecks.Text;
+            SaveGameSettings.Timer = int.Parse(textBoxTimer.Text);
             GameBoard frm = new GameBoard();    //New variable for Form3 aka. Gameboard.
             frm.Show();                 //For frm to show.
             this.Hide();                //Hide the startmenu.
@@ -36,38 +35,38 @@ namespace Gaame
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(textBox2.Text, "[^0-9]"))
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBoxPairs.Text, "[^0-9]"))
             // Regex expression to only allow numeric signs to be entered.
             {
                 MessageBox.Show("Please enter only numbers.");
-                textBox2.Text = "";
+                textBoxPairs.Text = "";
             }
-            else if(textBox2.Text=="")
+            else if(textBoxPairs.Text=="")
             // Accepting an empty field.
             {
-                textBox2.Text = "";
+                textBoxPairs.Text = "";
             }            
-            else if(int.Parse(this.textBox2.Text) > 60)
+            else if(int.Parse(this.textBoxPairs.Text) > 60)
                 // Defaulting to max value if numbers entered exceeds 60.
             {
-                textBox2.Text = "60";
+                textBoxPairs.Text = "60";
             }
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(textBox3.Text, "[^0-9]"))
+            if (System.Text.RegularExpressions.Regex.IsMatch(textBoxTimer.Text, "[^0-9]"))
                 // Regex expression to only allow numeric signs to be entered.
             {
                 MessageBox.Show("Please enter only numbers.");
-                textBox3.Text = "";
+                textBoxTimer.Text = "";
             }
-            else if (textBox3.Text == "")
+            else if (textBoxTimer.Text == "")
                 // Accepting an empty field.
             {
-                textBox3.Text = "";
+                textBoxTimer.Text = "";
             }   
-            else if (int.Parse(textBox3.Text) < 1)
+            else if (int.Parse(textBoxTimer.Text) < 1)
                 // Showing error message if timer is set to 0.
             {
                 MessageBox.Show("Round timer cannot be set lower than 1.");
