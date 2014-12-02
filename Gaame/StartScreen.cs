@@ -10,8 +10,11 @@ using System.Windows.Forms;
 
 namespace Gaame
 {
+    
     public partial class StartScreen : Form
     {
+        //List<PlayerList> list = new List<PlayerList>();
+
         public StartScreen()
         {
             InitializeComponent();
@@ -72,6 +75,24 @@ namespace Gaame
                 MessageBox.Show("Round timer cannot be set lower than 1.");
             }
         }
+
+        private void StartScreen_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddPlayer ad = new AddPlayer();
+            ad.ShowDialog();
+        }
+
+        public void DoitAll()
+        {
+            listView1.Items.Add(PlayerList.list[0].Name);
+            listView1.Items.Add(PlayerList.list[0].AI.ToString());
+            listView1.Items.Add(PlayerList.list[0].Skill.ToString());
+        }
     }
 
     public static class SaveGameSettings
@@ -81,4 +102,35 @@ namespace Gaame
          public static string Deck { get; set; }
          public static int Timer { get; set; }
     }
+
+    public class Player
+    {
+
+        public Player(string Name, bool AI, int Skill)
+        {
+            this.Name = Name;
+            this.AI = AI;
+            this.Skill = Skill;
+        }
+
+        public string Name { get; set; }
+        public bool AI { get; set; }
+        public int Skill { get; set; }
+    }
+
+    public static class PlayerList
+    {
+        public static List<Player> list { get; set; }
+
+        static PlayerList()
+        {
+            list = new List<Player>();
+        }
+        public static void Record(Player value)
+        {
+    	list.Add(value);
+        }
+    
+    }
+
 }
