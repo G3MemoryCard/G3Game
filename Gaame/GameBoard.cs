@@ -86,5 +86,20 @@ namespace Gaame
         {
             Application.Exit();
         }
+
+        //private void timer1_Tick(object sender, EventArgs e)
+        //{
+        //    if (timeLeft > 0)
+        //    {
+        //        timeLeft = timeLeft - 1;
+        //        timeLabel.Text = timeLeft + " seconds";
+
+        //    }
+        //    else
+        //    {
+        //        timer1.Stop();
+        //        timeLabel.Text = "Time's up!";
+        //    }
+        //}
     }
 }
