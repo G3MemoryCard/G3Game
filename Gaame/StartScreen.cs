@@ -78,7 +78,7 @@ namespace Gaame
         private void StartScreen_Load(object sender, EventArgs e)
         {
             listView1.View = View.Details;
-
+            
             listView1.Columns.Add("PLAYER", 100, HorizontalAlignment.Left);
             listView1.Columns.Add("AI", 50, HorizontalAlignment.Left);
             listView1.Columns.Add("SKILL", 50, HorizontalAlignment.Left);
@@ -92,6 +92,7 @@ namespace Gaame
             listView1.Items.Add(PlayerList.list[count].Name.ToString());
             listView1.Items[count].SubItems.Add(PlayerList.list[count].AI.ToString());
             listView1.Items[count].SubItems.Add(PlayerList.list[count].Skill.ToString());
+            Console.WriteLine(PlayerList.list[0].Name.ToString());
             count++;
         }
 
@@ -102,11 +103,8 @@ namespace Gaame
 
         private void button3_Click(object sender, EventArgs e)
         {
-            int remove;
-            remove = int.Parse(listView1.SelectedItems[0].ToString());
-
+            PlayerList.list.RemoveAt(listView1.SelectedItems[0].Index);
             listView1.SelectedItems[0].Remove();
-            PlayerList.list.RemoveAt(remove);
         }
     }
 
