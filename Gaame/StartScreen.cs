@@ -88,6 +88,7 @@ namespace Gaame
             listView1.Columns.Add("PLAYER", 100, HorizontalAlignment.Left);
             listView1.Columns.Add("AI", 40, HorizontalAlignment.Left);
             listView1.Columns.Add("SKILL", 50, HorizontalAlignment.Left);
+
         }
 
         private void button2_Click(object sender, EventArgs e)

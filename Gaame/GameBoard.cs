@@ -83,13 +83,21 @@ namespace Gaame
 
         }
 
+        public void update()
+        {
+            this.listView1.Items.Clear();
+            for (int i = 0; i < PlayerList.list.Count; i++)
+            {
+                listView1.Items.Add(PlayerList.list[i].Name.ToString());
+                listView1.Items[i].SubItems.Add(PlayerList.list[i].Score.ToString());
+            }
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
             FunkcheckAdd fun = new FunkcheckAdd();
-            fun.AddScore();
-                listView1.Items.Add(PlayerList.list[0].Name.ToString());
-                listView1.Items[0].SubItems.Add(PlayerList.list[0].Score.ToString());
-            
+            fun.AddScore(0, 2);
+            update();
+        }
         }
     }
-}
