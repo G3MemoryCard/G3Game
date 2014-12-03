@@ -90,6 +90,7 @@ namespace Gaame
 
         private void GameBoard_Load(object sender, EventArgs e)
         {
+            BoardGeneration.GenerateBoard(10, splitContainer1);
             // Show timer as "selected value" seconds, before countdown begins.
             timeLabel.Text = SaveGameSettings.Timer.ToString() + " seconds";
         }
