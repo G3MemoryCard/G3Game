@@ -44,7 +44,7 @@ namespace Gaame
             if (System.Text.RegularExpressions.Regex.IsMatch(textBoxPairs.Text, "[^0-9]"))
             // Regex expression to only allow numeric signs to be entered.
             {
-                MessageBox.Show("Please enter only numbers.");
+                //MessageBox.Show("Please enter only numbers.");
                 textBoxPairs.Text = "";
             }
             else if(textBoxPairs.Text=="")
@@ -64,7 +64,7 @@ namespace Gaame
             if (System.Text.RegularExpressions.Regex.IsMatch(textBoxTimer.Text, "[^0-9]"))
                 // Regex expression to only allow numeric signs to be entered.
             {
-                MessageBox.Show("Please enter only numbers.");
+                //MessageBox.Show("Please enter only numbers.");
                 textBoxTimer.Text = "";
             }
             else if (textBoxTimer.Text == "")
