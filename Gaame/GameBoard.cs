@@ -12,7 +12,7 @@ namespace Gaame
 {
     public partial class GameBoard : Form
     {
-        int timeLeft;
+        int timeLeft; // parameter used for the timer.
         bool turnstate = false;
 
         public GameBoard()
@@ -90,11 +90,13 @@ namespace Gaame
 
         private void GameBoard_Load(object sender, EventArgs e)
         {
+            // Show timer as "selected value" seconds, before countdown begins.
             timeLabel.Text = SaveGameSettings.Timer.ToString() + " seconds";
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            // Button for timer testing.
             timeLeft = SaveGameSettings.Timer;
             timer1.Start();
         }
@@ -102,12 +104,14 @@ namespace Gaame
         private void timer1_Tick_1(object sender, EventArgs e)
         {
             if (timeLeft > 0)
+                // if there's time left reduce time by 1 and update label every sec.
             {
                 timeLeft = timeLeft - 1;
                 timeLabel.Text = timeLeft + " seconds";
 
             }
             else
+                // If time's up announce by changing label.
             {
                 timer1.Stop();
                 timeLabel.Text = "Time's up!";
