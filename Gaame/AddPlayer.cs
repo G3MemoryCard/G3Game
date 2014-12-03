@@ -46,6 +46,8 @@ namespace Gaame
                 skill = 2;
             else if (check == true & comboBox1.Text.ToString() == "Easy (default)")
                 skill = 1;
+            else if (check == true & comboBox1.Text.ToString() == "Easy")
+                skill = 1;
             else
                 skill = 0;
             //Send the variables to the Playerlist.
@@ -64,7 +66,13 @@ namespace Gaame
         {
             //Disable combobox1, Add items for the combobox.
             comboBox1.Enabled = false;
+            this.comboBox1.Items.Add("Easy");
             this.comboBox1.Items.Add("Hard");
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

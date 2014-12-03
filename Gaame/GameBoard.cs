@@ -39,6 +39,19 @@ namespace Gaame
             CardArray = BoardGeneration.GenerateBoard(SaveGameSettings.Pairs * 2, splitContainer1);
             // Show timer as "selected value" seconds, before countdown begins.
             timeLabel.Text = SaveGameSettings.Timer.ToString() + " seconds";
+
+
+            
+            listView1.View = View.Details;
+            
+            listView1.Columns.Add("PLAYER", 100, HorizontalAlignment.Left);
+            listView1.Columns.Add("SCORE", 100, HorizontalAlignment.Left);
+
+            for (int i = 0; i < PlayerList.list.Count; i++)
+            {
+                listView1.Items.Add(PlayerList.list[i].Name.ToString());
+                listView1.Items[i].SubItems.Add(PlayerList.list[i].Score.ToString());
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -63,6 +76,11 @@ namespace Gaame
                 timer1.Stop();
                 timeLabel.Text = "Time's up!";
             }
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

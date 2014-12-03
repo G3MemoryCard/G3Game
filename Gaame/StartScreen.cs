@@ -14,7 +14,7 @@ namespace Gaame
     public partial class StartScreen : Form
     {
         //Number in the index for playerlist.
-        int count = 0;
+        public int count = 0;
         string Say;
         string SaySkill;
 
