@@ -32,6 +32,7 @@ namespace Gaame
             //Variables for player name, if it should be a AI.
             string name;
             bool ai = false;
+            int score = 0;
             //Type in the player name.
             name = textBox1.Text.ToString();
             //IF is should be a AI
@@ -41,14 +42,14 @@ namespace Gaame
                 ai = false;
             
             //What skill the AI should have
-            if (check == true & comboBox1.Text.ToString() == "Easy")
-                skill = 1;
-            else if (check == true & comboBox1.Text.ToString() == "Hard")
+            if (check == true & comboBox1.Text.ToString() == "Hard")
                 skill = 2;
+            else if (check == true & comboBox1.Text.ToString() == "Easy (default)")
+                skill = 1;
             else
                 skill = 0;
             //Send the variables to the Playerlist.
-            PlayerList.Record(new Player(name, ai, skill));
+            PlayerList.Record(new Player(name, ai, skill, score));
             this.Close();
         }
 
@@ -63,7 +64,6 @@ namespace Gaame
         {
             //Disable combobox1, Add items for the combobox.
             comboBox1.Enabled = false;
-            this.comboBox1.Items.Add("Easy");
             this.comboBox1.Items.Add("Hard");
         }
     }

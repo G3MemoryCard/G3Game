@@ -150,16 +150,18 @@ namespace Gaame
     public class Player
     {
         //Construtor for Playerlist to add players.
-        public Player(string Name, bool AI, int Skill)
+        public Player(string Name, bool AI, int Skill, int Score)
         {
             this.Name = Name;
             this.AI = AI;
             this.Skill = Skill;
+            this.Score = Score;
         }
         //Varibals for the Playerlist.
         public string Name { get; set; }
         public bool AI { get; set; }
         public int Skill { get; set; }
+        public int Score { get; set; }
     }
 
     public static class PlayerList
