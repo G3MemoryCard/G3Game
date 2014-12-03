@@ -13,8 +13,7 @@ namespace Gaame
     
     public partial class StartScreen : Form
     {
-        //List<PlayerList> list = new List<PlayerList>();
-
+        int count = 0;
         public StartScreen()
         {
             InitializeComponent();
@@ -78,20 +77,27 @@ namespace Gaame
 
         private void StartScreen_Load(object sender, EventArgs e)
         {
-            
+            listView1.View = View.Details;
+
+            listView1.Columns.Add("PLAYER", 100, HorizontalAlignment.Left);
+            listView1.Columns.Add("AI", 50, HorizontalAlignment.Left);
+            listView1.Columns.Add("SKILL", 50, HorizontalAlignment.Left);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             AddPlayer ad = new AddPlayer();
             ad.ShowDialog();
+
+            listView1.Items.Add(PlayerList.list[count].Name.ToString());
+            listView1.Items[count].SubItems.Add(PlayerList.list[count].AI.ToString());
+            listView1.Items[count].SubItems.Add(PlayerList.list[count].Skill.ToString());
+            count++;
         }
 
-        public void DoitAll()
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            listView1.Items.Add(PlayerList.list[0].Name);
-            listView1.Items.Add(PlayerList.list[0].AI.ToString());
-            listView1.Items.Add(PlayerList.list[0].Skill.ToString());
+
         }
     }
 

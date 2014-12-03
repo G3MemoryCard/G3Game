@@ -182,11 +182,12 @@
             // 
             // listView1
             // 
-            this.listView1.Location = new System.Drawing.Point(92, 60);
+            this.listView1.Location = new System.Drawing.Point(88, 52);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(188, 120);
-            this.listView1.TabIndex = 16;
+            this.listView1.Size = new System.Drawing.Size(200, 132);
+            this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // StartScreen
             // 
