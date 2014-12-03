@@ -75,7 +75,7 @@ namespace Gaame
                 pic1.Location = new Point(generateStartPoint.X + columNr * (cardSize + margin), generateStartPoint.Y + rowNr * (cardSize + margin));
                 pic1.Width = cardSize;
                 pic1.Height = cardSize;
-                pic1.Image = Properties.Resources.Facebook;
+                pic1.Image = Properties.Resources.theme1pic8;
                 pic1.SizeMode = PictureBoxSizeMode.StretchImage;
                 container.Panel1.Controls.Add(pic1);
                 PlayCard Card = new PlayCard(pic1);
@@ -84,7 +84,6 @@ namespace Gaame
                 Random random = new Random();
                 int curTag = random.Next(tagList.Count - 1);
                 Card.Tag = tagList[curTag];
-                Console.WriteLine(tagList[curTag]);
 
                 //Removes the used tag from the list
                 tagList.RemoveAt(curTag);
@@ -113,8 +112,10 @@ namespace Gaame
             AllowedToTurn = true;
             this.Pic = pic;
             this.Pic.Click += new EventHandler(Pic_Click);
-            //FrontImage = ThemeLists[SaveGameSettings.theme, Tag];
-            //BackImage = BackList[SaveGameSettings.backTheme];
+            FrontImage = ThemeArrays.Theme[Tag, 0];
+            BackImage = ThemeArrays.Back[0];
+            Console.WriteLine(Tag);
+            this.Pic.Image = BackImage;
         }
 
         private void Pic_Click(object sender, EventArgs e)
@@ -129,31 +130,55 @@ namespace Gaame
         }
         public void TurnUpCard()
         {
+            FrontImage = ThemeArrays.Theme[Tag, 0];
             Console.WriteLine("Turning the card up");
             Turned = true;
             //Set image to the front image
-            Pic.Image = BackImage;
+            Pic.Image = FrontImage;
         }
 
         public void TurnDownCard()
         {
+            BackImage = ThemeArrays.Back[0];
             Console.WriteLine("Turning the card down");
             Turned = false;
             //Set image to the back image
-            Pic.Image = FrontImage;
+            Pic.Image = BackImage;
         }
 
     }
 
     //An array to get fronts and backs for cards depening on tags
-    public static class ThemeArray
+    public static class ThemeArrays
     {
-        public static Bitmap[,] FrontTheme { get; set; }
-        public static Bitmap[] BackTheme { get; set; }
+        public static Bitmap[,] Theme { get; set; }
+        public static Bitmap[] Back { get; set; }
 
         public static void Construct()
         {
-            FrontTheme[0, 0] = Properties.Resources.Youtube;
+            
+            //Make theme array
+            Theme = new Bitmap[59, 2];
+            Theme[0, 0] = Properties.Resources.theme1pic0;
+            Theme[1, 0] = Properties.Resources.theme1pic1;
+            Theme[2, 0] = Properties.Resources.theme1pic2;
+            Theme[3, 0] = Properties.Resources.theme1pic3;
+            Theme[4, 0] = Properties.Resources.theme1pic4;
+            Theme[5, 0] = Properties.Resources.theme1pic5;
+            Theme[6, 0] = Properties.Resources.theme1pic6;
+            Theme[7, 0] = Properties.Resources.theme1pic7;
+            Theme[8, 0] = Properties.Resources.theme1pic8;
+
+            //Make back array
+            Back = new Bitmap[2];
+            Back[0] = Properties.Resources.CardBackGoldBlue;
         }
+    }
+    public static class CardList
+    {
+        //public static int SearchForPairs()
+        //{
+        //    
+        //}
     }
 }

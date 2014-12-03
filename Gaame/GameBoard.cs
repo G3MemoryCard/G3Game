@@ -35,6 +35,7 @@ namespace Gaame
 
         private void GameBoard_Load(object sender, EventArgs e)
         {
+            ThemeArrays.Construct();
             CardArray = BoardGeneration.GenerateBoard(SaveGameSettings.Pairs * 2, splitContainer1);
             // Show timer as "selected value" seconds, before countdown begins.
             timeLabel.Text = SaveGameSettings.Timer.ToString() + " seconds";

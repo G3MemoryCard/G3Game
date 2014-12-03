@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Firefox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="theme1pic0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Firefox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Flickr" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -163,19 +163,19 @@
   <data name="bg_darkbrador" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg_darkbrador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Blip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="theme1pic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Blogger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="theme1pic2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blogger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Del_icio_us" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="theme1pic6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Del icio us.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Digg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="theme1pic7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Digg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Facebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="theme1pic8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Facebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Foursquare" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -301,7 +301,7 @@
   <data name="v_youtube" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_youtube.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CardBackBlackOrange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="theme1pic3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CardBackBlackOrange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CardBackGoldBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -310,10 +310,10 @@
   <data name="CardBackGoldGrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CardBackGoldGrey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CardBackBrownBeige" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="theme1pic4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CardBackBrownBeige.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CardBackPurpleGold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="theme1pic5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CardBackPurpleGold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
