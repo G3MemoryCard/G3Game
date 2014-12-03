@@ -27,61 +27,6 @@ namespace Gaame
             this.Hide();
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            if (turnstate == false)
-            {
-                (sender as PictureBox).Image = Properties.Resources.Youtube;
-                turnstate = true;
-            }
-            else
-            {
-                (sender as PictureBox).Image = Properties.Resources.CardBackGoldBlue;
-                turnstate = false;
-            }
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            if (turnstate == false)
-            {
-                (sender as PictureBox).Image = Properties.Resources.Firefox;
-                turnstate = true;
-            }
-            else
-            {
-                (sender as PictureBox).Image = Properties.Resources.CardBackGoldBlue;
-                turnstate = false;
-            }
-        }
-
-        private void pictureBox10_Click(object sender, EventArgs e)
-        {
-            if (turnstate == false)
-            {
-                (sender as PictureBox).Image = Properties.Resources.Firefox;
-                turnstate = true;
-            }
-            else
-            {
-                (sender as PictureBox).Image = Properties.Resources.CardBackGoldBlue;
-                turnstate = false;
-            }
-        }
-
-        private void pictureBox13_Click(object sender, EventArgs e)
-        {
-            if (turnstate == false)
-            {
-                (sender as PictureBox).Image = Properties.Resources.Youtube;
-                turnstate = true;
-            }
-            else
-            {
-                (sender as PictureBox).Image = Properties.Resources.CardBackGoldBlue;
-                turnstate = false;
-            }
-        }
 
         private void Form3_FormClosing(object sender, FormClosingEventArgs e)
         {
