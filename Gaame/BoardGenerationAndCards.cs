@@ -82,8 +82,10 @@ namespace Gaame
 
                 //Add a random tag from the tag list to the card
                 Random random = new Random();
-                int curTag = random.Next(0, tagList.Count);
+                int curTag = random.Next(tagList.Count);
                 Card.Tag = tagList[curTag];
+                Console.WriteLine(tagList[curTag]);
+
                 //Removes the used tag from the list
                 tagList.RemoveAt(curTag);
 
@@ -112,7 +114,6 @@ namespace Gaame
             this.Pic.Click += new EventHandler(Pic_Click);
             //FrontImage = ThemeLists[SaveGameSettings.theme, Tag];
             //BackImage = BackList[SaveGameSettings.backTheme];
-            Console.WriteLine("Hej");
         }
 
         private void Pic_Click(object sender, EventArgs e)
@@ -141,5 +142,17 @@ namespace Gaame
             Pic.Image = FrontImage;
         }
 
+    }
+
+    //An array to get fronts and backs for cards depening on tags
+    public static class ThemeArray
+    {
+        public static Bitmap[,] FrontTheme { get; set; }
+        public static Bitmap[] BackTheme { get; set; }
+
+        public void Construct()
+        {
+            FrontTheme[0, 0] = Properties.Resources.Youtube;
+        }
     }
 }
