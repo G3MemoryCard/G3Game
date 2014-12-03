@@ -108,24 +108,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Backside1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\backside2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\backside3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\backside4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\backside5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Backside6.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\bg_darkbrador.png" />
   </ItemGroup>
   <ItemGroup>
@@ -322,6 +304,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CardBackPurpleGold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Backside\Backside1.png" />
+    <Content Include="Resources\Backside\backside2.png" />
+    <Content Include="Resources\Backside\backside3.png" />
+    <Content Include="Resources\Backside\backside4.png" />
+    <Content Include="Resources\Backside\backside5.png" />
+    <Content Include="Resources\Backside\Backside6.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

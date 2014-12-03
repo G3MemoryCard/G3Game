@@ -55,10 +55,6 @@ namespace Gaame
             check = !check;
 
         }
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
         private void AddPlayer_Load(object sender, EventArgs e)
         {
             comboBox1.Enabled = false;

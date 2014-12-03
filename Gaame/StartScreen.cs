@@ -99,6 +99,15 @@ namespace Gaame
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int remove;
+            remove = int.Parse(listView1.SelectedItems[0].ToString());
+
+            listView1.SelectedItems[0].Remove();
+            PlayerList.list.RemoveAt(remove);
+        }
     }
 
     public static class SaveGameSettings
