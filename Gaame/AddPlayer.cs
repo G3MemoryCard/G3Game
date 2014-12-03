@@ -13,7 +13,7 @@ namespace Gaame
     public partial class AddPlayer : Form
     {
         int skill = 0;
-        int check;
+        bool check = false;
         public AddPlayer()
         {
             InitializeComponent();
@@ -29,18 +29,18 @@ namespace Gaame
         private void button1_Click(object sender, EventArgs e)
         {
             string name;
-            bool ai;
+            bool ai = false;
             name = textBox1.Text.ToString();
 
-            if (check == 1)
+            if (check == true)
                 ai = true;
-            else if (check == 0)
+            else if (check == false)
                 ai = false;
             
 
-            if (ai = true & comboBox1.Text.ToString() == "Easy")
+            if (check == true & comboBox1.Text.ToString() == "Easy")
                 skill = 1;
-            else if (ai = true & comboBox1.Text.ToString() == "Hard")
+            else if (check == true & comboBox1.Text.ToString() == "Hard")
                 skill = 2;
             else
                 skill = 0;
@@ -52,10 +52,8 @@ namespace Gaame
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             comboBox1.Enabled = checkBox1.Checked;
-            if (checkBox1.Checked == true)
-                check = 1;
-            else
-                check = 0;
+            check = !check;
+
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
