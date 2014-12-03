@@ -75,7 +75,7 @@ namespace Gaame
             else if (int.Parse(textBoxTimer.Text) < 1)
                 // Showing error message if timer is set to 0.
             {
-                MessageBox.Show("Round timer cannot be set lower than 1.");
+                textBoxTimer.Text = "1";
             }
         }
 
