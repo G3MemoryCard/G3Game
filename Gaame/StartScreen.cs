@@ -13,7 +13,11 @@ namespace Gaame
     
     public partial class StartScreen : Form
     {
+        //Number in the index for playerlist.
         int count = 0;
+        string Say;
+        string SaySkill;
+
         public StartScreen()
         {
             InitializeComponent();
@@ -77,23 +81,46 @@ namespace Gaame
 
         private void StartScreen_Load(object sender, EventArgs e)
         {
-            listView1.View = View.Details;
+            //Change the view of ListView to Details.
+            listView1.View = View.Details; 
             
+            //Adding 3 Columns to ListView1.
             listView1.Columns.Add("PLAYER", 100, HorizontalAlignment.Left);
-            listView1.Columns.Add("AI", 50, HorizontalAlignment.Left);
+            listView1.Columns.Add("AI", 40, HorizontalAlignment.Left);
             listView1.Columns.Add("SKILL", 50, HorizontalAlignment.Left);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //Creating a instance to AddPlayer and starts it in a Dialog Form.
             AddPlayer ad = new AddPlayer();
             ad.ShowDialog();
 
-            listView1.Items.Add(PlayerList.list[count].Name.ToString());
-            listView1.Items[count].SubItems.Add(PlayerList.list[count].AI.ToString());
-            listView1.Items[count].SubItems.Add(PlayerList.list[count].Skill.ToString());
-            Console.WriteLine(PlayerList.list[0].Name.ToString());
-            count++;
+            //Check if AI is true or false.
+            if (PlayerList.list.Count > count && PlayerList.list[count] != null)
+            {
+                if (PlayerList.list[count].AI == true)
+                    Say = "YES";
+                else if (PlayerList.list[count].AI == false)
+                    Say = "NO";
+                else
+                    Say = null;
+
+                if (PlayerList.list[count].Skill == 1)
+                    SaySkill = "EASY";
+                else if (PlayerList.list[count].Skill == 2)
+                    SaySkill = "HARD";
+                else
+                    SaySkill = null;
+
+                //Add from playerlist to the listview1 and subitems for each player.
+                listView1.Items.Add(PlayerList.list[count].Name.ToString());
+                listView1.Items[count].SubItems.Add(Say);
+                listView1.Items[count].SubItems.Add(SaySkill);
+                //Add count for what player from playerlist would be added next.
+                count++;
+            }
+                
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -103,8 +130,12 @@ namespace Gaame
 
         private void button3_Click(object sender, EventArgs e)
         {
+            //Remove listview1 index number from the playerlist.
             PlayerList.list.RemoveAt(listView1.SelectedItems[0].Index);
+            //Remove selected item from listview1.
             listView1.SelectedItems[0].Remove();
+            //Remove one from count.
+            count--;
         }
     }
 
@@ -118,14 +149,14 @@ namespace Gaame
 
     public class Player
     {
-
+        //Construtor for Playerlist to add players.
         public Player(string Name, bool AI, int Skill)
         {
             this.Name = Name;
             this.AI = AI;
             this.Skill = Skill;
         }
-
+        //Varibals for the Playerlist.
         public string Name { get; set; }
         public bool AI { get; set; }
         public int Skill { get; set; }
@@ -133,12 +164,14 @@ namespace Gaame
 
     public static class PlayerList
     {
+        //generic playerlist name.
         public static List<Player> list { get; set; }
-
+        //Method for create a new playlist.
         static PlayerList()
         {
             list = new List<Player>();
         }
+        //To record the value for the new players.
         public static void Record(Player value)
         {
     	list.Add(value);
