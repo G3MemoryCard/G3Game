@@ -150,7 +150,7 @@ namespace Gaame
         public static Bitmap[,] FrontTheme { get; set; }
         public static Bitmap[] BackTheme { get; set; }
 
-        public void Construct()
+        public static void Construct()
         {
             FrontTheme[0, 0] = Properties.Resources.Youtube;
         }
