@@ -32,7 +32,7 @@ namespace Gaame
             list.RemoveAt(index);
         }
 
-        public static void GenerateBoard(int x, SplitContainer container)
+        public static PlayCard[] GenerateBoard(int x, SplitContainer container)
         {
             int maxBoardSize = 500;
             int cardMaxSize = 100;
@@ -82,7 +82,7 @@ namespace Gaame
 
                 //Add a random tag from the tag list to the card
                 Random random = new Random();
-                int curTag = random.Next(tagList.Count);
+                int curTag = random.Next(tagList.Count - 1);
                 Card.Tag = tagList[curTag];
                 Console.WriteLine(tagList[curTag]);
 
@@ -94,6 +94,7 @@ namespace Gaame
                 columNr++;
                 i++;
             }
+            return Cards;
         }
     }
 
