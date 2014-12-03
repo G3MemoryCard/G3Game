@@ -130,12 +130,16 @@ namespace Gaame
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //Remove listview1 index number from the playerlist.
-            PlayerList.list.RemoveAt(listView1.SelectedItems[0].Index);
-            //Remove selected item from listview1.
-            listView1.SelectedItems[0].Remove();
-            //Remove one from count.
-            count--;
+            
+            if (listView1.SelectedItems[null] != null)
+            {
+                //Remove listview1 index number from the playerlist.
+                PlayerList.list.RemoveAt(listView1.SelectedItems[0].Index);
+                //Remove selected item from listview1.
+                listView1.SelectedItems[0].Remove();
+                //Remove one from count.
+                count--;
+            }
         }
     }
 

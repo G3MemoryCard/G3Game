@@ -82,5 +82,14 @@ namespace Gaame
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FunkcheckAdd fun = new FunkcheckAdd();
+            fun.AddScore();
+                listView1.Items.Add(PlayerList.list[0].Name.ToString());
+                listView1.Items[0].SubItems.Add(PlayerList.list[0].Score.ToString());
+            
+        }
     }
 }

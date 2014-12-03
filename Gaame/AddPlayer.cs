@@ -44,8 +44,6 @@ namespace Gaame
             //What skill the AI should have
             if (check == true & comboBox1.Text.ToString() == "Hard")
                 skill = 2;
-            else if (check == true & comboBox1.Text.ToString() == "Easy (default)")
-                skill = 1;
             else if (check == true & comboBox1.Text.ToString() == "Easy")
                 skill = 1;
             else
@@ -66,13 +64,10 @@ namespace Gaame
         {
             //Disable combobox1, Add items for the combobox.
             comboBox1.Enabled = false;
+
             this.comboBox1.Items.Add("Easy");
             this.comboBox1.Items.Add("Hard");
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            this.comboBox1.SelectedItem = "Easy";
         }
     }
 }
