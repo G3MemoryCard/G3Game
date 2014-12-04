@@ -9,7 +9,7 @@ namespace Gaame
     class FunkcheckAdd
     {
 
-        public bool Checkpic()
+        public static bool Checkpic()
         {
             int[] Cards = CardList.SearchForPairs();
 
@@ -17,7 +17,7 @@ namespace Gaame
             return false;
         }
 
-        public void AddScore(int player, int PairCount)
+        public static void AddScore(int player, int PairCount)
         {
             int playerScore = PlayerList.list[player].Score; //Nuvarande poängen
             int score = 5; //Poängen som ska delas ut
