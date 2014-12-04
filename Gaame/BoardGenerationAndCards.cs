@@ -53,7 +53,7 @@ namespace Gaame
         //Generates the board and returns an array of playcards
         public static PlayCard[] GenerateBoard(int x, SplitContainer container)
         {
-            int maxBoardSize = 500;
+            int maxBoardSize = 650;
             int cardMaxSize = 100;
             int margin = 10;
 
@@ -61,7 +61,7 @@ namespace Gaame
             int rowNr = 0;
             int columNr = 0;
 
-            Point generateStartPoint = new Point(10, 50);
+            Point generateStartPoint = new Point(10, 10);
 
             //Find a apropiate number of colums to create a field as square as possible
             colums = Convert.ToInt32(Math.Ceiling(Math.Sqrt(x)));
