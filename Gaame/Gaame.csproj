@@ -58,6 +58,12 @@
       <DependentUpon>EndScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="FunkcheckAdd.cs" />
+    <Compile Include="Scoreboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scoreboard.Designer.cs">
+      <DependentUpon>Scoreboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="StartScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EndScreen.resx">
       <DependentUpon>EndScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scoreboard.resx">
+      <DependentUpon>Scoreboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartScreen.resx">
       <DependentUpon>StartScreen.cs</DependentUpon>
