@@ -10,7 +10,7 @@ namespace Gaame
     {
         public static int ActivePlayerIndex { get; set; }
         public static int PlayerCount { get; set; }
-        public static int PickedPairs { get; set; }
+        public static int PickedPairsCount { get; set; }
         public static int PiarMultiplier { get; set; }
         
 
@@ -26,11 +26,20 @@ namespace Gaame
 
         public static void TimeOver()
         {
-
+            EndTurn(false);
         }
+
         static void EndTurn(bool playerHasScored)
         {
-
+            if(playerHasScored)
+            {
+                FunkcheckAdd.AddScore(ActivePlayerIndex, PickedPairsCount);
+                NewTurn();
+            }
+            else
+            {
+                NewTurn();
+            }
         }
 
         static void AllowCards()
