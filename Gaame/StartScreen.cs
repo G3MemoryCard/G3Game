@@ -26,8 +26,26 @@ namespace Gaame
         private void button1_Click(object sender, EventArgs e)
         {
                 SaveGameSettings.Pairs = int.Parse(textBoxPairs.Text);
-                SaveGameSettings.Theme = comboBoxTheme.Text;
-                SaveGameSettings.Deck = comboBoxDecks.Text;
+
+                if (comboBoxTheme.Text == "Social Icons")
+                    SaveGameSettings.Theme = 0;
+                else if (comboBoxTheme.Text == "Smileys")
+                    SaveGameSettings.Theme = 1;
+                else if (comboBoxTheme.Text == "Flags")
+                    SaveGameSettings.Theme = 2;
+
+                if (comboBoxDecks.Text == "Gold & Blue")
+                    SaveGameSettings.Deck = 0;
+                else if (comboBoxDecks.Text == "Gold & Grey")
+                    SaveGameSettings.Deck = 1;
+                else if (comboBoxDecks.Text == "Black & Orange")
+                    SaveGameSettings.Deck = 2;
+                else if (comboBoxDecks.Text == "Brown & Beige")
+                    SaveGameSettings.Deck = 3;
+                else if (comboBoxDecks.Text == "Gold & Purple")
+                    SaveGameSettings.Deck = 4;
+
+
                 SaveGameSettings.Timer = int.Parse(textBoxTimer.Text);
                 GameBoard frm = new GameBoard();    //New variable for Form3 aka. Gameboard.
                 frm.Show();                 //For frm to show.
@@ -178,8 +196,8 @@ namespace Gaame
     {
          public static int Count { get; set; }
          public static int Pairs { get; set; }
-         public static string Theme { get; set; }
-         public static string Deck { get; set; }
+         public static int Theme { get; set; }
+         public static int Deck { get; set; }
          public static int Timer { get; set; }
     }
 
