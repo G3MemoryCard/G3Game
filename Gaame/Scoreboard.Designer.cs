@@ -62,6 +62,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Scoreboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Scoreboard";
             this.Load += new System.EventHandler(this.Scoreboard_Load);
             this.ResumeLayout(false);
