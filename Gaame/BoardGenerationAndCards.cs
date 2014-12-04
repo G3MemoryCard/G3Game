@@ -97,6 +97,7 @@ namespace Gaame
                 pic1.Height = cardSize;
                 pic1.Image = Properties.Resources.Theme_SI_pic20;
                 pic1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pic1.BackColor = Color.Transparent;
                 container.Panel1.Controls.Add(pic1);
                 PlayCard Card = new PlayCard(pic1);
 
