@@ -80,6 +80,7 @@ namespace Gaame
             {
                 timer1.Stop();
                 timeLabel.Text = "Time's up!";
+                //GameMaster.TimeOver();
             }
         }
 
