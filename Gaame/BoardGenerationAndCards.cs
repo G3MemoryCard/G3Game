@@ -153,6 +153,7 @@ namespace Gaame
             Turned = true;
             //Set image to the front image
             Pic.Image = FrontImage;
+            GameMaster.CardCLicked();
         }
 
         //Turns the card to display the back

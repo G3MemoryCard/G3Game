@@ -12,7 +12,7 @@ namespace Gaame
 {
     public partial class GameBoard : Form
     {
-        int timeLeft; // parameter used for the timer.
+        public int timeLeft = SaveGameSettings.Timer; // parameter used for the timer.
 
         public GameBoard()
         {
@@ -37,7 +37,7 @@ namespace Gaame
             ThemeArrays.Create();
             PlayCard[] CardArray = BoardGeneration.GenerateBoard(SaveGameSettings.Pairs * 2, splitContainer1);
             CardList.Create(CardArray);
-            GameMaster.Start();
+            GameMaster.Start(this);
 
 
 
@@ -80,7 +80,7 @@ namespace Gaame
             {
                 timer1.Stop();
                 timeLabel.Text = "Time's up!";
-                //GameMaster.TimeOver();
+                GameMaster.TimeOver();
             }
         }
 
