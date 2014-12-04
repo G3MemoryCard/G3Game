@@ -90,16 +90,14 @@
             // 
             this.comboBoxTheme.FormattingEnabled = true;
             this.comboBoxTheme.Items.AddRange(new object[] {
-            "Cats",
-            "Dogs",
-            "Internet Icons",
-            "Cars",
-            "Cartoons"});
+            "Social Icons",
+            "Smileys",
+            "Flags"});
             this.comboBoxTheme.Location = new System.Drawing.Point(196, 223);
             this.comboBoxTheme.Name = "comboBoxTheme";
             this.comboBoxTheme.Size = new System.Drawing.Size(100, 21);
             this.comboBoxTheme.TabIndex = 6;
-            this.comboBoxTheme.Text = "Internet Icons";
+            this.comboBoxTheme.Text = "Choose Theme";
             // 
             // label4
             // 
@@ -125,15 +123,16 @@
             // 
             this.comboBoxDecks.FormattingEnabled = true;
             this.comboBoxDecks.Items.AddRange(new object[] {
-            "Black & Yellow",
-            "Regular",
-            "Blue & White",
-            "Yellow & Pink"});
+            "Gold & Blue",
+            "Gold & Grey",
+            "Black & Orange",
+            "Brown & Beige",
+            "Gold & Purple"});
             this.comboBoxDecks.Location = new System.Drawing.Point(196, 249);
             this.comboBoxDecks.Name = "comboBoxDecks";
             this.comboBoxDecks.Size = new System.Drawing.Size(100, 21);
             this.comboBoxDecks.TabIndex = 9;
-            this.comboBoxDecks.Text = "Blue & Yellow";
+            this.comboBoxDecks.Text = "Choose Deck";
             // 
             // label6
             // 
