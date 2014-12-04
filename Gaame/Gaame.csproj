@@ -58,6 +58,7 @@
       <DependentUpon>EndScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="FunkcheckAdd.cs" />
+    <Compile Include="GameMaster.cs" />
     <Compile Include="StartScreen.cs">
       <SubType>Form</SubType>
     </Compile>
