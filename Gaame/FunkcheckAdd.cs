@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Gaame
 {
-    class FunkcheckAdd
+    public static class FunkcheckAdd
     {
 
         public static bool Checkpic()

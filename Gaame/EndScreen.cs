@@ -32,12 +32,32 @@ namespace Gaame
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Sort players by current score.
+            var winner = from w in PlayerList.list
+                         orderby w.Score descending
+                         select w;
 
+            // Display the player with the highest score in a textbox.
+            textBox1.Text = PlayerList.list[0].Name.ToString() 
+                         + " has won with a score of " 
+                         + PlayerList.list[0].Score.ToString() 
+                         + "!";
         }
 
         private void labelPlayer_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnScrBoard_Click(object sender, EventArgs e)
+        {
+            Scoreboard scr = new Scoreboard();
+            scr.ShowDialog();
         }
     }
 }

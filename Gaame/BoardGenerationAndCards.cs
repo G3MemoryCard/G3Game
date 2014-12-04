@@ -173,7 +173,7 @@ namespace Gaame
         public static Bitmap[,] Theme { get; set; }
         public static Bitmap[] Back { get; set; }
 
-        public static void Construct()
+        public static void Create()
         {
             
             //Make theme array
