@@ -11,7 +11,7 @@ namespace Gaame
         public static int ActivePlayerIndex { get; set; }
         public static int PlayerCount { get; set; }
         public static int PickedPairs { get; set; }
-        public static int ParisMultiplier { get; set; }
+        public static int PiarMultiplier { get; set; }
         
 
         public static void Start()
@@ -23,13 +23,35 @@ namespace Gaame
 
     
         }
-        
+
+        public static void TimeOver()
+        {
+
+        }
+        static void EndTurn(bool playerHasScored)
+        {
+
+        }
+
+        static void AllowCards()
+        {
+
+        }
+
+        static void NewTurn()
+        {
+
+        }
 
         static void NextPlayer()
         {
             if(ActivePlayerIndex < PlayerCount)
             {
                 ActivePlayerIndex++;
+            }
+            else
+            {
+                ActivePlayerIndex = 0;
             }
         }
     
