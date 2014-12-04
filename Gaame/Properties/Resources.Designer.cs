@@ -123,9 +123,9 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Board_DarkBrador {
+        internal static System.Drawing.Bitmap bttn_StartGame_nonClick {
             get {
-                object obj = ResourceManager.GetObject("Board_DarkBrador", resourceCulture);
+                object obj = ResourceManager.GetObject("bttn_StartGame_nonClick", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
