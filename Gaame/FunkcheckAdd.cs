@@ -11,8 +11,9 @@ namespace Gaame
 
         public bool Checkpic()
         {
+            int[] Cards = CardList.SearchForPairs();
 
-            //if(Picturbox[0].image.tag == Picturbox[1].image.tag) return true;
+            if(Cards[0] == Cards[1]) return true;
             return false;
         }
 
