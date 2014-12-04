@@ -10,13 +10,14 @@ namespace Gaame
     {
         public static int ActivePlayerIndex { get; set; }
         public static int PlayerCount { get; set; }
-        public static int Pairs { get; set; }
-        public static bool AllowTurn { get; set; }
+        public static int PickedPairs { get; set; }
+        public static int ParisMultiplier { get; set; }
+        
 
         public static void Start()
         {
             PlayerCount = PlayerList.list.Count;
-            AllowTurn = true;
+            
 
             //FunkcheckAdd.AddScore(ActivePlayerIndex, Pairs);
 
