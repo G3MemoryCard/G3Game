@@ -95,7 +95,7 @@ namespace Gaame
                 pic1.Location = new Point(generateStartPoint.X + columNr * (cardSize + margin), generateStartPoint.Y + rowNr * (cardSize + margin));
                 pic1.Width = cardSize;
                 pic1.Height = cardSize;
-                pic1.Image = Properties.Resources.theme1pic8;
+                pic1.Image = Properties.Resources.Theme_SI_pic20;
                 pic1.SizeMode = PictureBoxSizeMode.StretchImage;
                 container.Panel1.Controls.Add(pic1);
                 PlayCard Card = new PlayCard(pic1);
@@ -178,19 +178,19 @@ namespace Gaame
             
             //Make theme array
             Theme = new Bitmap[59, 2];
-            Theme[0, 0] = Properties.Resources.theme1pic0;
-            Theme[1, 0] = Properties.Resources.theme1pic1;
-            Theme[2, 0] = Properties.Resources.theme1pic2;
-            Theme[3, 0] = Properties.Resources.theme1pic3;
-            Theme[4, 0] = Properties.Resources.theme1pic4;
-            Theme[5, 0] = Properties.Resources.theme1pic5;
-            Theme[6, 0] = Properties.Resources.theme1pic6;
-            Theme[7, 0] = Properties.Resources.theme1pic7;
-            Theme[8, 0] = Properties.Resources.theme1pic8;
+            Theme[0, 0] = Properties.Resources.Theme_SI_pic0;
+            Theme[1, 0] = Properties.Resources.Theme_SI_pic1;
+            Theme[2, 0] = Properties.Resources.Theme_SI_pic2;
+            Theme[3, 0] = Properties.Resources.Back_BlackOrange;
+            Theme[4, 0] = Properties.Resources.Back_BrownBeige;
+            Theme[5, 0] = Properties.Resources.Back_GoldPurple;
+            Theme[6, 0] = Properties.Resources.Theme_SI_pic18;
+            Theme[7, 0] = Properties.Resources.Theme_SI_pic19;
+            Theme[8, 0] = Properties.Resources.Theme_SI_pic20;
 
             //Make back array
             Back = new Bitmap[2];
-            Back[0] = Properties.Resources.CardBackGoldBlue;
+            Back[0] = Properties.Resources.Back_GoldBlue;
         }
     }
 

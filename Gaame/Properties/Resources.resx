@@ -118,202 +118,202 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="theme1pic0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Firefox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Flickr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic28" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Flickr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gmail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gmail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Google" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Google.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Instagram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Instagram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Myspace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Myspace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Pinterest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pinterest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Reddit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic13" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Reddit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Skype" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic15" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Skype.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Tumblr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tumblr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TwitterNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TwitterNew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TwitterOld" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic23" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TwitterOld.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Wordpress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic26" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wordpress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Youtube" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic27" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Youtube.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bg_darkbrador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Board_DarkBrador" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg_darkbrador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="theme1pic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="theme1pic2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blogger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="theme1pic6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Del icio us.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="theme1pic7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic19" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Digg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="theme1pic8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Facebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Foursquare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Foursquare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hi5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hi5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LastFM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LastFM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="linkedin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\linkedin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LiveJournal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LiveJournal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Meneame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Meneame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Netvibes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Netvibes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Picasa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Picasa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RSS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic14" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RSS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="StumbleUpon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\StumbleUpon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Technorati" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic17" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Technorati.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Vimeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vimeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_blogger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_blogger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_buzz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic53" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_buzz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_delicious" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic54" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_delicious.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_designbump" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic55" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_designbump.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_designfloat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic56" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_designfloat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_digg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic57" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_digg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_evernote" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic58" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_evernote.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_facebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic59" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_facebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_flickr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_flickr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_forrst" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic33" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_forrst.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_github" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic34" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_github.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_gmail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic35" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_gmail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_google" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic36" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_google.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_googleplus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic37" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_googleplus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_instagram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic38" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_instagram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_lastfm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic39" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_lastfm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_linkedin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_linkedin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_myspace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic41" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_myspace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_pinterest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic42" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_pinterest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_reddit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic43" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_reddit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_rss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic44" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_rss.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_skype" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic45" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_skype.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_spotify" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic46" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_spotify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_stumbleupon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic47" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_stumbleupon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_tumblr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_tumblr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_twitter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic49" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_twitter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_vimeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_vimeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_wordpress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic51" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_wordpress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="v_youtube" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Theme_SI_pic52" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\v_youtube.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="theme1pic3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Back_BlackOrange" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CardBackBlackOrange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CardBackGoldBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Back_GoldBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CardBackGoldBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CardBackGoldGrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Back_GoldGrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CardBackGoldGrey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="theme1pic4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Back_BrownBeige" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CardBackBrownBeige.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="theme1pic5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Back_GoldPurple" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CardBackPurpleGold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
