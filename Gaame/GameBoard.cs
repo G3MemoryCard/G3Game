@@ -58,14 +58,6 @@ namespace Gaame
                 listView1.Items[i].SubItems.Add(PlayerList.list[i].Score.ToString());
             }
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            // Button for timer testing.
-            timeLeft = SaveGameSettings.Timer;
-            timer1.Start();
-        }
-
         private void timer1_Tick_1(object sender, EventArgs e)
         {
             if (timeLeft > 0)

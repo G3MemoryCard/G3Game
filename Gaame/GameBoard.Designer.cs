@@ -33,7 +33,6 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.button2 = new System.Windows.Forms.Button();
             this.timeLabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -51,7 +50,7 @@
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -73,7 +72,7 @@
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.IsSplitterFixed = true;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -84,7 +83,6 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.Black;
-            this.splitContainer2.Panel2.Controls.Add(this.button2);
             this.splitContainer2.Panel2.Controls.Add(this.timeLabel);
             this.splitContainer2.Panel2.Controls.Add(this.button1);
             this.splitContainer2.Size = new System.Drawing.Size(215, 640);
@@ -98,25 +96,14 @@
             this.listView1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.ForeColor = System.Drawing.Color.DodgerBlue;
             this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.MinimumSize = new System.Drawing.Size(265, 571);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(215, 465);
+            this.listView1.Size = new System.Drawing.Size(265, 571);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(43, 110);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(56, 19);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Timer";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // timeLabel
             // 
@@ -134,7 +121,7 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Location = new System.Drawing.Point(76, 85);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 50);
             this.button1.TabIndex = 8;
@@ -156,7 +143,7 @@
             this.ClientSize = new System.Drawing.Size(858, 640);
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "GameBoard";
             this.Text = "G3 Memory";
@@ -182,6 +169,5 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label timeLabel;
         public System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button2;
     }
 }
