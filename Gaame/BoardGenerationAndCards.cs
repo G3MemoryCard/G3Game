@@ -131,7 +131,7 @@ namespace Gaame
             this.Pic = pic;
             this.Pic.Click += new EventHandler(Pic_Click);
 
-            BackImage = ThemeArrays.Back[0];
+            BackImage = ThemeArrays.Back[SaveGameSettings.Deck];
             this.Pic.Image = BackImage;
         }
 
@@ -148,7 +148,7 @@ namespace Gaame
         //Turns the card to diplay the picture up
         public void TurnUpCard()
         {
-            FrontImage = ThemeArrays.Theme[Tag, 0];
+            FrontImage = ThemeArrays.Theme[Tag, SaveGameSettings.Theme];
             Console.WriteLine("Turning the card up");
             Turned = true;
             //Set image to the front image
