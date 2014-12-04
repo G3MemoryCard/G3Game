@@ -88,6 +88,7 @@
             // 
             // comboBoxTheme
             // 
+            this.comboBoxTheme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTheme.FormattingEnabled = true;
             this.comboBoxTheme.Items.AddRange(new object[] {
             "Social Icons",
@@ -97,7 +98,6 @@
             this.comboBoxTheme.Name = "comboBoxTheme";
             this.comboBoxTheme.Size = new System.Drawing.Size(100, 21);
             this.comboBoxTheme.TabIndex = 6;
-            this.comboBoxTheme.Text = "Choose Theme";
             // 
             // label4
             // 
@@ -121,6 +121,7 @@
             // 
             // comboBoxDecks
             // 
+            this.comboBoxDecks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDecks.FormattingEnabled = true;
             this.comboBoxDecks.Items.AddRange(new object[] {
             "Gold & Blue",
@@ -132,7 +133,6 @@
             this.comboBoxDecks.Name = "comboBoxDecks";
             this.comboBoxDecks.Size = new System.Drawing.Size(100, 21);
             this.comboBoxDecks.TabIndex = 9;
-            this.comboBoxDecks.Text = "Choose Deck";
             // 
             // label6
             // 
@@ -187,7 +187,6 @@
             this.listView1.Size = new System.Drawing.Size(200, 132);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // StartScreen
             // 

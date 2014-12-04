@@ -130,6 +130,8 @@ namespace Gaame
                     listView1.Items[i].SubItems.Add(SaySkill);
                 }
                 StartButton();
+                this.comboBoxTheme.SelectedItem = "Social Icons";
+                this.comboBoxDecks.SelectedItem = "Gold & Blue";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -163,11 +165,6 @@ namespace Gaame
                 SaveGameSettings.Count++;
             }
                 
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button3_Click(object sender, EventArgs e)
