@@ -25,6 +25,7 @@ namespace Gaame
 
         private void btnPlayAgain_Click(object sender, EventArgs e) // Closes the current window and returns to the start window.
         {
+            WinnerList.list.Clear();
             StartScreen frm2 = new StartScreen();
             frm2.Show();
             this.Hide();
@@ -32,16 +33,15 @@ namespace Gaame
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Sort players by current score.
+            // Sorts the PlayerList and saves the result in WinnerList, ordered by score from high to low.
             var winner = from w in PlayerList.list
                          orderby w.Score descending
                          select w;
+            foreach (Player p in winner)
+                WinnerList.Record(p);
 
-            // Display the player with the highest score in a textbox.
-            textBox1.Text = PlayerList.list[0].Name.ToString() 
-                         + " has won with a score of " 
-                         + PlayerList.list[0].Score.ToString() 
-                         + "!";
+            // Displays the winner alone on screen.
+            textBox1.Text = WinnerList.list[0].Name + " has won with the score of: " + WinnerList.list[0].Score + "!";
         }
 
         private void labelPlayer_Click(object sender, EventArgs e)
@@ -58,6 +58,22 @@ namespace Gaame
         {
             Scoreboard scr = new Scoreboard();
             scr.ShowDialog();
+        }
+
+    }
+    public static class WinnerList
+    {
+        //generic playerlist name.
+        public static List<Player> list { get; set; }
+        //Method for create a new playlist.
+        static WinnerList()
+        {
+            list = new List<Player>();
+        }
+        //To record the value for the new players.
+        public static void Record(Player value)
+        {
+            list.Add(value);
         }
     }
 }

@@ -35,6 +35,8 @@ namespace Gaame
             PickedCardsCount++;
             if(PickedCardsCount == 2)
             {
+                Board.timer1.Stop();
+                System.Threading.Thread.Sleep(1500);
                 CardClickAllowence(false);
                 PickedCardsCount = 0;
                 if(FunkcheckAdd.Checkpic())
@@ -93,6 +95,8 @@ namespace Gaame
             {
                 PairMultiplier = 0;
                 NextPlayer();
+                Board.timer1.Stop();
+                System.Threading.Thread.Sleep(1500);
                 Board.timeLeft = SaveGameSettings.Timer;
                 Board.timer1.Start();
                 NewTurn();

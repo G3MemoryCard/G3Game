@@ -130,7 +130,6 @@ namespace Gaame
             AllowedToTurn = true;
             this.Pic = pic;
             this.Pic.Click += new EventHandler(Pic_Click);
-
             BackImage = ThemeArrays.Back[SaveGameSettings.Deck];
             this.Pic.Image = BackImage;
         }
