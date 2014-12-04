@@ -14,7 +14,7 @@ namespace Gaame
     public partial class StartScreen : Form
     {
         //Number in the index for playerlist.
-        public int count = 0;
+        
         string Say;
         string SaySkill;
 
@@ -89,6 +89,30 @@ namespace Gaame
             listView1.Columns.Add("AI", 40, HorizontalAlignment.Left);
             listView1.Columns.Add("SKILL", 50, HorizontalAlignment.Left);
 
+            
+                for (int i = 0; i < PlayerList.list.Count; i++)
+                {
+                    PlayerList.list[i].Score = 0;
+                    if (PlayerList.list[i].AI == true)
+                        Say = "YES";
+                    else if (PlayerList.list[i].AI == false)
+                        Say = "NO";
+                    else
+                        Say = null;
+
+                    if (PlayerList.list[i].Skill == 1)
+                        SaySkill = "EASY";
+                    else if (PlayerList.list[i].Skill == 2)
+                        SaySkill = "HARD";
+                    else
+                        SaySkill = null;
+
+                    listView1.Items.Add(PlayerList.list[i].Name.ToString());
+                    listView1.Items[i].SubItems.Add(Say);
+                    listView1.Items[i].SubItems.Add(SaySkill);
+                }
+            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -98,28 +122,28 @@ namespace Gaame
             ad.ShowDialog();
 
             //Check if AI is true or false.
-            if (PlayerList.list.Count > count && PlayerList.list[count] != null)
+            if (PlayerList.list.Count > SaveGameSettings.Count && PlayerList.list[SaveGameSettings.Count] != null)
             {
-                if (PlayerList.list[count].AI == true)
+                if (PlayerList.list[SaveGameSettings.Count].AI == true)
                     Say = "YES";
-                else if (PlayerList.list[count].AI == false)
+                else if (PlayerList.list[SaveGameSettings.Count].AI == false)
                     Say = "NO";
                 else
                     Say = null;
 
-                if (PlayerList.list[count].Skill == 1)
+                if (PlayerList.list[SaveGameSettings.Count].Skill == 1)
                     SaySkill = "EASY";
-                else if (PlayerList.list[count].Skill == 2)
+                else if (PlayerList.list[SaveGameSettings.Count].Skill == 2)
                     SaySkill = "HARD";
                 else
                     SaySkill = null;
 
                 //Add from playerlist to the listview1 and subitems for each player.
-                listView1.Items.Add(PlayerList.list[count].Name.ToString());
-                listView1.Items[count].SubItems.Add(Say);
-                listView1.Items[count].SubItems.Add(SaySkill);
+                listView1.Items.Add(PlayerList.list[SaveGameSettings.Count].Name.ToString());
+                listView1.Items[SaveGameSettings.Count].SubItems.Add(Say);
+                listView1.Items[SaveGameSettings.Count].SubItems.Add(SaySkill);
                 //Add count for what player from playerlist would be added next.
-                count++;
+                SaveGameSettings.Count++;
             }
                 
         }
@@ -131,21 +155,21 @@ namespace Gaame
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
-            if (listView1.SelectedItems[null] != null)
+            if (listView1.SelectedItems.Count > 0)
             {
                 //Remove listview1 index number from the playerlist.
                 PlayerList.list.RemoveAt(listView1.SelectedItems[0].Index);
                 //Remove selected item from listview1.
                 listView1.SelectedItems[0].Remove();
                 //Remove one from count.
-                count--;
+               SaveGameSettings.Count--;
             }
         }
     }
 
     public static class SaveGameSettings
     {
+         public static int Count { get; set; }
          public static int Pairs { get; set; }
          public static string Theme { get; set; }
          public static string Deck { get; set; }
@@ -185,5 +209,6 @@ namespace Gaame
         }
     
     }
+    
 
 }

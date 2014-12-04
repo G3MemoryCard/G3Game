@@ -93,11 +93,5 @@ namespace Gaame
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            FunkcheckAdd fun = new FunkcheckAdd();
-            fun.AddScore(0, 2);
-            update();
-        }
         }
     }
