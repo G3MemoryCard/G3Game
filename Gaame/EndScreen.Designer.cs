@@ -39,10 +39,10 @@
             // 
             // btnPlayAgain
             // 
-            this.btnPlayAgain.Location = new System.Drawing.Point(115, 133);
-            this.btnPlayAgain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPlayAgain.Location = new System.Drawing.Point(123, 143);
+            this.btnPlayAgain.Margin = new System.Windows.Forms.Padding(2);
             this.btnPlayAgain.Name = "btnPlayAgain";
-            this.btnPlayAgain.Size = new System.Drawing.Size(66, 26);
+            this.btnPlayAgain.Size = new System.Drawing.Size(66, 25);
             this.btnPlayAgain.TabIndex = 3;
             this.btnPlayAgain.Text = "&Play Again";
             this.btnPlayAgain.UseVisualStyleBackColor = true;
@@ -51,10 +51,10 @@
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(185, 133);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Location = new System.Drawing.Point(193, 143);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(66, 26);
+            this.btnExit.Size = new System.Drawing.Size(66, 25);
             this.btnExit.TabIndex = 4;
             this.btnExit.Text = "&Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -65,20 +65,21 @@
             this.textBox1.BackColor = System.Drawing.SystemColors.Control;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(22, 83);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Location = new System.Drawing.Point(15, 85);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(0);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(326, 46);
+            this.textBox1.Size = new System.Drawing.Size(350, 50);
             this.textBox1.TabIndex = 6;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnScrBoard
             // 
-            this.btnScrBoard.Location = new System.Drawing.Point(135, 163);
-            this.btnScrBoard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnScrBoard.Location = new System.Drawing.Point(141, 172);
+            this.btnScrBoard.Margin = new System.Windows.Forms.Padding(2);
             this.btnScrBoard.Name = "btnScrBoard";
-            this.btnScrBoard.Size = new System.Drawing.Size(100, 26);
+            this.btnScrBoard.Size = new System.Drawing.Size(100, 25);
             this.btnScrBoard.TabIndex = 7;
             this.btnScrBoard.Text = "View &Scoreboard";
             this.btnScrBoard.UseVisualStyleBackColor = true;
@@ -90,9 +91,9 @@
             this.pictureBox1.BackgroundImage = global::Gaame.Properties.Resources.Banner_Congrats;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(43, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(48, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(284, 73);
+            this.pictureBox1.Size = new System.Drawing.Size(285, 75);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -103,7 +104,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(374, 211);
+            this.ClientSize = new System.Drawing.Size(384, 211);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnScrBoard);
@@ -111,7 +112,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnPlayAgain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EndScreen";
