@@ -53,7 +53,7 @@ namespace Gaame
         //Generates the board and returns an array of playcards
         public static PlayCard[] GenerateBoard(int x, SplitContainer container)
         {
-            int maxBoardSize = 650;
+            int maxBoardSize = 500;
             int cardMaxSize = 100;
             int margin = 10;
 
