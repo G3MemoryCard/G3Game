@@ -13,7 +13,6 @@ namespace Gaame
     public partial class GameBoard : Form
     {
         int timeLeft; // parameter used for the timer.
-        public PlayCard[] CardArray;
 
         public GameBoard()
         {
@@ -35,8 +34,14 @@ namespace Gaame
 
         private void GameBoard_Load(object sender, EventArgs e)
         {
-            ThemeArrays.Construct();
-            CardArray = BoardGeneration.GenerateBoard(SaveGameSettings.Pairs * 2, splitContainer1);
+            ThemeArrays.Create();
+            PlayCard[] CardArray = BoardGeneration.GenerateBoard(SaveGameSettings.Pairs * 2, splitContainer1);
+            CardList.Create(CardArray);
+            GameMaster.Start();
+
+
+
+
             // Show timer as "selected value" seconds, before countdown begins.
             timeLabel.Text = SaveGameSettings.Timer.ToString() + " seconds";
 

@@ -58,12 +58,7 @@
       <DependentUpon>EndScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="FunkcheckAdd.cs" />
-    <Compile Include="Scoreboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Scoreboard.Designer.cs">
-      <DependentUpon>Scoreboard.cs</DependentUpon>
-    </Compile>
+    <Compile Include="GameMaster.cs" />
     <Compile Include="StartScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,9 +78,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EndScreen.resx">
       <DependentUpon>EndScreen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Scoreboard.resx">
-      <DependentUpon>Scoreboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartScreen.resx">
       <DependentUpon>StartScreen.cs</DependentUpon>
@@ -315,6 +307,126 @@
     <None Include="Resources\CardBackPurpleGold.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Vietnam.png" />
+    <None Include="Resources\UnitedKingsom.png" />
+    <None Include="Resources\Ukraine.png" />
+    <None Include="Resources\Turkmenistan.png" />
+    <None Include="Resources\Turkey.png" />
+    <None Include="Resources\Thailand.png" />
+    <None Include="Resources\Taiwan.png" />
+    <None Include="Resources\Syria.png" />
+    <None Include="Resources\Switzerland.png" />
+    <None Include="Resources\Sweden.png" />
+    <None Include="Resources\SriLanka.png" />
+    <None Include="Resources\Spain.png" />
+    <None Include="Resources\SouthKorea.png" />
+    <None Include="Resources\Slovakia.png" />
+    <None Include="Resources\Singapore.png" />
+    <None Include="Resources\Serbia.png" />
+    <None Include="Resources\Romainia.png" />
+    <None Include="Resources\Quatar.png" />
+    <None Include="Resources\Portugal.png" />
+    <None Include="Resources\Poland.png" />
+    <None Include="Resources\Philippines.png" />
+    <None Include="Resources\Norway.png" />
+    <None Include="Resources\Netherlands.png" />
+    <None Include="Resources\Nepal.png" />
+    <None Include="Resources\Mongolia.png" />
+    <None Include="Resources\Mazedonia.png" />
+    <None Include="Resources\Malta.png" />
+    <None Include="Resources\Malaysia.png" />
+    <None Include="Resources\Luxemburg.png" />
+    <None Include="Resources\Lithuania.png" />
+    <None Include="Resources\Lebanon.png" />
+    <None Include="Resources\Latvia.png" />
+    <None Include="Resources\Kosovo.png" />
+    <None Include="Resources\Kazakhstan.png" />
+    <None Include="Resources\Japan.png" />
+    <None Include="Resources\Ireland.png" />
+    <None Include="Resources\Iraq.png" />
+    <None Include="Resources\Iran.png" />
+    <None Include="Resources\Indonesia.png" />
+    <None Include="Resources\India.png" />
+    <None Include="Resources\Iceland.png" />
+    <None Include="Resources\HongKong.png" />
+    <None Include="Resources\Greece.png" />
+    <None Include="Resources\Germany.png" />
+    <None Include="Resources\Georgia.png" />
+    <None Include="Resources\France.png" />
+    <None Include="Resources\Finland.png" />
+    <None Include="Resources\Estonia.png" />
+    <None Include="Resources\Danmark.png" />
+    <None Include="Resources\CzechRepublic.png" />
+    <None Include="Resources\Cyprus.png" />
+    <None Include="Resources\Croatia.png" />
+    <None Include="Resources\China.png" />
+    <None Include="Resources\Buthan.png" />
+    <None Include="Resources\Bulgaria.png" />
+    <None Include="Resources\Belgium.png" />
+    <None Include="Resources\what.png" />
+    <None Include="Resources\waaaht.png" />
+    <None Include="Resources\Tounge.png" />
+    <None Include="Resources\too_sad.png" />
+    <None Include="Resources\tire.png" />
+    <None Include="Resources\sweet_kiss.png" />
+    <None Include="Resources\sweat.png" />
+    <None Include="Resources\surrender.png" />
+    <None Include="Resources\sure.png" />
+    <None Include="Resources\still_dreaming.png" />
+    <None Include="Resources\spiderman.png" />
+    <None Include="Resources\Smile.png" />
+    <None Include="Resources\Sick.png" />
+    <None Include="Resources\Shocking.png" />
+    <None Include="Resources\shame.png" />
+    <None Include="Resources\sexy_girl.png" />
+    <None Include="Resources\rap.png" />
+    <None Include="Resources\pudency.png" />
+    <None Include="Resources\oh.png" />
+    <None Include="Resources\nosebleed.png" />
+    <None Include="Resources\Ninja.png" />
+    <None Include="Resources\misdoubt.png" />
+    <None Include="Resources\matrix.png" />
+    <None Include="Resources\Love.png" />
+    <None Include="Resources\Laugh.png" />
+    <None Include="Resources\hungry.png" />
+    <None Include="Resources\hell_boy.png" />
+    <None Include="Resources\haha.png" />
+    <None Include="Resources\go.png" />
+    <None Include="Resources\feel_good.png" />
+    <None Include="Resources\extreme_sexy_girl.png" />
+    <None Include="Resources\embarrassed.png" />
+    <None Include="Resources\dribble.png" />
+    <None Include="Resources\doubt.png" />
+    <None Include="Resources\Devil.png" />
+    <None Include="Resources\Crying.png" />
+    <None Include="Resources\cry.png" />
+    <None Include="Resources\Cool.png" />
+    <None Include="Resources\confident.png" />
+    <None Include="Resources\cold.png" />
+    <None Include="Resources\choler.png" />
+    <None Include="Resources\canny.png" />
+    <None Include="Resources\byebye.png" />
+    <None Include="Resources\burn_joss_stick.png" />
+    <None Include="Resources\boss.png" />
+    <None Include="Resources\Blush.png" />
+    <None Include="Resources\big_smile.png" />
+    <None Include="Resources\beauty.png" />
+    <None Include="Resources\beated.png" />
+    <None Include="Resources\beat_shot.png" />
+    <None Include="Resources\beat_plaster.png" />
+    <None Include="Resources\beat_brick.png" />
+    <None Include="Resources\bad_smelly.png" />
+    <None Include="Resources\adore.png" />
+    <None Include="Resources\after_boom.png" />
+    <None Include="Resources\ah.png" />
+    <None Include="Resources\Ahhhh.png" />
+    <None Include="Resources\Alien.png" />
+    <None Include="Resources\amazed.png" />
+    <None Include="Resources\angry.png" />
+    <None Include="Resources\Afghanistan.png" />
+    <None Include="Resources\Albania.png" />
+    <None Include="Resources\Andorra.png" />
+    <None Include="Resources\Austria.png" />
     <Content Include="Resources\Backside\Backside1.png" />
     <Content Include="Resources\Backside\backside2.png" />
     <Content Include="Resources\Backside\backside3.png" />
