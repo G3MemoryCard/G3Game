@@ -158,7 +158,7 @@ namespace Gaame
         //Turns the card to display the back
         public void TurnDownCard()
         {
-            BackImage = ThemeArrays.Back[0];
+            BackImage = ThemeArrays.Back[SaveGameSettings.Deck];
             Console.WriteLine("Turning the card down");
             Turned = false;
             //Set image to the back image
