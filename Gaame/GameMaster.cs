@@ -15,6 +15,7 @@ namespace Gaame
         public static GameBoard Board { get; set; }
         static bool FirstTurn { get; set; }
 
+
         public static void Start(GameBoard board)
         {
             PlayerCount = PlayerList.list.Count - 1;
@@ -35,8 +36,6 @@ namespace Gaame
             PickedCardsCount++;
             if(PickedCardsCount == 2)
             {
-                Board.timer1.Stop();
-                System.Threading.Thread.Sleep(1500);
                 CardClickAllowence(false);
                 PickedCardsCount = 0;
                 if(FunkcheckAdd.Checkpic())
@@ -49,7 +48,7 @@ namespace Gaame
                     EndTurn(false);
                 }
             }
-                
+            
         }
 
         static void HideClickedCards()
@@ -88,18 +87,18 @@ namespace Gaame
                 FunkcheckAdd.AddScore(ActivePlayerIndex, PairMultiplier);
                 Board.timeLeft = SaveGameSettings.Timer;
                 Board.timer1.Start();
-                NewTurn();
+                Board.timeLeftCard = 5;
+                Board.timer2.Start();
                 
             }
             else
             {
                 PairMultiplier = 0;
                 NextPlayer();
-                Board.timer1.Stop();
-                System.Threading.Thread.Sleep(1500);
                 Board.timeLeft = SaveGameSettings.Timer;
                 Board.timer1.Start();
-                NewTurn();
+                Board.timeLeftCard = 5;
+                Board.timer2.Start();
                 
             }
             Board.update();
@@ -128,7 +127,7 @@ namespace Gaame
         {
             CardClickAllowence(true);
             TurnBackCards();
-            
+            Board.Namechange(ActivePlayerIndex);
 
         }
 
@@ -150,6 +149,10 @@ namespace Gaame
             {
                 ActivePlayerIndex = 0;
             }
+        }
+        public static void TimerCard()
+        {
+            NewTurn();
         }
     
         //Active player

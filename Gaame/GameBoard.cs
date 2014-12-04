@@ -13,6 +13,7 @@ namespace Gaame
     public partial class GameBoard : Form
     {
         public int timeLeft = SaveGameSettings.Timer; // parameter used for the timer.
+        public int timeLeftCard = 5;
 
         public GameBoard()
         {
@@ -39,14 +40,9 @@ namespace Gaame
             CardList.Create(CardArray);
             GameMaster.Start(this);
 
-
-
-
             // Show timer as "selected value" seconds, before countdown begins.
             timeLabel.Text = SaveGameSettings.Timer.ToString() + " seconds";
 
-
-            
             listView1.View = View.Details;
             
             listView1.Columns.Add("PLAYER", 100, HorizontalAlignment.Left);
@@ -89,6 +85,39 @@ namespace Gaame
                 listView1.Items.Add(PlayerList.list[i].Name.ToString());
                 listView1.Items[i].SubItems.Add(PlayerList.list[i].Score.ToString());
             }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (timeLeftCard > 0)
+            // if there's time left reduce time by 1 and update label every sec.
+            {
+                timeLeftCard = timeLeftCard - 1;
+
+            }
+            else
+            // If time's up announce by changing label.
+            {
+                timer2.Stop();
+                GameMaster.TimerCard();
+            }
+
+        }
+        public void Namechange(int player)
+        {
+            label1.Text = PlayerList.list[player].Name.ToString();
+            label2.Text = "Current Player: ";
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
 
         }
