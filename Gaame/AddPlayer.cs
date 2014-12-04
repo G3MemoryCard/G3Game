@@ -15,6 +15,8 @@ namespace Gaame
         //Variables for what skill the AI should have, if the checkbox is checked or not. 
         int skill = 0;
         bool check = false;
+        
+
         public AddPlayer()
         {
             InitializeComponent();
@@ -34,7 +36,13 @@ namespace Gaame
             bool ai = false;
             int score = 0;
             //Type in the player name.
-            name = textBox1.Text.ToString();
+            if (textBox1.Text == "")
+            {
+               SaveGameSettings.x++;
+               name = "Player" + SaveGameSettings.x;
+            }
+            else
+                name = textBox1.Text.ToString();
             //IF is should be a AI
             if (check == true)
                 ai = true;

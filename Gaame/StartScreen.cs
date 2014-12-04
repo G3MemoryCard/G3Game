@@ -132,6 +132,7 @@ namespace Gaame
                 StartButton();
                 this.comboBoxTheme.SelectedItem = "Social Icons";
                 this.comboBoxDecks.SelectedItem = "Gold & Blue";
+                SaveGameSettings.x = 0;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -196,6 +197,7 @@ namespace Gaame
          public static int Theme { get; set; }
          public static int Deck { get; set; }
          public static int Timer { get; set; }
+         public static int x { get; set; }
     }
 
     public class Player

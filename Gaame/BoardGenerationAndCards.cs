@@ -20,7 +20,7 @@ namespace Gaame
             while (n > 1)
             {
                 int k = (rnd.Next(0, n) % n);
-                n--;
+                n--;    
                 T value = list[k];
                 list[k] = list[n];
                 list[n] = value;
