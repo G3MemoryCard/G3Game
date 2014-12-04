@@ -13,7 +13,8 @@ namespace Gaame
         {
             int[] Cards = CardList.SearchForPairs();
 
-            if(Cards[0] == Cards[1]) return true;
+            if (Cards[0] == Cards[1]) return true;
+            
             return false;
         }
 

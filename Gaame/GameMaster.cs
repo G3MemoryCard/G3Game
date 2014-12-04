@@ -109,6 +109,7 @@ namespace Gaame
             Board.timer1.Stop();
             EndScreen endS = new EndScreen();
             endS.ShowDialog();
+            Board.Hide();
         }
 
         static void CardClickAllowence(bool set)
