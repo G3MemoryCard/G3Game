@@ -316,6 +316,11 @@
     <None Include="Resources\CardBackPurpleGold.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bttn_Remove.png" />
+    <None Include="Resources\bttn_StartGame.png" />
+    <None Include="Resources\bttn_Add.png" />
+    <None Include="Resources\bttn_StartGame_nonClick.png" />
+    <None Include="Resources\Banner_.png" />
     <None Include="Resources\Vietnam.png" />
     <None Include="Resources\UnitedKingsom.png" />
     <None Include="Resources\Ukraine.png" />

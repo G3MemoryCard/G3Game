@@ -39,6 +39,7 @@ namespace Gaame
                 PickedCardsCount = 0;
                 if(FunkcheckAdd.Checkpic())
                 {
+                    HideClickedCards();
                     EndTurn(true);
                 }
                 else
@@ -47,6 +48,29 @@ namespace Gaame
                 }
             }
                 
+        }
+
+        static void HideClickedCards()
+        {
+            foreach(PlayCard card in CardList.Cards)
+            {
+                if(card.Turned)
+                {
+                    card.Pic.Visible = false;
+                }
+            }
+        }
+
+        static bool CheckGameOver()
+        {
+            foreach(PlayCard card in CardList.Cards)
+            {
+                if(card.Pic.Visible == true)
+                {
+                    return false;
+                }
+            }
+            return true;
         }
 
         public static void TimeOver()
@@ -75,6 +99,16 @@ namespace Gaame
                 
             }
             Board.update();
+            if(CheckGameOver())
+            {
+                GameOver();
+            }
+        }
+        static void GameOver()
+        {
+            Board.timer1.Stop();
+            EndScreen endS = new EndScreen();
+            endS.ShowDialog();
         }
 
         static void CardClickAllowence(bool set)
