@@ -25,13 +25,13 @@ namespace Gaame
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SaveGameSettings.Pairs = int.Parse(textBoxPairs.Text);
-            SaveGameSettings.Theme = comboBoxTheme.Text;
-            SaveGameSettings.Deck = comboBoxDecks.Text;
-            SaveGameSettings.Timer = int.Parse(textBoxTimer.Text);
-            GameBoard frm = new GameBoard();    //New variable for Form3 aka. Gameboard.
-            frm.Show();                 //For frm to show.
-            this.Hide();                //Hide the startmenu.
+                SaveGameSettings.Pairs = int.Parse(textBoxPairs.Text);
+                SaveGameSettings.Theme = comboBoxTheme.Text;
+                SaveGameSettings.Deck = comboBoxDecks.Text;
+                SaveGameSettings.Timer = int.Parse(textBoxTimer.Text);
+                GameBoard frm = new GameBoard();    //New variable for Form3 aka. Gameboard.
+                frm.Show();                 //For frm to show.
+                this.Hide();                //Hide the startmenu.
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
@@ -111,8 +111,7 @@ namespace Gaame
                     listView1.Items[i].SubItems.Add(Say);
                     listView1.Items[i].SubItems.Add(SaySkill);
                 }
-            
-
+                StartButton();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -120,7 +119,7 @@ namespace Gaame
             //Creating a instance to AddPlayer and starts it in a Dialog Form.
             AddPlayer ad = new AddPlayer();
             ad.ShowDialog();
-
+            StartButton();
             //Check if AI is true or false.
             if (PlayerList.list.Count > SaveGameSettings.Count && PlayerList.list[SaveGameSettings.Count] != null)
             {
@@ -163,7 +162,15 @@ namespace Gaame
                 listView1.SelectedItems[0].Remove();
                 //Remove one from count.
                SaveGameSettings.Count--;
+               StartButton();
             }
+        }
+        public void StartButton()
+        {
+            if (PlayerList.list.Count > 0)
+                button1.Enabled = true;
+            else
+                button1.Enabled = false;
         }
     }
 
