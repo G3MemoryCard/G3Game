@@ -103,21 +103,26 @@ namespace Gaame
             }
 
         }
+        
         public void Namechange(int player)
         {
             label1.Text = PlayerList.list[player].Name.ToString();
             label2.Text = "Current Player: ";
 
         }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void timer3_Tick_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            if (timeLeftCard > 0)
+            // if there's time left reduce time by 1 and update label every sec.
+            {
+                timeLeftCard = timeLeftCard - 1;
+            }
+            else
+            // If time's up announce by changing label.
+            {
+                timer3.Stop();
+                GameMaster.TimerCardScore();
+            }
         }
 
         }

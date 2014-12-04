@@ -40,7 +40,7 @@ namespace Gaame
                 PickedCardsCount = 0;
                 if(FunkcheckAdd.Checkpic())
                 {
-                    HideClickedCards();
+                    
                     EndTurn(true);
                 }
                 else
@@ -88,8 +88,7 @@ namespace Gaame
                 Board.timeLeft = SaveGameSettings.Timer;
                 Board.timer1.Start();
                 Board.timeLeftCard = 5;
-                Board.timer2.Start();
-                
+                Board.timer3.Start();
             }
             else
             {
@@ -102,10 +101,7 @@ namespace Gaame
                 
             }
             Board.update();
-            if(CheckGameOver())
-            {
-                GameOver();
-            }
+            
         }
         static void GameOver()
         {
@@ -125,6 +121,10 @@ namespace Gaame
 
         static void NewTurn()
         {
+            if (CheckGameOver())
+            {
+                GameOver();
+            }
             CardClickAllowence(true);
             TurnBackCards();
             Board.Namechange(ActivePlayerIndex);
@@ -154,29 +154,10 @@ namespace Gaame
         {
             NewTurn();
         }
-    
-        //Active player
-
-
-
-        //Check Pic
-
-
-
-        //Add Score
-
-
-
-        //Tidklocka
-
-
-
-        //Next Player
-
-
-
-
-
-
+        public static void TimerCardScore()
+        {
+            HideClickedCards();
+            NewTurn();
+        }
     }
 }
