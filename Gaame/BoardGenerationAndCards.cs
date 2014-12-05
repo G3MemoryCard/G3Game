@@ -141,6 +141,7 @@ namespace Gaame
             //AllowedToTurn = Gamemaster.AllowCardTurn
             if (AllowedToTurn)
             {
+                AllowedToTurn = false;
                 Console.WriteLine("My tag is: " + Tag);
                 TurnUpCard();
             }
