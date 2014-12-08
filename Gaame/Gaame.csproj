@@ -319,6 +319,11 @@
     <None Include="Resources\CardBackPurpleGold.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\FINAL_FANTASY_VII-Victory_Fanfare2.wav" />
+    <None Include="Resources\Turn card1.wav" />
+    <None Include="Resources\No match2.wav" />
+    <None Include="Resources\No match1.wav" />
+    <None Include="Resources\Match1.wav" />
     <None Include="Resources\FINAL_FANTASY_VII-Victory_Fanfare.wav" />
     <None Include="Resources\FINAL FANTASY VII-Victory Fanfare.mp3" />
     <None Include="Resources\FINAL FANTASY VII-Victory Fanfare %28www.myfreesongs.cc%29.mp3" />
