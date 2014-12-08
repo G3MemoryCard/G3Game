@@ -44,7 +44,10 @@ namespace Gaame
                     SaveGameSettings.Deck = 3;
                 else if (comboBoxDecks.Text == "Gold & Purple")
                     SaveGameSettings.Deck = 4;
-
+                if (comboBox1.Text == "Classic")
+                    SaveGameSettings.GameType = 0;
+                else if (comboBox1.Text == "Combo score")
+                    SaveGameSettings.GameType = 1;
 
                 SaveGameSettings.Timer = int.Parse(textBoxTimer.Text);
                 GameBoard frm = new GameBoard();    //New variable for Form3 aka. Gameboard.
@@ -198,6 +201,7 @@ namespace Gaame
          public static int Theme { get; set; }
          public static int Deck { get; set; }
          public static int Timer { get; set; }
+         public static int GameType { get; set; }
          public static int x { get; set; }
     }
 
