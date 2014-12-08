@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Gaame
 {
@@ -14,7 +15,7 @@ namespace Gaame
     public partial class StartScreen : Form
     {
         //Number in the index for playerlist.
-        
+        SoundPlayer IntroMusic = new SoundPlayer(Properties.Resources.Intro);
         string Say;
         string SaySkill;
 
@@ -26,6 +27,7 @@ namespace Gaame
         private void button1_Click(object sender, EventArgs e)
         {
                 SaveGameSettings.Pairs = int.Parse(textBoxPairs.Text);
+                IntroMusic.Stop();
 
                 if (comboBoxTheme.Text == "Social Icons")
                     SaveGameSettings.Theme = 0;
@@ -102,6 +104,8 @@ namespace Gaame
 
         private void StartScreen_Load(object sender, EventArgs e)
         {
+
+            IntroMusic.Play();
             //Change the view of ListView to Details.
             listView1.View = View.Details; 
             
@@ -189,9 +193,9 @@ namespace Gaame
         public void StartButton()
         {
             if (PlayerList.list.Count > 0)
-                button1.Enabled = true;
+                StartGame.Enabled = true;
             else
-                button1.Enabled = false;
+                StartGame.Enabled = false;
         }
     }
 
