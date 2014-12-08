@@ -317,6 +317,9 @@
     <None Include="Resources\CardBackPurpleGold.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\FINAL_FANTASY_VII-Victory_Fanfare.wav" />
+    <None Include="Resources\FINAL FANTASY VII-Victory Fanfare.mp3" />
+    <None Include="Resources\FINAL FANTASY VII-Victory Fanfare %28www.myfreesongs.cc%29.mp3" />
     <None Include="Resources\Banner_Congrats.png" />
     <None Include="Resources\bttn_Remove.png" />
     <None Include="Resources\bttn_StartGame.png" />
