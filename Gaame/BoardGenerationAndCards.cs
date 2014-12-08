@@ -137,7 +137,7 @@ namespace Gaame
             this.Pic.Image = BackImage;
         }
 
-        private void Pic_Click(object sender, EventArgs e)
+        public void Pic_Click(object sender, EventArgs e)
         {
             //The gamemaster decides if the player can turn a card
             //AllowedToTurn = Gamemaster.AllowCardTurn

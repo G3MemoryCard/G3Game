@@ -128,6 +128,8 @@ namespace Gaame
             CardClickAllowence(true);
             TurnBackCards();
             Board.Namechange(ActivePlayerIndex);
+            if (PlayerList.list[ActivePlayerIndex].AI == true)
+                AIeasy.PlayAI();
 
         }
 
@@ -161,3 +163,5 @@ namespace Gaame
         }
     }
 }
+
+
