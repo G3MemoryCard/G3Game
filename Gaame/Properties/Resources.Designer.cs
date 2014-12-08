@@ -183,15 +183,6 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream FINAL_FANTASY_VII_Victory_Fanfare1 {
-            get {
-                return ResourceManager.GetStream("FINAL_FANTASY_VII_Victory_Fanfare1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         internal static System.IO.UnmanagedMemoryStream FINAL_FANTASY_VII_Victory_Fanfare2 {
             get {
                 return ResourceManager.GetStream("FINAL_FANTASY_VII_Victory_Fanfare2", resourceCulture);
