@@ -319,6 +319,7 @@
     <None Include="Resources\CardBackPurpleGold.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\BG_Blue_pic1.jpg" />
     <None Include="Resources\Intro.wav" />
     <None Include="Resources\EndScreen.wav" />
     <None Include="Resources\Wrong.wav" />
