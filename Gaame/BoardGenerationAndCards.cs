@@ -64,7 +64,7 @@ namespace Gaame
             Point generateStartPoint = new Point(10, 10);
 
             //Find a apropiate number of colums to create a field as square as possible
-            colums = Convert.ToInt32(Math.Ceiling(Math.Sqrt(x)));
+            colums = Convert.ToInt32(Math.Ceiling(Math.Sqrt(x)) + 1);
 
             //Calculate the card size depending on the max board size and the amount of columns
             //Then restrict the cards max size
