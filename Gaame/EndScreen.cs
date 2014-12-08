@@ -33,7 +33,7 @@ namespace Gaame
             WinnerList.list.Clear();
             StartScreen frm2 = new StartScreen();
             frm2.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void Form1_Load(object sender, EventArgs e)
