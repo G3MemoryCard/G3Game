@@ -50,6 +50,7 @@
     <Compile Include="AddPlayer.Designer.cs">
       <DependentUpon>AddPlayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="AIeasy.cs" />
     <Compile Include="BoardGenerationAndCards.cs" />
     <Compile Include="BoardGenerationAssist.cs" />
     <Compile Include="EndScreen.cs">
@@ -60,6 +61,7 @@
     </Compile>
     <Compile Include="FunkcheckAdd.cs" />
     <Compile Include="GameMaster.cs" />
+    <Compile Include="HighScore.cs" />
     <Compile Include="Scoreboard.cs">
       <SubType>Form</SubType>
     </Compile>
