@@ -703,11 +703,11 @@
   <data name="Turn_card1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Turn card1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Intro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Intro.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="EndScreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EndScreen.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Intro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Intro.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Wrong" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wrong.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

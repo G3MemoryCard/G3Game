@@ -197,6 +197,18 @@ namespace Gaame
             else
                 StartGame.Enabled = false;
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                IntroMusic.Play();
+            }
+            else
+            {
+                IntroMusic.Stop();
+            }
+        }
     }
 
     public static class SaveGameSettings
