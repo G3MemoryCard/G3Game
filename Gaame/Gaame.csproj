@@ -51,6 +51,7 @@
       <DependentUpon>AddPlayer.cs</DependentUpon>
     </Compile>
     <Compile Include="BoardGenerationAndCards.cs" />
+    <Compile Include="BoardGenerationAssist.cs" />
     <Compile Include="EndScreen.cs">
       <SubType>Form</SubType>
     </Compile>
