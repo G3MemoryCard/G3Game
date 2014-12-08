@@ -221,6 +221,7 @@ namespace Gaame
          public static int GameType { get; set; }
          public static int addBot { get; set; }
          public static int addPlayer { get; set; }
+         public static int ThemeBg { get; set; }
     }
 
     public class Player
