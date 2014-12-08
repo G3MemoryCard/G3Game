@@ -11,54 +11,28 @@ namespace Gaame
         static Random rdn = new Random();
         public static GameBoard Board { get; set; }
         static int PickOne;
-        static int PickTwo;
 
         public static void PlayAI(GameBoard board)
         {
+            CheckifSafe();
             Board = board;
 
             RndOne();
-            RndTwo();
 
-
-            while (CardList.Cards[PickOne].Pic.Visible == false || CardList.Cards[PickTwo].Pic.Visible == false)
-            {
-                if (CardList.Cards[PickOne].Turned == false && CardList.Cards[PickOne].Pic.Visible == false)
-                    RndOne();
-                if (CardList.Cards[PickTwo].Turned == false && CardList.Cards[PickTwo].Pic.Visible == false)
-                    RndTwo();
-            }
-
-            while (CardList.Cards[PickTwo].Pic.Visible == false || CardList.Cards[PickOne].Pic.Visible == false)
-            {
-                if (CardList.Cards[PickTwo].Turned == false && CardList.Cards[PickTwo].Pic.Visible == false)
-                    RndTwo();
-                if (CardList.Cards[PickOne].Turned == false && CardList.Cards[PickOne].Pic.Visible == false)
-                    RndOne();
-            }
-
-            while (PickOne == PickTwo)
-            {
-                RndOne();
-                if (CardList.Cards[PickOne].Pic.Visible == false && CardList.Cards[PickOne].Turned == true && PickOne == PickTwo)
-                    RndOne();
-
-                RndTwo();
-                if (CardList.Cards[PickTwo].Pic.Visible == false && CardList.Cards[PickTwo].Turned == true && PickTwo == PickOne)
-                    RndTwo();
-            }
+            CARDFUCINGLIST.list[PickOne].Pic_Click(null, EventArgs.Empty);
+            CheckifSafe();
+            RndOne();
 
             Console.WriteLine(GameMaster.ActivePlayerIndex + " PickOne = " + PickOne);
-            Console.WriteLine(GameMaster.ActivePlayerIndex + " PickTwo = " + PickTwo);
 
-            CardList.Cards[PickOne].Pic_Click(null, EventArgs.Empty);
             Board.timeLeftCard = 2;
             board.timer4.Start();
 
         }
         public static void NextCard()
         {
-            CardList.Cards[PickTwo].Pic_Click(null, EventArgs.Empty);
+            CARDFUCINGLIST.list[PickOne].Pic_Click(null, EventArgs.Empty);
+            CARDFUCINGLIST.list.Clear();
         }
 
         static void Pic_Click(object sender, EventArgs e)
@@ -68,18 +42,22 @@ namespace Gaame
 
         public static void RndOne()
         {
-
-            int cardCount = CardList.Cards.Count() - 1;
+            int cardCount = CARDFUCINGLIST.list.Count();
             PickOne = rdn.Next(0, cardCount);
         }
-        public static void RndTwo()
+
+        public static void CheckifSafe()
         {
-            int cardCount = CardList.Cards.Count() - 1;
-            PickTwo = rdn.Next(0, cardCount);
+            CARDFUCINGLIST.list = new List<PlayCard>();
+            foreach (PlayCard Card in CardList.Cards)
+                if (Card.Pic.Visible == true && Card.Turned == false)
+                    CARDFUCINGLIST.list.Add(Card);
         }
 
-
-
+        public static class CARDFUCINGLIST
+        {
+            public static List<PlayCard> list { get; set; }
+        }
 
         public class IfVisable
         {

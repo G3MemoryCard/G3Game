@@ -125,11 +125,14 @@ namespace Gaame
             {
                 GameOver();
             }
-            CardClickAllowence(true);
-            TurnBackCards();
-            Board.Namechange(ActivePlayerIndex);
-            if (PlayerList.list[ActivePlayerIndex].AI == true)
-                AIeasy.PlayAI(Board);
+            else
+            {
+                CardClickAllowence(true);
+                TurnBackCards();
+                Board.Namechange(ActivePlayerIndex);
+                if (PlayerList.list[ActivePlayerIndex].AI == true && PlayerList.list[ActivePlayerIndex].Skill == 1)
+                    AIeasy.PlayAI(Board);
+            }
 
         }
 
