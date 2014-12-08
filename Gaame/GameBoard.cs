@@ -39,7 +39,6 @@ namespace Gaame
             PlayCard[] CardArray = BoardGeneration.GenerateBoard(SaveGameSettings.Pairs * 2, splitContainer1);
             CardList.Create(CardArray);
             GameMaster.Start(this);
-            BoardGenerationAssist.getColumnsFromPairs(60);
 
             // Show timer as "selected value" seconds, before countdown begins.
             timeLabel.Text = SaveGameSettings.Timer.ToString() + " seconds";

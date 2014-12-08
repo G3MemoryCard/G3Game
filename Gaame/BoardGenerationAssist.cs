@@ -8,15 +8,21 @@ namespace Gaame
 {
     public static class BoardGenerationAssist
     {
-        static int singles { get; set; }
-        static List<int> rectOptions { get; set; }
+        static double singles { get; set; }
+        static List<SideProx> rectOptions { get; set; }
         static int i { get; set; }
-        static decimal d { get; set; }
+        static double d { get; set; }
+        static List<double> prox { get; set; }
+        static List<SideProx> resultList { get; set; }
+        
 
-        public static void getColumnsFromPairs(int pairs)
+        public static int getColumnsFromPairs(int pairs)
         {
-            rectOptions = new List<int>();
+            resultList = new List<SideProx>();
+            rectOptions = new List<SideProx>();
             singles = pairs * 2;
+
+
 
             i = 1;
             while(i <= 12)
@@ -24,16 +30,35 @@ namespace Gaame
                 d = singles / i;
                 if ((d % 1) == 0)
                 {
-                    Console.WriteLine(d);
-                    rectOptions.Add(i);
+                    rectOptions.Add(new SideProx(i, 0));
                 }
                 i++;
             }
 
-            //foreach (int a in rectOptions)
-                
+            foreach (SideProx a in rectOptions)
+                a.Prox = Math.Abs(Math.Sqrt(singles) - a.Side + 1);
+
+            var spList = from p in rectOptions orderby p.Prox select p;
+
             
+            foreach(SideProx sp in spList)
+            {
+                resultList.Add(sp);
+            }
+
+            return resultList[0].Side;
         }
 
+    }
+    public class SideProx
+    {
+        public int Side { get; set; }
+        public double Prox { get; set; }
+
+        public SideProx(int side, double prox) 
+        {
+            this.Side = side;
+            this.Prox = prox;
+        }
     }
 }
