@@ -58,34 +58,5 @@ namespace Gaame
         {
             public static List<PlayCard> list { get; set; }
         }
-
-        public class IfVisable
-        {
-            
-            public IfVisable(bool Visable, int CardTag)
-            {
-                this.CardTag = CardTag;
-                this.Visable = Visable;
-            }
-
-            public bool Visable { get; set; }
-            public int CardTag { get; set; }
-        }
-
-        public static class CardVisableList
-        {
-            
-            public static List<IfVisable> list { get; set; }
-            
-            static CardVisableList()
-            {
-                list = new List<IfVisable>();
-            }
-            
-            public static void Record(IfVisable value)
-            {
-                list.Add(value);
-            }
-        }
     }
 }
