@@ -13,7 +13,7 @@ namespace Gaame
 {
     public partial class EndScreen : Form
     {
-        SoundPlayer EndScreenMusic = new SoundPlayer(Properties.Resources.FINAL_FANTASY_VII_Victory_Fanfare1);
+        SoundPlayer EndScreenMusic = new SoundPlayer(Properties.Resources.FINAL_FANTASY_VII_Victory_Fanfare2);
 
         public EndScreen()
         {

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Gaame
 {
@@ -139,6 +140,8 @@ namespace Gaame
 
         public void Pic_Click(object sender, EventArgs e)
         {
+            SoundPlayer TurnCard = new SoundPlayer(Properties.Resources.Turn_card1);
+            TurnCard.Play();
             //The gamemaster decides if the player can turn a card
             //AllowedToTurn = Gamemaster.AllowCardTurn
             if (AllowedToTurn)
