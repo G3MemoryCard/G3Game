@@ -60,6 +60,7 @@
     </Compile>
     <Compile Include="FunkcheckAdd.cs" />
     <Compile Include="GameMaster.cs" />
+    <Compile Include="HighScore.cs" />
     <Compile Include="Scoreboard.cs">
       <SubType>Form</SubType>
     </Compile>
