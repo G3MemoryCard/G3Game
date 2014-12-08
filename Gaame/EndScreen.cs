@@ -14,6 +14,7 @@ namespace Gaame
     public partial class EndScreen : Form
     {
         SoundPlayer EndScreenMusic = new SoundPlayer(Properties.Resources.FINAL_FANTASY_VII_Victory_Fanfare1);
+        HighScore hs = new HighScore();
 
         public EndScreen()
         {
@@ -48,6 +49,7 @@ namespace Gaame
             // Displays the winner alone on screen.
             textBox1.Text = WinnerList.list[0].Name + " has won with the score of: " + WinnerList.list[0].Score + "!";
 
+            hs.highscore();
         }
 
         private void labelPlayer_Click(object sender, EventArgs e)
