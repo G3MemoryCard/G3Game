@@ -129,7 +129,7 @@ namespace Gaame
             TurnBackCards();
             Board.Namechange(ActivePlayerIndex);
             if (PlayerList.list[ActivePlayerIndex].AI == true)
-                AIeasy.PlayAI();
+                AIeasy.PlayAI(Board);
 
         }
 
