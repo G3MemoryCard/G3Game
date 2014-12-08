@@ -146,7 +146,6 @@ namespace Gaame
             if (AllowedToTurn)
             {
                 AllowedToTurn = false;
-                Console.WriteLine("My tag is: " + Tag);
                 TurnUpCard();
             }
         }
@@ -154,7 +153,6 @@ namespace Gaame
         public void TurnUpCard()
         {
             FrontImage = ThemeArrays.Theme[Tag, SaveGameSettings.Theme];
-            Console.WriteLine("Turning the card up");
             Turned = true;
             //Set image to the front image
             Pic.Image = FrontImage;
@@ -165,7 +163,6 @@ namespace Gaame
         public void TurnDownCard()
         {
             BackImage = ThemeArrays.Back[SaveGameSettings.Deck];
-            Console.WriteLine("Turning the card down");
             Turned = false;
             //Set image to the back image
             Pic.Image = BackImage;
