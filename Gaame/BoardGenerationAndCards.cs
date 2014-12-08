@@ -129,6 +129,7 @@ namespace Gaame
         public int Tag { get; set; }
         public bool AllowedToTurn { get; set; }
         SoundPlayer TurnCard = new SoundPlayer(Properties.Resources.Turn_card1);
+        SoundPlayer WrongClick = new SoundPlayer(Properties.Resources.Wrong);
 
         public PlayCard(PictureBox pic)
         {
@@ -148,6 +149,10 @@ namespace Gaame
                 TurnCard.Play();
                 AllowedToTurn = false;
                 TurnUpCard();
+            }
+            else
+            {
+                WrongClick.Play();
             }
         }
         //Turns the card to diplay the picture up

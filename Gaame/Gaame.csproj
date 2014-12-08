@@ -319,6 +319,8 @@
     <None Include="Resources\CardBackPurpleGold.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\EndScreen.wav" />
+    <None Include="Resources\Wrong.wav" />
     <None Include="Resources\Intro.wav" />
     <None Include="Resources\FINAL_FANTASY_VII-Victory_Fanfare2.wav" />
     <None Include="Resources\Turn card1.wav" />

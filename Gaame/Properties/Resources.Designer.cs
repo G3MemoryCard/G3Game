@@ -171,21 +171,21 @@ namespace Gaame.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream EndScreen {
+            get {
+                return ResourceManager.GetStream("EndScreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] FINAL_FANTASY_VII_Victory_Fanfare {
             get {
                 object obj = ResourceManager.GetObject("FINAL_FANTASY_VII_Victory_Fanfare", resourceCulture);
                 return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream FINAL_FANTASY_VII_Victory_Fanfare2 {
-            get {
-                return ResourceManager.GetStream("FINAL_FANTASY_VII_Victory_Fanfare2", resourceCulture);
             }
         }
         
@@ -204,24 +204,6 @@ namespace Gaame.Properties {
         internal static System.IO.UnmanagedMemoryStream Match1 {
             get {
                 return ResourceManager.GetStream("Match1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream No_match1 {
-            get {
-                return ResourceManager.GetStream("No_match1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream No_match2 {
-            get {
-                return ResourceManager.GetStream("No_match2", resourceCulture);
             }
         }
         
@@ -2040,6 +2022,15 @@ namespace Gaame.Properties {
         internal static System.IO.UnmanagedMemoryStream Turn_card1 {
             get {
                 return ResourceManager.GetStream("Turn_card1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Wrong {
+            get {
+                return ResourceManager.GetStream("Wrong", resourceCulture);
             }
         }
     }
