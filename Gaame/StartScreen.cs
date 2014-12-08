@@ -30,11 +30,21 @@ namespace Gaame
                 IntroMusic.Stop();
 
                 if (comboBoxTheme.Text == "Social Icons")
+                {
                     SaveGameSettings.Theme = 0;
+                    SaveGameSettings.ThemeBg = 0;
+                }
+                    
                 else if (comboBoxTheme.Text == "Smileys")
+                {
                     SaveGameSettings.Theme = 1;
+                    SaveGameSettings.ThemeBg = 1;
+                }
                 else if (comboBoxTheme.Text == "Flags")
+                {
                     SaveGameSettings.Theme = 2;
+                    SaveGameSettings.ThemeBg = 2;
+                }
 
                 if (comboBoxDecks.Text == "Gold & Blue")
                     SaveGameSettings.Deck = 0;
