@@ -39,8 +39,6 @@ namespace Gaame
                 i++;
             }
             Shuffle<int>(tagList);
-            foreach (int a in tagList)
-                Console.WriteLine(a);
             return tagList;
         }
 

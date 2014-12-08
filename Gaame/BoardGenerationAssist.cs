@@ -9,7 +9,7 @@ namespace Gaame
     public static class BoardGenerationAssist
     {
         static int singles { get; set; }
-        static List<int> rectOptions { get; set; }
+        public static List<int> rectOptions { get; set; }
         static int i { get; set; }
 
         public static void getColumnsFromPairs(int pairs)
