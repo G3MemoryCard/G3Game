@@ -35,14 +35,22 @@ namespace Gaame
             string name;
             bool ai = false;
             int score = 0;
+            
             //Type in the player name.
-            if (textBox1.Text == "")
+            if (check == true & textBox1.Text == "")
             {
-               SaveGameSettings.x++;
-               name = "Player" + SaveGameSettings.x;
+               SaveGameSettings.addBot++;
+               name = "BOT" + SaveGameSettings.addBot;
+            }
+            //Type in the Botplayer name.
+            else if (textBox1.Text == "")
+            {
+                SaveGameSettings.addPlayer++;
+                name = "Player" + SaveGameSettings.addPlayer;
             }
             else
                 name = textBox1.Text.ToString();
+
             //IF is should be a AI
             if (check == true)
                 ai = true;
