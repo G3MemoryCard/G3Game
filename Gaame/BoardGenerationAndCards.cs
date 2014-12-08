@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Gaame
 {
@@ -39,8 +40,6 @@ namespace Gaame
                 i++;
             }
             Shuffle<int>(tagList);
-            foreach (int a in tagList)
-                Console.WriteLine(a);
             return tagList;
         }
 
@@ -129,6 +128,8 @@ namespace Gaame
         public bool Turned { get; set; }
         public int Tag { get; set; }
         public bool AllowedToTurn { get; set; }
+        SoundPlayer TurnCard = new SoundPlayer(Properties.Resources.Turn_card1);
+        SoundPlayer WrongClick = new SoundPlayer(Properties.Resources.Wrong);
 
         public PlayCard(PictureBox pic)
         {
@@ -139,22 +140,25 @@ namespace Gaame
             this.Pic.Image = BackImage;
         }
 
-        private void Pic_Click(object sender, EventArgs e)
-        {
+        public void Pic_Click(object sender, EventArgs e)
+        {          
             //The gamemaster decides if the player can turn a card
             //AllowedToTurn = Gamemaster.AllowCardTurn
             if (AllowedToTurn)
             {
+                TurnCard.Play();
                 AllowedToTurn = false;
-                Console.WriteLine("My tag is: " + Tag);
                 TurnUpCard();
+            }
+            else
+            {
+                WrongClick.Play();
             }
         }
         //Turns the card to diplay the picture up
         public void TurnUpCard()
         {
             FrontImage = ThemeArrays.Theme[Tag, SaveGameSettings.Theme];
-            Console.WriteLine("Turning the card up");
             Turned = true;
             //Set image to the front image
             Pic.Image = FrontImage;
@@ -165,7 +169,6 @@ namespace Gaame
         public void TurnDownCard()
         {
             BackImage = ThemeArrays.Back[SaveGameSettings.Deck];
-            Console.WriteLine("Turning the card down");
             Turned = false;
             //Set image to the back image
             Pic.Image = BackImage;

@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartScreen));
-            this.button1 = new System.Windows.Forms.Button();
+            this.StartGame = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxPairs = new System.Windows.Forms.TextBox();
@@ -39,28 +39,29 @@
             this.comboBoxDecks = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxTimer = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.AddPlayer = new System.Windows.Forms.Button();
+            this.RemovePlayer = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.listView1 = new System.Windows.Forms.ListView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // StartGame
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Image = global::Gaame.Properties.Resources.bttn_StartGame;
-            this.button1.Location = new System.Drawing.Point(324, 372);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 31);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.StartGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StartGame.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartGame.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.StartGame.Image = global::Gaame.Properties.Resources.bttn_StartGame;
+            this.StartGame.Location = new System.Drawing.Point(324, 372);
+            this.StartGame.Name = "StartGame";
+            this.StartGame.Size = new System.Drawing.Size(95, 31);
+            this.StartGame.TabIndex = 0;
+            this.StartGame.UseVisualStyleBackColor = true;
+            this.StartGame.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -156,34 +157,34 @@
             this.textBoxTimer.Text = "20";
             this.textBoxTimer.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // button2
+            // AddPlayer
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button2.Image = global::Gaame.Properties.Resources.bttn_Add;
-            this.button2.Location = new System.Drawing.Point(324, 187);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(68, 30);
-            this.button2.TabIndex = 13;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.AddPlayer.BackColor = System.Drawing.SystemColors.Control;
+            this.AddPlayer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddPlayer.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.AddPlayer.Image = global::Gaame.Properties.Resources.bttn_Add;
+            this.AddPlayer.Location = new System.Drawing.Point(324, 187);
+            this.AddPlayer.Margin = new System.Windows.Forms.Padding(2);
+            this.AddPlayer.Name = "AddPlayer";
+            this.AddPlayer.Size = new System.Drawing.Size(68, 30);
+            this.AddPlayer.TabIndex = 13;
+            this.AddPlayer.UseVisualStyleBackColor = false;
+            this.AddPlayer.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // RemovePlayer
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Control;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button3.Image = global::Gaame.Properties.Resources.bttn_Remove;
-            this.button3.Location = new System.Drawing.Point(324, 221);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(68, 30);
-            this.button3.TabIndex = 14;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.RemovePlayer.BackColor = System.Drawing.SystemColors.Control;
+            this.RemovePlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.RemovePlayer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RemovePlayer.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.RemovePlayer.Image = global::Gaame.Properties.Resources.bttn_Remove;
+            this.RemovePlayer.Location = new System.Drawing.Point(324, 221);
+            this.RemovePlayer.Margin = new System.Windows.Forms.Padding(2);
+            this.RemovePlayer.Name = "RemovePlayer";
+            this.RemovePlayer.Size = new System.Drawing.Size(68, 30);
+            this.RemovePlayer.TabIndex = 14;
+            this.RemovePlayer.UseVisualStyleBackColor = false;
+            this.RemovePlayer.Click += new System.EventHandler(this.button3_Click);
             // 
             // listView1
             // 
@@ -227,6 +228,21 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Gametype:";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(12, 370);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(59, 17);
+            this.checkBox1.TabIndex = 18;
+            this.checkBox1.Text = "Music";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // StartScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -234,12 +250,13 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(428, 409);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.RemovePlayer);
+            this.Controls.Add(this.AddPlayer);
             this.Controls.Add(this.textBoxTimer);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.comboBoxDecks);
@@ -248,7 +265,7 @@
             this.Controls.Add(this.textBoxPairs);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.StartGame);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "StartScreen";
@@ -264,7 +281,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button StartGame;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxPairs;
@@ -273,13 +290,14 @@
         private System.Windows.Forms.ComboBox comboBoxDecks;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBoxTimer;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button AddPlayer;
+        private System.Windows.Forms.Button RemovePlayer;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

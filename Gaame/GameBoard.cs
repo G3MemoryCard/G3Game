@@ -39,6 +39,7 @@ namespace Gaame
             PlayCard[] CardArray = BoardGeneration.GenerateBoard(SaveGameSettings.Pairs * 2, splitContainer1);
             CardList.Create(CardArray);
             GameMaster.Start(this);
+            BoardGenerationAssist.getColumnsFromPairs(60);
 
             // Show timer as "selected value" seconds, before countdown begins.
             timeLabel.Text = SaveGameSettings.Timer.ToString() + " seconds";
@@ -122,6 +123,21 @@ namespace Gaame
             {
                 timer3.Stop();
                 GameMaster.TimerCardScore();
+            }
+        }
+
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            if (timeLeftCard > 0)
+            // if there's time left reduce time by 1 and update label every sec.
+            {
+                timeLeftCard = timeLeftCard - 1;
+            }
+            else
+            // If time's up announce by changing label.
+            {
+                timer4.Stop();
+                AIeasy.NextCard();
             }
         }
 

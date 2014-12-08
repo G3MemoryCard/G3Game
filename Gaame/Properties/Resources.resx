@@ -697,7 +697,22 @@
   <data name="FINAL_FANTASY_VII_Victory_Fanfare" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FINAL FANTASY VII-Victory Fanfare.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="FINAL_FANTASY_VII_Victory_Fanfare1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FINAL_FANTASY_VII-Victory_Fanfare.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Match1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Match1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Turn_card1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Turn card1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BG_Blue_pic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BG_Blue_pic1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EndScreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EndScreen.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Intro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Intro.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wrong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wrong.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

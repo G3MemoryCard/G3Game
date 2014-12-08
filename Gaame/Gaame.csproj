@@ -50,6 +50,7 @@
     <Compile Include="AddPlayer.Designer.cs">
       <DependentUpon>AddPlayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="AIeasy.cs" />
     <Compile Include="BoardGenerationAndCards.cs" />
     <Compile Include="BoardGenerationAssist.cs" />
     <Compile Include="EndScreen.cs">
@@ -318,6 +319,15 @@
     <None Include="Resources\CardBackPurpleGold.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\BG_Blue_pic1.jpg" />
+    <None Include="Resources\Intro.wav" />
+    <None Include="Resources\EndScreen.wav" />
+    <None Include="Resources\Wrong.wav" />
+    <None Include="Resources\FINAL_FANTASY_VII-Victory_Fanfare2.wav" />
+    <None Include="Resources\Turn card1.wav" />
+    <None Include="Resources\No match2.wav" />
+    <None Include="Resources\No match1.wav" />
+    <None Include="Resources\Match1.wav" />
     <None Include="Resources\FINAL_FANTASY_VII-Victory_Fanfare.wav" />
     <None Include="Resources\FINAL FANTASY VII-Victory Fanfare.mp3" />
     <None Include="Resources\FINAL FANTASY VII-Victory Fanfare %28www.myfreesongs.cc%29.mp3" />
