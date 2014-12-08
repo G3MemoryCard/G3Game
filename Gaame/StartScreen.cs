@@ -114,8 +114,10 @@ namespace Gaame
 
         private void StartScreen_Load(object sender, EventArgs e)
         {
-
-            IntroMusic.Play();
+            if (checkBox1.Checked)
+            {
+                IntroMusic.Play();
+            }
             //Change the view of ListView to Details.
             listView1.View = View.Details; 
             
