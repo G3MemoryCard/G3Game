@@ -65,7 +65,7 @@ namespace Gaame
 
             Point generateStartPoint = new Point(10, 10);
 
-            maxBoardSize = container.Panel1.Width - 150;
+            maxBoardSize = container.Panel1.Width - 125;
 
             //Find a apropiate number of colums to create a field as square as possible
             colums = Convert.ToInt32(Math.Ceiling(Math.Sqrt(x)) + 1);
