@@ -52,6 +52,7 @@
     </Compile>
     <Compile Include="AI Easy.cs" />
     <Compile Include="BoardGenerationAndCards.cs" />
+    <Compile Include="BoardGenerationAssist.cs" />
     <Compile Include="EndScreen.cs">
       <SubType>Form</SubType>
     </Compile>
