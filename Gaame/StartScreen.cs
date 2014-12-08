@@ -136,7 +136,8 @@ namespace Gaame
                 this.comboBoxTheme.SelectedItem = "Social Icons";
                 this.comboBoxDecks.SelectedItem = "Gold & Blue";
                 this.comboBox1.SelectedItem = "Classic";
-                SaveGameSettings.x = 0;
+                SaveGameSettings.addBot = 0;
+                SaveGameSettings.addPlayer = 0;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -202,7 +203,8 @@ namespace Gaame
          public static int Deck { get; set; }
          public static int Timer { get; set; }
          public static int GameType { get; set; }
-         public static int x { get; set; }
+         public static int addBot { get; set; }
+         public static int addPlayer { get; set; }
     }
 
     public class Player
