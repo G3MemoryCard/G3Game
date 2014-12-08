@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Gaame
 {
     public partial class EndScreen : Form
     {
+        SoundPlayer EndScreenMusic = new SoundPlayer(Properties.Resources.FINAL_FANTASY_VII_Victory_Fanfare1);
         public EndScreen()
         {
             InitializeComponent();
@@ -25,6 +27,7 @@ namespace Gaame
 
         private void btnPlayAgain_Click(object sender, EventArgs e) // Closes the current window and returns to the start window.
         {
+            EndScreenMusic.Stop();
             WinnerList.list.Clear();
             StartScreen frm2 = new StartScreen();
             frm2.Show();
@@ -33,6 +36,7 @@ namespace Gaame
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            EndScreenMusic.Play();
             // Sorts the PlayerList and saves the result in WinnerList, ordered by score from high to low.
             var winner = from w in PlayerList.list
                          orderby w.Score descending
@@ -42,6 +46,7 @@ namespace Gaame
 
             // Displays the winner alone on screen.
             textBox1.Text = WinnerList.list[0].Name + " has won with the score of: " + WinnerList.list[0].Score + "!";
+
         }
 
         private void labelPlayer_Click(object sender, EventArgs e)

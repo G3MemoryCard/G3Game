@@ -171,6 +171,25 @@ namespace Gaame.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] FINAL_FANTASY_VII_Victory_Fanfare {
+            get {
+                object obj = ResourceManager.GetObject("FINAL_FANTASY_VII_Victory_Fanfare", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream FINAL_FANTASY_VII_Victory_Fanfare1 {
+            get {
+                return ResourceManager.GetStream("FINAL_FANTASY_VII_Victory_Fanfare1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Theme_Flag_pic4.
         /// </summary>
         internal static string String {
