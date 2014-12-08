@@ -128,6 +128,7 @@ namespace Gaame
         public bool Turned { get; set; }
         public int Tag { get; set; }
         public bool AllowedToTurn { get; set; }
+        SoundPlayer TurnCard = new SoundPlayer(Properties.Resources.Turn_card1);
 
         public PlayCard(PictureBox pic)
         {
@@ -139,13 +140,12 @@ namespace Gaame
         }
 
         public void Pic_Click(object sender, EventArgs e)
-        {
-            SoundPlayer TurnCard = new SoundPlayer(Properties.Resources.Turn_card1);
-            TurnCard.Play();
+        {          
             //The gamemaster decides if the player can turn a card
             //AllowedToTurn = Gamemaster.AllowCardTurn
             if (AllowedToTurn)
             {
+                TurnCard.Play();
                 AllowedToTurn = false;
                 TurnUpCard();
             }
