@@ -132,6 +132,7 @@ namespace Gaame
                 StartButton();
                 this.comboBoxTheme.SelectedItem = "Social Icons";
                 this.comboBoxDecks.SelectedItem = "Gold & Blue";
+                this.comboBox1.SelectedItem = "Classic";
                 SaveGameSettings.x = 0;
         }
 
