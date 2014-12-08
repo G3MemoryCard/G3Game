@@ -50,6 +50,8 @@ namespace Gaame
             list.RemoveAt(index);
         }
 
+        //Calculate the max board size
+
         //Generates the board and returns an array of playcards
         public static PlayCard[] GenerateBoard(int x, SplitContainer container)
         {
@@ -62,6 +64,8 @@ namespace Gaame
             int columNr = 0;
 
             Point generateStartPoint = new Point(10, 10);
+
+            maxBoardSize = container.Panel1.Width - 150;
 
             //Find a apropiate number of colums to create a field as square as possible
             colums = Convert.ToInt32(Math.Ceiling(Math.Sqrt(x)) + 1);
