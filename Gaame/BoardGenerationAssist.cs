@@ -14,7 +14,6 @@ namespace Gaame
         public static void getColumnsFromPairs(int pairs)
         {
             singles = pairs * 2;
-            rectOptions.Clear();
 
             int i = 1;
             while(i <= 12)
