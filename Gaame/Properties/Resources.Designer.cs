@@ -133,6 +133,16 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BG_Blue_pic1 {
+            get {
+                object obj = ResourceManager.GetObject("BG_Blue_pic1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bttn_Add {
             get {
                 object obj = ResourceManager.GetObject("bttn_Add", resourceCulture);
@@ -171,6 +181,15 @@ namespace Gaame.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream EndScreen {
+            get {
+                return ResourceManager.GetStream("EndScreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] FINAL_FANTASY_VII_Victory_Fanfare {
@@ -183,18 +202,9 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream FINAL_FANTASY_VII_Victory_Fanfare1 {
+        internal static System.IO.UnmanagedMemoryStream Intro {
             get {
-                return ResourceManager.GetStream("FINAL_FANTASY_VII_Victory_Fanfare1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream FINAL_FANTASY_VII_Victory_Fanfare2 {
-            get {
-                return ResourceManager.GetStream("FINAL_FANTASY_VII_Victory_Fanfare2", resourceCulture);
+                return ResourceManager.GetStream("Intro", resourceCulture);
             }
         }
         
@@ -204,24 +214,6 @@ namespace Gaame.Properties {
         internal static System.IO.UnmanagedMemoryStream Match1 {
             get {
                 return ResourceManager.GetStream("Match1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream No_match1 {
-            get {
-                return ResourceManager.GetStream("No_match1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream No_match2 {
-            get {
-                return ResourceManager.GetStream("No_match2", resourceCulture);
             }
         }
         
@@ -2040,6 +2032,15 @@ namespace Gaame.Properties {
         internal static System.IO.UnmanagedMemoryStream Turn_card1 {
             get {
                 return ResourceManager.GetStream("Turn_card1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Wrong {
+            get {
+                return ResourceManager.GetStream("Wrong", resourceCulture);
             }
         }
     }
