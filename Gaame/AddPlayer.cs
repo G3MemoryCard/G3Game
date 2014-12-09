@@ -49,7 +49,7 @@ namespace Gaame
                 name = "Player" + SaveGameSettings.addPlayer;
             }
             else
-                name = textBox1.Text.ToString();
+                name = textBox1.Text.Trim().ToString();
 
             //IF is should be a AI
             if (check == true)

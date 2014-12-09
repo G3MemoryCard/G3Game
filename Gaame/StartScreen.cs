@@ -100,6 +100,11 @@ namespace Gaame
             {
                 textBoxPairs.Text = "60";
             }
+            else if (int.Parse(this.textBoxPairs.Text) == 0)
+            {
+                textBoxPairs.Text = "1";
+            }
+
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
