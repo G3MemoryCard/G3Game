@@ -43,12 +43,12 @@
             this.RemovePlayer = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.listView1 = new System.Windows.Forms.ListView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxBanner = new System.Windows.Forms.PictureBox();
             this.comboBoxGameType = new System.Windows.Forms.ComboBox();
             this.labelGameType = new System.Windows.Forms.Label();
             this.checkBoxMusic = new System.Windows.Forms.CheckBox();
             this.checkBoxSFX = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBanner)).BeginInit();
             this.SuspendLayout();
             // 
             // StartGame
@@ -57,7 +57,7 @@
             this.StartGame.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartGame.ForeColor = System.Drawing.SystemColors.ControlText;
             this.StartGame.Image = global::Gaame.Properties.Resources.bttn_StartGame;
-            this.StartGame.Location = new System.Drawing.Point(324, 372);
+            this.StartGame.Location = new System.Drawing.Point(324, 358);
             this.StartGame.Name = "StartGame";
             this.StartGame.Size = new System.Drawing.Size(95, 31);
             this.StartGame.TabIndex = 0;
@@ -195,16 +195,16 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // pictureBox1
+            // pictureBoxBanner
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Gaame.Properties.Resources.Banner_;
-            this.pictureBox1.Location = new System.Drawing.Point(44, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(348, 110);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxBanner.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxBanner.Image = global::Gaame.Properties.Resources.Banner_;
+            this.pictureBoxBanner.Location = new System.Drawing.Point(44, 3);
+            this.pictureBoxBanner.Name = "pictureBoxBanner";
+            this.pictureBoxBanner.Size = new System.Drawing.Size(348, 110);
+            this.pictureBoxBanner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxBanner.TabIndex = 15;
+            this.pictureBoxBanner.TabStop = false;
             // 
             // comboBoxGameType
             // 
@@ -266,7 +266,7 @@
             this.Controls.Add(this.checkBoxMusic);
             this.Controls.Add(this.labelGameType);
             this.Controls.Add(this.comboBoxGameType);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxBanner);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.RemovePlayer);
             this.Controls.Add(this.AddPlayer);
@@ -286,7 +286,7 @@
             this.Text = "G3 Memory";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.Load += new System.EventHandler(this.StartScreen_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBanner)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,7 +307,7 @@
         private System.Windows.Forms.Button RemovePlayer;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxBanner;
         private System.Windows.Forms.ComboBox comboBoxGameType;
         private System.Windows.Forms.Label labelGameType;
         private System.Windows.Forms.CheckBox checkBoxMusic;
