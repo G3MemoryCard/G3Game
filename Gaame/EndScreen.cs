@@ -44,20 +44,6 @@ namespace Gaame
             {
                 EndScreenMusic.Play();
             }
-            List<Player> currentHscore = new List<Player>();
-
-            currentHscore = HighScore.ReadScoresFromFile(Filename);
-            int nr = 1;
-            var winners = from w in currentHscore
-                         orderby w.Score descending
-                         select w;
-            foreach (Player p in winners)
-                HighscoreList.Record(p);
-            foreach (Player p in winners)
-            {
-                MessageBox.Show(nr.ToString() + ". " + p.Name.ToString() + "\t" + p.Score.ToString());
-                nr++;
-            }
 
             // Sorts the PlayerList and saves the result in WinnerList, ordered by score from high to low.
             var winner = from w in PlayerList.list
@@ -69,12 +55,56 @@ namespace Gaame
             // Displays the winner alone on screen.
             labelWinningPlayer.Text = WinnerList.list[0].Name + " has won with the score of: " + WinnerList.list[0].Score + "!";
 
+            List<Player> currentHscore = new List<Player>();
+
+            currentHscore = HighScore.ReadScoresFromFile(Filename);
+
+
+
+            var winners = from w in currentHscore
+                         orderby w.Score descending
+                         select w;
+            foreach (Player p in winners)
+                HighscoreList.Record(p);
+            //foreach (Player p in winners)
+            //{
+            //    MessageBox.Show(nr.ToString() + ". " + p.Name.ToString() + "\t" + p.Score.ToString());
+            //    nr++;
+            //}
+
+            foreach (Player p in winner)
+                HighscoreList.Record(p);
+
+
+            using (var sw = new StreamWriter(Filename, false))
+            {
+                
+                for (int i = 0; i < HighscoreList.list.Count; i++)
+                {
+                    sw.WriteLine(HighscoreList.list[i].Name.ToString() + " " + HighscoreList.list[i].Score.ToString());
+                }
+                sw.Flush();
+                sw.Close();
+            }
         }
 
         private void btnScrBoard_Click(object sender, EventArgs e)
         {
             Scoreboard scr = new Scoreboard();
             scr.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var sorted = from s in HighscoreList.list
+                          orderby s.Score descending
+                          select s;
+            foreach (Player p in sorted)
+                SortedHighscoreList.Record(p);
+
+            HighscoreWindow hsw = new HighscoreWindow();
+            hsw.ShowDialog();
+
         }
 
     }
@@ -99,6 +129,21 @@ namespace Gaame
         public static List<Player> list { get; set; }
         //Method for create a new playlist.
         static HighscoreList()
+        {
+            list = new List<Player>();
+        }
+        //To record the value for the new players.
+        public static void Record(Player value)
+        {
+            list.Add(value);
+        }
+    }
+    public static class SortedHighscoreList
+    {
+        //generic playerlist name.
+        public static List<Player> list { get; set; }
+        //Method for create a new playlist.
+        static SortedHighscoreList()
         {
             list = new List<Player>();
         }
