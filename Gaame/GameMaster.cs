@@ -133,9 +133,15 @@ namespace Gaame
                 TurnBackCards();
                 Board.Namechange(ActivePlayerIndex);
                 if (PlayerList.list[ActivePlayerIndex].AI == true && PlayerList.list[ActivePlayerIndex].Skill == 1)
+                {
+                    CardClickAllowence(false);
                     AIeasy.PlayAI(Board);
+                }
                 else if (PlayerList.list[ActivePlayerIndex].AI == true && PlayerList.list[ActivePlayerIndex].Skill == 2)
+                {
+                    CardClickAllowence(false);
                     AIhard.PlayAI(Board);
+                }
             }
 
         }
