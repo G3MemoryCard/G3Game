@@ -43,17 +43,17 @@ namespace Gaame
             // Background depending on chosen theme.
             if (SaveGameSettings.ThemeBg == 0)
             {
-                this.BackgroundImage = Properties.Resources.bg_worldmap;
+                splitContainer1.Panel1.BackgroundImage = Properties.Resources.bg_hi_tech_1;
             }
 
             else if (SaveGameSettings.ThemeBg == 1)
             {
-                this.BackgroundImage = Properties.Resources.bg_worldmap;
+                splitContainer1.Panel1.BackgroundImage = Properties.Resources.bg_myLittlePony;
             }
 
             else if (SaveGameSettings.ThemeBg == 2)
             {
-                this.BackgroundImage = Properties.Resources.bg_worldmap;
+                splitContainer1.Panel1.BackgroundImage = Properties.Resources.bg_worldmap_2;
             }
             
 
