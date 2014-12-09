@@ -13,6 +13,7 @@ namespace Gaame
         static int PickOne;
         static PlayCard Card1;
         static PlayCard Card2;
+        static bool firsttime = true;
 
         public static void PlayAI(GameBoard board)
         {
@@ -29,7 +30,7 @@ namespace Gaame
                 RndOne();
                 Card1.Pic_Click(null, EventArgs.Empty);
             }
-            Console.WriteLine(PickOne + "=" + Card1.Tag);
+            
             Board.timeLeftCard = 2;
             board.timer5.Start();
 
@@ -45,7 +46,6 @@ namespace Gaame
                 RndOne();
                 Card2.Pic_Click(null, EventArgs.Empty);
             }
-            Console.WriteLine(PickOne + "=" + Card2.Tag);
             CARDLIST.list.Clear();
         }
 
@@ -75,7 +75,20 @@ namespace Gaame
 
         public static void RemeberCard(PlayCard Card)
         {
-            RememberTag.list.Add(Card);
+            if (firsttime)
+            {
+                RememberTag.list.Add(Card);
+                firsttime = false;
+            }
+            else
+            {
+                foreach (PlayCard listcard in RememberTag.list)
+                    if (listcard.ID != Card.ID)
+                    {
+                        RememberTag.list.Add(Card);
+                        break;
+                    }
+            }
         }
 
         public static class RememberTag
@@ -87,35 +100,31 @@ namespace Gaame
         {
             foreach (PlayCard Card in RememberTag.list)
                 foreach (PlayCard Carrd in RememberTag.list)
-                    if (Card.Tag == Carrd.Tag && Card != Carrd && Card.Pic.Visible == true)
+                    if (Card.Tag == Carrd.Tag && Card.ID != Carrd.ID && Card.Pic.Visible == true)
                     {
                         Card1 = Card;
                         Card2 = Carrd;
+                        Console.WriteLine("hej");
                         return true;
                     }
-                    else
-                    {
-                        Card1 = CARDLIST.list[PickOne];
-                        return false;
-                    }
+
+            Card1 = CARDLIST.list[PickOne];
             return false;
         }
 
-
         public static bool CheckCardListCARD2()
         {
-            foreach (PlayCard Card in RememberTag.list)
-                foreach (PlayCard Carrd in RememberTag.list)
-                    if (Card1.Tag == Carrd.Tag && Card != Carrd && Card.Pic.Visible == true)
-                    {
-                        Card2 = Carrd;
-                        return true;
-                    }
-                    else
-                    {
-                        Card2 = CARDLIST.list[PickOne];
-                        return false;
-                    }
+            //foreach (PlayCard Card in RememberTag.list)
+            foreach (PlayCard Carrd in RememberTag.list)
+                if (Card1.Tag == Carrd.Tag && Card1.ID != Carrd.ID && Carrd.Pic.Visible == true && Carrd.Turned == false)
+                {
+                    Card2 = Carrd;
+                    Console.WriteLine("hejsan igen");
+                    return true;
+                }
+            
+
+            Card2 = CARDLIST.list[PickOne];
             return false;
         }
     }
