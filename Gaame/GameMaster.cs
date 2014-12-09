@@ -25,7 +25,7 @@ namespace Gaame
 
         }
 
-        public static void CardCLicked() 
+        public static void CardCLicked(PlayCard sender) 
         {
             if(FirstTurn)
             {
