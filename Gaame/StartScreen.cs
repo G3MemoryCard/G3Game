@@ -18,6 +18,7 @@ namespace Gaame
         SoundPlayer IntroMusic = new SoundPlayer(Properties.Resources.Intro);
         string Say;
         string SaySkill;
+        bool sfx;
 
         public StartScreen()
         {
@@ -114,7 +115,7 @@ namespace Gaame
 
         private void StartScreen_Load(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
+            if (checkBoxMusic.Checked)
             {
                 IntroMusic.Play();
             }
@@ -212,7 +213,7 @@ namespace Gaame
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
+            if (checkBoxMusic.Checked)
             {
                 IntroMusic.Play();
             }
@@ -221,6 +222,20 @@ namespace Gaame
                 IntroMusic.Stop();
             }
         }
+
+        private void checkBoxSFX_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxSFX.Checked)
+            {
+                sfx = true;
+            }
+
+            else
+            {
+                sfx = false;
+            }
+        }
+
     }
 
     public static class SaveGameSettings
@@ -234,6 +249,7 @@ namespace Gaame
          public static int addBot { get; set; }
          public static int addPlayer { get; set; }
          public static int ThemeBg { get; set; }
+         
     }
 
     public class Player

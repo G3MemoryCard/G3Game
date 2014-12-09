@@ -46,7 +46,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxMusic = new System.Windows.Forms.CheckBox();
+            this.checkBoxSFX = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -228,18 +229,31 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Gametype:";
             // 
-            // checkBox1
+            // checkBoxMusic
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(12, 370);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(59, 17);
-            this.checkBox1.TabIndex = 18;
-            this.checkBox1.Text = "Music";
-            this.checkBox1.UseVisualStyleBackColor = false;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBoxMusic.AutoSize = true;
+            this.checkBoxMusic.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxMusic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxMusic.Location = new System.Drawing.Point(12, 370);
+            this.checkBoxMusic.Name = "checkBoxMusic";
+            this.checkBoxMusic.Size = new System.Drawing.Size(59, 17);
+            this.checkBoxMusic.TabIndex = 18;
+            this.checkBoxMusic.Text = "Music";
+            this.checkBoxMusic.UseVisualStyleBackColor = false;
+            this.checkBoxMusic.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // checkBoxSFX
+            // 
+            this.checkBoxSFX.AutoSize = true;
+            this.checkBoxSFX.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxSFX.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxSFX.Location = new System.Drawing.Point(12, 345);
+            this.checkBoxSFX.Name = "checkBoxSFX";
+            this.checkBoxSFX.Size = new System.Drawing.Size(49, 17);
+            this.checkBoxSFX.TabIndex = 19;
+            this.checkBoxSFX.Text = "SFX";
+            this.checkBoxSFX.UseVisualStyleBackColor = false;
+            this.checkBoxSFX.CheckedChanged += new System.EventHandler(this.checkBoxSFX_CheckedChanged);
             // 
             // StartScreen
             // 
@@ -248,7 +262,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(428, 409);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.checkBoxSFX);
+            this.Controls.Add(this.checkBoxMusic);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox1);
@@ -295,7 +310,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBoxMusic;
+        private System.Windows.Forms.CheckBox checkBoxSFX;
     }
 }
 
