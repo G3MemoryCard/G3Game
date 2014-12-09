@@ -19,6 +19,7 @@ namespace Gaame
 
         public static void Start(GameBoard board)
         {
+            ActivePlayerIndex = 0;
             PlayerCount = PlayerList.list.Count - 1;
             Board = board;
             FirstTurn = true;
@@ -124,7 +125,7 @@ namespace Gaame
             }
         }
 
-        static void NewTurn()
+        public static void NewTurn()
         {
             if (CheckGameOver() || GameSetOver)
             {
