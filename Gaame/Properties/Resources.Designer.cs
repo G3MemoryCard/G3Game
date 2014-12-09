@@ -143,6 +143,16 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg_worldmap {
+            get {
+                object obj = ResourceManager.GetObject("bg_worldmap", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bttn_Add {
             get {
                 object obj = ResourceManager.GetObject("bttn_Add", resourceCulture);

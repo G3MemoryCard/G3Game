@@ -40,6 +40,23 @@ namespace Gaame
             CardList.Create(CardArray);
             GameMaster.Start(this);
 
+            // Background depending on chosen theme.
+            if (SaveGameSettings.ThemeBg == 0)
+            {
+                this.BackgroundImage = Properties.Resources.bg_worldmap;
+            }
+
+            else if (SaveGameSettings.ThemeBg == 1)
+            {
+                this.BackgroundImage = Properties.Resources.bg_worldmap;
+            }
+
+            else if (SaveGameSettings.ThemeBg == 2)
+            {
+                this.BackgroundImage = Properties.Resources.bg_worldmap;
+            }
+            
+
             // Show timer as "selected value" seconds, before countdown begins.
             timeLabel.Text = SaveGameSettings.Timer.ToString() + " seconds";
 

@@ -60,7 +60,6 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.BackgroundImage = global::Gaame.Properties.Resources.BG_Blue_pic1;
             this.splitContainer1.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.splitContainer1.Panel1MinSize = 128;
             // 
