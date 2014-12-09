@@ -105,10 +105,13 @@ namespace Gaame
                 pic1.BackColor = Color.Transparent;
                 container.Panel1.Controls.Add(pic1);
                 PlayCard Card = new PlayCard(pic1);
+                
 
                 //Add a tag from the random tag list to the card
                 Card.Tag = tagList[0];
 
+                //Add an id to the card
+                Card.ID = i;
                 //Removes the used tag from the list
                 tagList.RemoveAt(0);
 
@@ -124,6 +127,7 @@ namespace Gaame
     //Playcard class
     public class PlayCard
     {
+        public int ID { get; set; }
         public PictureBox Pic { get; set; }
         public Bitmap FrontImage { get; set; }
         public Bitmap BackImage { get; set; }
@@ -148,6 +152,7 @@ namespace Gaame
             //AllowedToTurn = Gamemaster.AllowCardTurn
             if (AllowedToTurn)
             {
+                Console.WriteLine("my id is " + ID);
                 AllowedToTurn = false;
                 TurnUpCard();
                 if (SaveGameSettings.sfx == true)
