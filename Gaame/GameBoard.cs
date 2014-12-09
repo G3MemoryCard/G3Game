@@ -24,7 +24,13 @@ namespace Gaame
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            GameMaster.GameSetOver = true;
+            if (GameMaster.GameStarted == true)
+            {
+                GameMaster.GameSetOver = true;
+                GameMaster.NewTurn();
+            }
+            else
+                GameMaster.GameOver();
         }
 
 
