@@ -14,7 +14,6 @@ namespace Gaame
     public partial class EndScreen : Form
     {
         SoundPlayer EndScreenMusic = new SoundPlayer(Properties.Resources.EndScreen);
-        HighScore hs = new HighScore();
 
         public EndScreen()
         {
@@ -52,7 +51,6 @@ namespace Gaame
             // Displays the winner alone on screen.
             labelWinningPlayer.Text = WinnerList.list[0].Name + " has won with the score of: " + WinnerList.list[0].Score + "!";
 
-            hs.highscore();
         }
 
         private void btnScrBoard_Click(object sender, EventArgs e)
