@@ -35,6 +35,7 @@ namespace Gaame
 
         private void GameBoard_Load(object sender, EventArgs e)
         {
+            AIhard.RememberTag.list = new List<PlayCard>();
             ThemeArrays.Create();
             PlayCard[] CardArray = BoardGeneration.GenerateBoard(SaveGameSettings.Pairs * 2, splitContainer1);
             CardList.Create(CardArray);
@@ -154,6 +155,21 @@ namespace Gaame
             {
                 timer4.Stop();
                 AIeasy.NextCard();
+            }
+        }
+
+        private void timer5_Tick(object sender, EventArgs e)
+        {
+            if (timeLeftCard > 0)
+            // if there's time left reduce time by 1 and update label every sec.
+            {
+                timeLeftCard = timeLeftCard - 1;
+            }
+            else
+            // If time's up announce by changing label.
+            {
+                timer5.Stop();
+                AIhard.NextCard();
             }
         }
 
