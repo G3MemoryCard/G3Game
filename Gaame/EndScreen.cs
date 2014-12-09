@@ -50,19 +50,9 @@ namespace Gaame
                 WinnerList.Record(p);
 
             // Displays the winner alone on screen.
-            textBox1.Text = WinnerList.list[0].Name + " has won with the score of: " + WinnerList.list[0].Score + "!";
+            labelWinningPlayer.Text = WinnerList.list[0].Name + " has won with the score of: " + WinnerList.list[0].Score + "!";
 
             hs.highscore();
-        }
-
-        private void labelPlayer_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnScrBoard_Click(object sender, EventArgs e)
