@@ -132,6 +132,8 @@ namespace Gaame
                 Board.Namechange(ActivePlayerIndex);
                 if (PlayerList.list[ActivePlayerIndex].AI == true && PlayerList.list[ActivePlayerIndex].Skill == 1)
                     AIeasy.PlayAI(Board);
+                else if (PlayerList.list[ActivePlayerIndex].AI == true && PlayerList.list[ActivePlayerIndex].Skill == 2)
+                    AIhard.PlayAI(Board);
             }
 
         }

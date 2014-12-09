@@ -19,7 +19,7 @@ namespace Gaame
 
             RndOne();
 
-            CARDFUCINGLIST.list[PickOne].Pic_Click(null, EventArgs.Empty);
+            CARDLIST.list[PickOne].Pic_Click(null, EventArgs.Empty);
             CheckifSafe();
             RndOne();
 
@@ -31,8 +31,10 @@ namespace Gaame
         }
         public static void NextCard()
         {
-            CARDFUCINGLIST.list[PickOne].Pic_Click(null, EventArgs.Empty);
-            CARDFUCINGLIST.list.Clear();
+            CheckifSafe();
+            RndOne();
+            CARDLIST.list[PickOne].Pic_Click(null, EventArgs.Empty);
+            CARDLIST.list.Clear();
         }
 
         static void Pic_Click(object sender, EventArgs e)
@@ -42,19 +44,19 @@ namespace Gaame
 
         public static void RndOne()
         {
-            int cardCount = CARDFUCINGLIST.list.Count();
+            int cardCount = CARDLIST.list.Count();
             PickOne = rdn.Next(0, cardCount);
         }
 
         public static void CheckifSafe()
         {
-            CARDFUCINGLIST.list = new List<PlayCard>();
+            CARDLIST.list = new List<PlayCard>();
             foreach (PlayCard Card in CardList.Cards)
                 if (Card.Pic.Visible == true && Card.Turned == false)
-                    CARDFUCINGLIST.list.Add(Card);
+                    CARDLIST.list.Add(Card);
         }
 
-        public static class CARDFUCINGLIST
+        public static class CARDLIST
         {
             public static List<PlayCard> list { get; set; }
         }
