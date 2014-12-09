@@ -8,12 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.IO;
 
 namespace Gaame
 {
     public partial class EndScreen : Form
     {
+
         SoundPlayer EndScreenMusic = new SoundPlayer(Properties.Resources.EndScreen);
+        string Filename = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "MemoryHighScore.txt");
 
         public EndScreen()
         {
@@ -41,6 +44,21 @@ namespace Gaame
             {
                 EndScreenMusic.Play();
             }
+            List<Player> currentHscore = new List<Player>();
+
+            currentHscore = HighScore.ReadScoresFromFile(Filename);
+            int nr = 1;
+            var winners = from w in currentHscore
+                         orderby w.Score descending
+                         select w;
+            foreach (Player p in winners)
+                HighscoreList.Record(p);
+            foreach (Player p in winners)
+            {
+                MessageBox.Show(nr.ToString() + ". " + p.Name.ToString() + "\t" + p.Score.ToString());
+                nr++;
+            }
+
             // Sorts the PlayerList and saves the result in WinnerList, ordered by score from high to low.
             var winner = from w in PlayerList.list
                          orderby w.Score descending
@@ -66,6 +84,21 @@ namespace Gaame
         public static List<Player> list { get; set; }
         //Method for create a new playlist.
         static WinnerList()
+        {
+            list = new List<Player>();
+        }
+        //To record the value for the new players.
+        public static void Record(Player value)
+        {
+            list.Add(value);
+        }
+    }
+    public static class HighscoreList
+    {
+        //generic playerlist name.
+        public static List<Player> list { get; set; }
+        //Method for create a new playlist.
+        static HighscoreList()
         {
             list = new List<Player>();
         }
