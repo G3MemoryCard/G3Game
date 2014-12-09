@@ -56,9 +56,9 @@ namespace Gaame
                     SaveGameSettings.Deck = 3;
                 else if (comboBoxDecks.Text == "Gold & Purple")
                     SaveGameSettings.Deck = 4;
-                if (comboBox1.Text == "Classic")
+                if (comboBoxGameType.Text == "Classic")
                     SaveGameSettings.GameType = 0;
-                else if (comboBox1.Text == "Combo score")
+                else if (comboBoxGameType.Text == "Combo score")
                     SaveGameSettings.GameType = 1;
 
                 SaveGameSettings.Timer = int.Parse(textBoxTimer.Text);
@@ -154,7 +154,7 @@ namespace Gaame
                 StartButton();
                 this.comboBoxTheme.SelectedItem = "Social Icons";
                 this.comboBoxDecks.SelectedItem = "Gold & Blue";
-                this.comboBox1.SelectedItem = "Classic";
+                this.comboBoxGameType.SelectedItem = "Classic";
                 SaveGameSettings.addBot = 0;
                 SaveGameSettings.addPlayer = 0;
         }

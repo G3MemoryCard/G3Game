@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EndScreen));
             this.btnPlayAgain = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnScrBoard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelWinningPlayer = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,20 +60,6 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(15, 85);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(350, 50);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // btnScrBoard
             // 
             this.btnScrBoard.Location = new System.Drawing.Point(141, 172);
@@ -97,6 +83,17 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // labelWinningPlayer
+            // 
+            this.labelWinningPlayer.BackColor = System.Drawing.Color.Transparent;
+            this.labelWinningPlayer.Font = new System.Drawing.Font("Buxton Sketch", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWinningPlayer.Location = new System.Drawing.Point(1, 95);
+            this.labelWinningPlayer.Name = "labelWinningPlayer";
+            this.labelWinningPlayer.Size = new System.Drawing.Size(380, 46);
+            this.labelWinningPlayer.TabIndex = 9;
+            this.labelWinningPlayer.Text = "WinningPlayer";
+            this.labelWinningPlayer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // EndScreen
             // 
             this.AcceptButton = this.btnPlayAgain;
@@ -106,9 +103,9 @@
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(384, 211);
             this.ControlBox = false;
+            this.Controls.Add(this.labelWinningPlayer);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnScrBoard);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnPlayAgain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -121,7 +118,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -129,9 +125,9 @@
 
         private System.Windows.Forms.Button btnPlayAgain;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnScrBoard;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label labelWinningPlayer;
     }
 }
 

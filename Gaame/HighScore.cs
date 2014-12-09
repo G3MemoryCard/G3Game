@@ -3,67 +3,76 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Gaame
 {
     class HighScore
     {
-        static string Filename = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "MemoryHighScore.txt");
+        public string Name { get; set; }
+        public int Position { get; set; }
+        public int Score { get; set; }
 
-        public static class HighScoreList
+        public HighScore(string data)
         {
-            //generic playerlist name.
-            public static List<Player> list { get; set; }
-            //Method for create a new playlist.
-            static HighScoreList()
+            var d = data.Split(' ');
+
+            if (string.IsNullOrEmpty(data) || d.Length < 2)
+                throw new ArgumentException("Invalid high score string", "data");
+
+            this.Name = d[0];
+
+            int num;
+            if (int.TryParse(d[1], out num))
             {
-                list = new List<Player>();
+                this.Score = num;
             }
-            //To record the value for the new players.
-            public static void Record(Player value)
+            else
             {
-                list.Add(value);
+                throw new ArgumentException("Invalid score", "data");
             }
         }
-        public static class NewHighScoreList
+
+        public override string ToString()
         {
-            //generic playerlist name.
-            public static List<Player> list { get; set; }
-            //Method for create a new playlist.
-            static NewHighScoreList()
-            {
-                list = new List<Player>();
-            }
-            //To record the value for the new players.
-            public static void Record(Player value)
-            {
-                list.Add(value);
-            }
+            return String.Format("{0}. {1}: {2}", this.Position, this.Name, this.Score);
         }
-            public void highscore()
+
+        static List<HighScore> ReadScoresFromFile(string path)
+        {
+            var scores = new List<HighScore>();
+            
+            using (StreamReader reader = new StreamReader(path))
             {
-                HighScoreList.list.AddRange(WinnerList.list);
-
-                var top10 = from hs in HighScoreList.list
-                            orderby hs.Score descending
-                            select hs;
-                foreach (Player p in top10)
-                    NewHighScoreList.Record(p);
-
-                int i = 0;
-                using (var sw = new System.IO.StreamWriter(Filename))
+                string line;
+                while (!reader.EndOfStream)
                 {
-                    sw.WriteLine("Highscore:");
-                    sw.WriteLine();
-                    foreach (Player p in NewHighScoreList.list)
+                    line = reader.ReadLine();
+                    try
                     {
-                        sw.WriteLine(i+1+ ". " + NewHighScoreList.list[i].Name + "\t" + NewHighScoreList.list[i].Score + " pts.");
-                        i++;
+                        scores.Add(new HighScore(line));
                     }
-                    sw.Flush();
-                    sw.Close();
+                    catch (ArgumentException ex)
+                    {
+                        Console.WriteLine("Invalid score at line \"{0}\": {1}", line, ex);
+                    }
                 }
             }
+
+            return SortAndPositionHighscores(scores);
         }
-    
+
+        static List<HighScore> SortAndPositionHighscores(List<HighScore> scores)
+        {
+            scores = scores.OrderByDescending(s => s.Score).ToList();
+
+            int pos = 1;
+
+            scores.ForEach(s => s.Position = pos++);
+
+            return scores.ToList();
+        }
+    }
+
+
 }

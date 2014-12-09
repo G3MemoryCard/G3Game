@@ -11,29 +11,41 @@ namespace Gaame
         static Random rdn = new Random();
         public static GameBoard Board { get; set; }
         static int PickOne;
+        static PlayCard Card1;
+        static PlayCard Card2;
 
         public static void PlayAI(GameBoard board)
         {
             CheckifSafe();
+            RndOne();
+
             Board = board;
 
-            RndOne();
-
-            CARDLIST.list[PickOne].Pic_Click(null, EventArgs.Empty);
-            CheckifSafe();
-            RndOne();
-
-            Console.WriteLine(GameMaster.ActivePlayerIndex + " PickOne = " + PickOne);
-
+            if (CheckCardList() == true)
+                Card1.Pic_Click(null, EventArgs.Empty);
+            else
+            {
+                CheckifSafe();
+                RndOne();
+                Card1.Pic_Click(null, EventArgs.Empty);
+            }
+            Console.WriteLine(PickOne + "=" + Card1.Tag);
             Board.timeLeftCard = 2;
-            board.timer4.Start();
+            board.timer5.Start();
 
         }
         public static void NextCard()
         {
-            CheckifSafe();
-            RndOne();
-            CARDLIST.list[PickOne].Pic_Click(null, EventArgs.Empty);
+
+            if(CheckCardListCARD2() == true)
+            Card2.Pic_Click(null, EventArgs.Empty);
+            else
+            {
+                CheckifSafe();
+                RndOne();
+                Card2.Pic_Click(null, EventArgs.Empty);
+            }
+            Console.WriteLine(PickOne + "=" + Card2.Tag);
             CARDLIST.list.Clear();
         }
 
@@ -59,6 +71,52 @@ namespace Gaame
         public static class CARDLIST
         {
             public static List<PlayCard> list { get; set; }
+        }
+
+        public static void RemeberCard(PlayCard Card)
+        {
+            RememberTag.list.Add(Card);
+        }
+
+        public static class RememberTag
+        {
+            public static List<PlayCard> list { get; set; }
+        }
+
+        public static bool CheckCardList()
+        {
+            foreach (PlayCard Card in RememberTag.list)
+                foreach (PlayCard Carrd in RememberTag.list)
+                    if (Card.Tag == Carrd.Tag && Card != Carrd && Card.Pic.Visible == true)
+                    {
+                        Card1 = Card;
+                        Card2 = Carrd;
+                        return true;
+                    }
+                    else
+                    {
+                        Card1 = CARDLIST.list[PickOne];
+                        return false;
+                    }
+            return false;
+        }
+
+
+        public static bool CheckCardListCARD2()
+        {
+            foreach (PlayCard Card in RememberTag.list)
+                foreach (PlayCard Carrd in RememberTag.list)
+                    if (Card1.Tag == Carrd.Tag && Card != Carrd && Card.Pic.Visible == true)
+                    {
+                        Card2 = Carrd;
+                        return true;
+                    }
+                    else
+                    {
+                        Card2 = CARDLIST.list[PickOne];
+                        return false;
+                    }
+            return false;
         }
     }
 }

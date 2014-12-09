@@ -27,6 +27,7 @@ namespace Gaame
 
         public static void CardCLicked(PlayCard sender) 
         {
+            AIhard.RemeberCard(sender);
             if(FirstTurn)
             {
                 FirstTurn = false;
