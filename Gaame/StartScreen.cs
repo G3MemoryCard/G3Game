@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.IO;
 
 namespace Gaame
 {
@@ -123,6 +124,7 @@ namespace Gaame
 
         private void StartScreen_Load(object sender, EventArgs e)
         {
+
             if (checkBoxMusic.Checked)
             {
                 IntroMusic.Play();

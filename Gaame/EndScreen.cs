@@ -14,9 +14,10 @@ namespace Gaame
 {
     public partial class EndScreen : Form
     {
-
         SoundPlayer EndScreenMusic = new SoundPlayer(Properties.Resources.EndScreen);
+
         string Filename = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "MemoryHighScore.txt");
+             
 
         public EndScreen()
         {
@@ -40,6 +41,11 @@ namespace Gaame
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            using (var sw = new StreamWriter(Filename, true))
+            {
+                sw.WriteLine("HighScore! SECRET MESSAGE!");
+            }
+
             if (SaveGameSettings.music == true)
             {
                 EndScreenMusic.Play();
@@ -76,7 +82,7 @@ namespace Gaame
                 HighscoreList.Record(p);
 
 
-            using (var sw = new StreamWriter(Filename, false))
+            using (var sw = new StreamWriter(Filename, true))
             {
                 
                 for (int i = 0; i < HighscoreList.list.Count; i++)
