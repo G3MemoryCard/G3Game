@@ -14,7 +14,7 @@ namespace Gaame
         public static int PairMultiplier { get; set; }
         public static GameBoard Board { get; set; }
         static bool FirstTurn { get; set; }
-
+        public static bool GameSetOver { get; set; }
 
         public static void Start(GameBoard board)
         {
@@ -22,6 +22,7 @@ namespace Gaame
             Board = board;
             FirstTurn = true;
             AIhard.firsttime = true;
+            GameSetOver = false;
             NewTurn();
 
         }
@@ -64,7 +65,7 @@ namespace Gaame
             }
         }
 
-        static bool CheckGameOver()
+        public static bool CheckGameOver()
         {
             foreach(PlayCard card in CardList.Cards)
             {
@@ -123,7 +124,7 @@ namespace Gaame
 
         static void NewTurn()
         {
-            if (CheckGameOver())
+            if (CheckGameOver() || GameSetOver)
             {
                 GameOver();
             }
