@@ -125,6 +125,7 @@
             this.comboBoxDecks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDecks.FormattingEnabled = true;
             this.comboBoxDecks.Items.AddRange(new object[] {
+            "Theme",
             "Gold & Blue",
             "Gold & Grey",
             "Black & Orange",

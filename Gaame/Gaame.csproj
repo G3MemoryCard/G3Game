@@ -320,6 +320,9 @@
     <None Include="Resources\CardBackPurpleGold.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Back_Smiley.png" />
+    <None Include="Resources\Back_Flags.png" />
+    <None Include="Resources\Back_Yellow_Mail.png" />
     <None Include="Resources\Turn card3.wav" />
     <None Include="Resources\Turn card2.wav" />
     <None Include="Resources\Turn card1.wav" />

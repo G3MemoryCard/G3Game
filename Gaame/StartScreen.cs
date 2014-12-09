@@ -46,7 +46,16 @@ namespace Gaame
                     SaveGameSettings.ThemeBg = 2;
                 }
 
-                if (comboBoxDecks.Text == "Gold & Blue")
+                if(comboBoxDecks.Text == "Theme")
+                {
+                    if (comboBoxTheme.Text == "Social Icons")
+                        SaveGameSettings.Deck = 5;
+                    else if (comboBoxTheme.Text == "Smileys")
+                        SaveGameSettings.Deck = 6;
+                    else if (comboBoxTheme.Text == "Flags")
+                        SaveGameSettings.Deck = 7;
+                }
+                else if (comboBoxDecks.Text == "Gold & Blue")
                     SaveGameSettings.Deck = 0;
                 else if (comboBoxDecks.Text == "Gold & Grey")
                     SaveGameSettings.Deck = 1;
@@ -153,7 +162,7 @@ namespace Gaame
                 }
                 StartButton();
                 this.comboBoxTheme.SelectedItem = "Social Icons";
-                this.comboBoxDecks.SelectedItem = "Gold & Blue";
+                this.comboBoxDecks.SelectedItem = "Theme";
                 this.comboBoxGameType.SelectedItem = "Classic";
                 SaveGameSettings.addBot = 0;
                 SaveGameSettings.addPlayer = 0;
