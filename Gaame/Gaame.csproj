@@ -320,8 +320,8 @@
     <None Include="Resources\CardBackPurpleGold.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\GameBoardTheme.wav" />
-    <None Include="Resources\bg_hi-tech_2.png" />
+    <None Include="Resources\bttn_playAgain.png" />
+    <None Include="Resources\bttn_Exit.png" />
     <None Include="Resources\bg_hi-tech_1.png" />
     <None Include="Resources\bg_worldmap_2.png" />
     <None Include="Resources\bg_worldmap_1.png" />
@@ -332,7 +332,6 @@
     <None Include="Resources\EndScreen.wav" />
     <None Include="Resources\Wrong.wav" />
     <None Include="Resources\FINAL_FANTASY_VII-Victory_Fanfare2.wav" />
-    <None Include="Resources\Turn card1.wav" />
     <None Include="Resources\No match2.wav" />
     <None Include="Resources\No match1.wav" />
     <None Include="Resources\Match1.wav" />
