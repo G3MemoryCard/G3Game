@@ -83,6 +83,16 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Back_Flags {
+            get {
+                object obj = ResourceManager.GetObject("Back_Flags", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Back_GoldBlue {
             get {
                 object obj = ResourceManager.GetObject("Back_GoldBlue", resourceCulture);
@@ -106,6 +116,26 @@ namespace Gaame.Properties {
         internal static System.Drawing.Bitmap Back_GoldPurple {
             get {
                 object obj = ResourceManager.GetObject("Back_GoldPurple", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Back_SI {
+            get {
+                object obj = ResourceManager.GetObject("Back_SI", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Back_Smiley {
+            get {
+                object obj = ResourceManager.GetObject("Back_Smiley", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2079,18 +2109,9 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Turn_card1 {
+        internal static System.IO.UnmanagedMemoryStream Turn_card2 {
             get {
-                return ResourceManager.GetStream("Turn_card1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Wrong {
-            get {
-                return ResourceManager.GetStream("Wrong", resourceCulture);
+                return ResourceManager.GetStream("Turn_card2", resourceCulture);
             }
         }
     }

@@ -13,7 +13,7 @@ namespace Gaame
         static int PickOne;
         static PlayCard Card1;
         static PlayCard Card2;
-        static bool firsttime = true;
+        public static bool firsttime { get; set; }
 
         public static void PlayAI(GameBoard board)
         {
@@ -23,12 +23,12 @@ namespace Gaame
             Board = board;
 
             if (CheckCardList() == true)
-                Card1.Pic_Click(null, EventArgs.Empty);
+                Card1.TurnUpCard();
             else
             {
                 CheckifSafe();
                 RndOne();
-                Card1.Pic_Click(null, EventArgs.Empty);
+                Card1.TurnUpCard();
             }
             
             Board.timeLeftCard = 2;
@@ -38,13 +38,13 @@ namespace Gaame
         public static void NextCard()
         {
 
-            if(CheckCardListCARD2() == true)
-            Card2.Pic_Click(null, EventArgs.Empty);
+            if (CheckCardListCARD2() == true)
+                Card2.TurnUpCard();
             else
             {
                 CheckifSafe();
                 RndOne();
-                Card2.Pic_Click(null, EventArgs.Empty);
+                Card2.TurnUpCard();
             }
             CARDLIST.list.Clear();
         }
@@ -77,6 +77,7 @@ namespace Gaame
         {
             if (firsttime)
             {
+                RememberTag.list.Clear();
                 RememberTag.list.Add(Card);
                 firsttime = false;
             }

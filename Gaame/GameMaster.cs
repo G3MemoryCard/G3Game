@@ -21,6 +21,7 @@ namespace Gaame
             PlayerCount = PlayerList.list.Count - 1;
             Board = board;
             FirstTurn = true;
+            AIhard.firsttime = true;
             NewTurn();
 
         }
@@ -104,7 +105,7 @@ namespace Gaame
             Board.update();
             
         }
-        static void GameOver()
+        public static void GameOver()
         {
             Board.timer1.Stop();
             EndScreen endS = new EndScreen();
@@ -132,9 +133,15 @@ namespace Gaame
                 TurnBackCards();
                 Board.Namechange(ActivePlayerIndex);
                 if (PlayerList.list[ActivePlayerIndex].AI == true && PlayerList.list[ActivePlayerIndex].Skill == 1)
+                {
+                    CardClickAllowence(false);
                     AIeasy.PlayAI(Board);
+                }
                 else if (PlayerList.list[ActivePlayerIndex].AI == true && PlayerList.list[ActivePlayerIndex].Skill == 2)
+                {
+                    CardClickAllowence(false);
                     AIhard.PlayAI(Board);
+                }
             }
 
         }
