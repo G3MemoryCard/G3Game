@@ -41,6 +41,15 @@ namespace Gaame
 
         private void GameBoard_Load(object sender, EventArgs e)
         {
+            if(SaveGameSettings.sfx == true)
+            {
+                checkBoxSFX.Checked = true;
+            }
+            else
+            {
+                checkBoxSFX.Checked = false;
+            }
+
             AIhard.RememberTag.list = new List<PlayCard>();
             ThemeArrays.Create();
             PlayCard[] CardArray = BoardGeneration.GenerateBoard(SaveGameSettings.Pairs * 2, splitContainer1);
@@ -94,11 +103,6 @@ namespace Gaame
                 timeLabel.Text = "Time's up!";
                 GameMaster.TimeOver();
             }
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         public void update()
@@ -176,21 +180,6 @@ namespace Gaame
             {
                 timer5.Stop();
                 AIhard.NextCard();
-            }
-        }
-
-        private void checkBoxMusic_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBoxMusic.Checked)
-            {
-                SaveGameSettings.GBmusic = true;
-                SaveGameSettings.music = true;
-                GBMusic.Play();
-            }
-            else
-            {
-                SaveGameSettings.GBmusic = false;
-                GBMusic.Stop();
             }
         }
 

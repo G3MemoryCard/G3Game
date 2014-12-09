@@ -33,7 +33,6 @@
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.listView1 = new System.Windows.Forms.ListView();
             this.checkBoxSFX = new System.Windows.Forms.CheckBox();
-            this.checkBoxMusic = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timeLabel = new System.Windows.Forms.Label();
@@ -94,7 +93,6 @@
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.Black;
             this.splitContainer2.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.splitContainer2.Panel2.Controls.Add(this.checkBoxSFX);
-            this.splitContainer2.Panel2.Controls.Add(this.checkBoxMusic);
             this.splitContainer2.Panel2.Controls.Add(this.label2);
             this.splitContainer2.Panel2.Controls.Add(this.label1);
             this.splitContainer2.Panel2.Controls.Add(this.timeLabel);
@@ -119,37 +117,19 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // checkBoxSFX
             // 
             this.checkBoxSFX.AutoSize = true;
-            this.checkBoxSFX.Checked = true;
-            this.checkBoxSFX.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxSFX.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxSFX.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.checkBoxSFX.Location = new System.Drawing.Point(111, 223);
+            this.checkBoxSFX.Location = new System.Drawing.Point(77, 224);
             this.checkBoxSFX.Name = "checkBoxSFX";
             this.checkBoxSFX.Size = new System.Drawing.Size(49, 17);
             this.checkBoxSFX.TabIndex = 13;
             this.checkBoxSFX.Text = "SFX";
             this.checkBoxSFX.UseVisualStyleBackColor = true;
             this.checkBoxSFX.CheckedChanged += new System.EventHandler(this.checkBoxSFX_CheckedChanged);
-            // 
-            // checkBoxMusic
-            // 
-            this.checkBoxMusic.AutoSize = true;
-            this.checkBoxMusic.Checked = true;
-            this.checkBoxMusic.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxMusic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxMusic.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.checkBoxMusic.Location = new System.Drawing.Point(46, 223);
-            this.checkBoxMusic.Name = "checkBoxMusic";
-            this.checkBoxMusic.Size = new System.Drawing.Size(59, 17);
-            this.checkBoxMusic.TabIndex = 12;
-            this.checkBoxMusic.Text = "Music";
-            this.checkBoxMusic.UseVisualStyleBackColor = true;
-            this.checkBoxMusic.CheckedChanged += new System.EventHandler(this.checkBoxMusic_CheckedChanged);
             // 
             // label2
             // 
@@ -265,6 +245,5 @@
         public System.Windows.Forms.Timer timer4;
         public System.Windows.Forms.Timer timer5;
         private System.Windows.Forms.CheckBox checkBoxSFX;
-        private System.Windows.Forms.CheckBox checkBoxMusic;
     }
 }
