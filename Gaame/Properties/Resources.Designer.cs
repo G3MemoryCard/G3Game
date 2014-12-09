@@ -183,6 +183,16 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg_hi_tech_2 {
+            get {
+                object obj = ResourceManager.GetObject("bg_hi_tech_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bg_myLittlePony {
             get {
                 object obj = ResourceManager.GetObject("bg_myLittlePony", resourceCulture);
