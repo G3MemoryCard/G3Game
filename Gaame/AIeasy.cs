@@ -19,7 +19,7 @@ namespace Gaame
 
             RndOne();
 
-            CARDLIST.list[PickOne].Pic_Click(null, EventArgs.Empty);
+            CARDLIST.list[PickOne].TurnUpCard();
             CheckifSafe();
             RndOne();
 
@@ -33,7 +33,7 @@ namespace Gaame
         {
             CheckifSafe();
             RndOne();
-            CARDLIST.list[PickOne].Pic_Click(null, EventArgs.Empty);
+            CARDLIST.list[PickOne].TurnUpCard();
             CARDLIST.list.Clear();
         }
 

@@ -329,13 +329,12 @@
     <None Include="Resources\CardBackPurpleGold.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Turn card3.wav" />
-    <None Include="Resources\Turn card2.wav" />
-    <None Include="Resources\Turn card1.wav" />
+    <None Include="Resources\bttn_playAgain.png" />
+    <None Include="Resources\bttn_Exit.png" />
+    <None Include="Resources\bg_hi-tech_1.png" />
     <None Include="Resources\bg_worldmap_2.png" />
     <None Include="Resources\bg_worldmap_1.png" />
     <None Include="Resources\bg_myLittlePony.png" />
-    <None Include="Resources\bg_hi-tech_1.png" />
     <None Include="Resources\bg_worldmap.png" />
     <None Include="Resources\BG_Blue_pic1.jpg" />
     <None Include="Resources\Intro.wav" />

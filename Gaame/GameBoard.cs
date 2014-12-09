@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Gaame
 {
@@ -14,6 +15,7 @@ namespace Gaame
     {
         public int timeLeft = SaveGameSettings.Timer; // parameter used for the timer.
         public int timeLeftCard = 5;
+        SoundPlayer GBMusic = new SoundPlayer(Properties.Resources.GameBoardTheme);
 
         public GameBoard()
         {
@@ -22,7 +24,13 @@ namespace Gaame
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-           GameMaster.GameOver();
+            if (GameMaster.GameStarted == true)
+            {
+                GameMaster.GameSetOver = true;
+                GameMaster.NewTurn();
+            }
+            else
+                GameMaster.GameOver();
         }
 
 
@@ -42,7 +50,7 @@ namespace Gaame
             // Background depending on chosen theme.
             if (SaveGameSettings.ThemeBg == 0)
             {
-                splitContainer1.Panel1.BackgroundImage = Properties.Resources.bg_hi_tech_1;
+                splitContainer1.Panel1.BackgroundImage = Properties.Resources.bg_hi_tech_2;
             }
 
             else if (SaveGameSettings.ThemeBg == 1)
@@ -168,6 +176,34 @@ namespace Gaame
             {
                 timer5.Stop();
                 AIhard.NextCard();
+            }
+        }
+
+        private void checkBoxMusic_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxMusic.Checked)
+            {
+                SaveGameSettings.GBmusic = true;
+                SaveGameSettings.music = true;
+                GBMusic.Play();
+            }
+            else
+            {
+                SaveGameSettings.GBmusic = false;
+                GBMusic.Stop();
+            }
+        }
+
+        private void checkBoxSFX_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxSFX.Checked)
+            {
+                SaveGameSettings.sfx = true;
+            }
+
+            else
+            {
+                SaveGameSettings.sfx = false;
             }
         }
 
