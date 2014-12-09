@@ -62,8 +62,11 @@ namespace Gaame
             int rowNr = 0;
             int columNr = 0;
 
-            
+            //Check appropiate board generation style
             colums = BoardGenerationAssist.getColumnsFromPairs(x / 2);
+            if (x / colums > 9)
+                colums = (int)Math.Ceiling(Math.Sqrt(x) + 1);
+
             Point generateStartPoint = new Point(10, 10);
 
             maxBoardSize = container.Panel1.Width - 125;
