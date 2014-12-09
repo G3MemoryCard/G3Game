@@ -253,6 +253,16 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bttn_Highscore {
+            get {
+                object obj = ResourceManager.GetObject("bttn_Highscore", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bttn_playAgain {
             get {
                 object obj = ResourceManager.GetObject("bttn_playAgain", resourceCulture);
@@ -266,6 +276,16 @@ namespace Gaame.Properties {
         internal static System.Drawing.Bitmap bttn_Remove {
             get {
                 object obj = ResourceManager.GetObject("bttn_Remove", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bttn_Scoreboard {
+            get {
+                object obj = ResourceManager.GetObject("bttn_Scoreboard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

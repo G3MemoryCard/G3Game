@@ -329,6 +329,8 @@
     <None Include="Resources\CardBackPurpleGold.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bttn_Scoreboard.png" />
+    <None Include="Resources\bttn_Highscore.png" />
     <None Include="Resources\bttn_playAgain.png" />
     <None Include="Resources\bttn_Exit.png" />
     <None Include="Resources\bg_hi-tech_1.png" />
