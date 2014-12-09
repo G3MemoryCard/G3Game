@@ -13,10 +13,11 @@ namespace Gaame
         static int PickOne;
         static PlayCard Card1;
         static PlayCard Card2;
-        static bool firsttime = true;
+        public static bool firsttime { get; set; }
 
         public static void PlayAI(GameBoard board)
         {
+            firsttime = true;
             CheckifSafe();
             RndOne();
 
@@ -77,6 +78,7 @@ namespace Gaame
         {
             if (firsttime)
             {
+                RememberTag.list.Clear();
                 RememberTag.list.Add(Card);
                 firsttime = false;
             }

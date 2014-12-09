@@ -21,6 +21,7 @@ namespace Gaame
             PlayerCount = PlayerList.list.Count - 1;
             Board = board;
             FirstTurn = true;
+            AIhard.firsttime = true;
             NewTurn();
 
         }
