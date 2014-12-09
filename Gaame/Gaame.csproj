@@ -320,6 +320,7 @@
     <None Include="Resources\CardBackPurpleGold.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\GameBoardTheme.wav" />
     <None Include="Resources\bg_hi-tech_2.png" />
     <None Include="Resources\bg_hi-tech_1.png" />
     <None Include="Resources\bg_worldmap_2.png" />

@@ -264,6 +264,7 @@ namespace Gaame
          public static int ThemeBg { get; set; }
          public static bool sfx { get; set; }
          public static bool music { get; set; }
+         public static bool GBmusic { get; set; }
     }
 
     public class Player
