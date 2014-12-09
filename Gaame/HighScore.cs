@@ -7,10 +7,9 @@ using System.IO;
 
 namespace Gaame
 {
-    class HighScore
+    public class HighScore
     {
         public string Name { get; set; }
-        public int Position { get; set; }
         public int Score { get; set; }
 
         public HighScore(string data)
@@ -35,12 +34,12 @@ namespace Gaame
 
         public override string ToString()
         {
-            return String.Format("{0}. {1}: {2}", this.Position, this.Name, this.Score);
+            return String.Format("{0}\t{1}", this.Name, this.Score);
         }
 
-        static List<HighScore> ReadScoresFromFile(string path)
+        public static List<Player> ReadScoresFromFile(string path)
         {
-            var scores = new List<HighScore>();
+            var pList = new List<Player>();
             
             using (StreamReader reader = new StreamReader(path))
             {
@@ -50,7 +49,8 @@ namespace Gaame
                     line = reader.ReadLine();
                     try
                     {
-                        scores.Add(new HighScore(line));
+                        var hScore = new HighScore(line);
+                        pList.Add(new Player(hScore.Name, false, 0, hScore.Score));
                     }
                     catch (ArgumentException ex)
                     {
@@ -59,19 +59,19 @@ namespace Gaame
                 }
             }
 
-            return SortAndPositionHighscores(scores);
+            return pList;
         }
 
-        static List<HighScore> SortAndPositionHighscores(List<HighScore> scores)
-        {
-            scores = scores.OrderByDescending(s => s.Score).ToList();
+        //static List<Player> SortAndPositionHighscores(List<Player> scores)
+        //{
+        //    scores = scores.OrderByDescending(s => s.Score).ToList();
 
-            int pos = 1;
+        //    int pos = 1;
 
-            scores.ForEach(s => s.Position = pos++);
+        //    scores.ForEach(s => s.Position = pos++);
 
-            return scores.ToList();
-        }
+        //    return scores.ToList();
+        //}
     }
 
 

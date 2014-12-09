@@ -137,8 +137,7 @@ namespace Gaame
         public bool Turned { get; set; }
         public int Tag { get; set; }
         public bool AllowedToTurn { get; set; }
-        SoundPlayer TurnCard = new SoundPlayer(Properties.Resources.Turn_card1);
-        SoundPlayer WrongClick = new SoundPlayer(Properties.Resources.Wrong);
+        SoundPlayer TurnCard = new SoundPlayer(Properties.Resources.Turn_card2);
 
         public PlayCard(PictureBox pic)
         {
@@ -158,14 +157,6 @@ namespace Gaame
                 Console.WriteLine("my id is " + ID);
                 AllowedToTurn = false;
                 TurnUpCard();
-                if (SaveGameSettings.sfx == true)
-                {
-                    TurnCard.Play();
-                }
-            }
-            else if(SaveGameSettings.sfx == true)
-            {
-                WrongClick.Play();
             }
         }
         //Turns the card to diplay the picture up
@@ -176,6 +167,10 @@ namespace Gaame
             //Set image to the front image
             Pic.Image = FrontImage;
             GameMaster.CardCLicked(this);
+            if (SaveGameSettings.sfx == true)
+                {
+                    TurnCard.Play();
+                }
         }
 
         //Turns the card to display the back
@@ -393,12 +388,15 @@ namespace Gaame
             #endregion Flags
 
             //Make back array
-            Back = new Bitmap[5];
+            Back = new Bitmap[8];
             Back[0] = Properties.Resources.Back_GoldBlue;
             Back[1] = Properties.Resources.Back_GoldGrey;
             Back[2] = Properties.Resources.Back_BlackOrange;
             Back[3] = Properties.Resources.Back_BrownBeige;
             Back[4] = Properties.Resources.Back_GoldPurple;
+            Back[5] = Properties.Resources.Back_SI;
+            Back[6] = Properties.Resources.Back_Smiley;
+            Back[7] = Properties.Resources.Back_Flags;
         }
     }
 

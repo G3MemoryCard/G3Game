@@ -14,13 +14,17 @@ namespace Gaame
         public static int PairMultiplier { get; set; }
         public static GameBoard Board { get; set; }
         static bool FirstTurn { get; set; }
-
+        public static bool GameSetOver { get; set; }
+        public static bool GameStarted { get; set; }
 
         public static void Start(GameBoard board)
         {
+            ActivePlayerIndex = 0;
             PlayerCount = PlayerList.list.Count - 1;
             Board = board;
             FirstTurn = true;
+            AIhard.firsttime = true;
+            GameSetOver = false;
             NewTurn();
 
         }
@@ -31,6 +35,7 @@ namespace Gaame
             if(FirstTurn)
             {
                 FirstTurn = false;
+                GameStarted = true;
                 Board.timeLeft = SaveGameSettings.Timer;
                 Board.timer1.Start();
             }
@@ -63,7 +68,7 @@ namespace Gaame
             }
         }
 
-        static bool CheckGameOver()
+        public static bool CheckGameOver()
         {
             foreach(PlayCard card in CardList.Cards)
             {
@@ -104,7 +109,7 @@ namespace Gaame
             Board.update();
             
         }
-        static void GameOver()
+        public static void GameOver()
         {
             Board.timer1.Stop();
             EndScreen endS = new EndScreen();
@@ -120,9 +125,9 @@ namespace Gaame
             }
         }
 
-        static void NewTurn()
+        public static void NewTurn()
         {
-            if (CheckGameOver())
+            if (CheckGameOver() || GameSetOver)
             {
                 GameOver();
             }
@@ -132,9 +137,15 @@ namespace Gaame
                 TurnBackCards();
                 Board.Namechange(ActivePlayerIndex);
                 if (PlayerList.list[ActivePlayerIndex].AI == true && PlayerList.list[ActivePlayerIndex].Skill == 1)
+                {
+                    CardClickAllowence(false);
                     AIeasy.PlayAI(Board);
+                }
                 else if (PlayerList.list[ActivePlayerIndex].AI == true && PlayerList.list[ActivePlayerIndex].Skill == 2)
+                {
+                    CardClickAllowence(false);
                     AIhard.PlayAI(Board);
+                }
             }
 
         }

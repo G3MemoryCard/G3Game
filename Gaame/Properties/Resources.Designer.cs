@@ -83,6 +83,16 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Back_Flags {
+            get {
+                object obj = ResourceManager.GetObject("Back_Flags", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Back_GoldBlue {
             get {
                 object obj = ResourceManager.GetObject("Back_GoldBlue", resourceCulture);
@@ -106,6 +116,26 @@ namespace Gaame.Properties {
         internal static System.Drawing.Bitmap Back_GoldPurple {
             get {
                 object obj = ResourceManager.GetObject("Back_GoldPurple", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Back_SI {
+            get {
+                object obj = ResourceManager.GetObject("Back_SI", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Back_Smiley {
+            get {
+                object obj = ResourceManager.GetObject("Back_Smiley", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,6 +173,36 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg_hi_tech_1 {
+            get {
+                object obj = ResourceManager.GetObject("bg_hi_tech_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bg_hi_tech_2 {
+            get {
+                object obj = ResourceManager.GetObject("bg_hi_tech_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bg_myLittlePony {
+            get {
+                object obj = ResourceManager.GetObject("bg_myLittlePony", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bg_worldmap {
             get {
                 object obj = ResourceManager.GetObject("bg_worldmap", resourceCulture);
@@ -153,9 +213,49 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg_worldmap_1 {
+            get {
+                object obj = ResourceManager.GetObject("bg_worldmap_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bg_worldmap_2 {
+            get {
+                object obj = ResourceManager.GetObject("bg_worldmap_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bttn_Add {
             get {
                 object obj = ResourceManager.GetObject("bttn_Add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bttn_Exit {
+            get {
+                object obj = ResourceManager.GetObject("bttn_Exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bttn_playAgain {
+            get {
+                object obj = ResourceManager.GetObject("bttn_playAgain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +306,15 @@ namespace Gaame.Properties {
             get {
                 object obj = ResourceManager.GetObject("FINAL_FANTASY_VII_Victory_Fanfare", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream GameBoardTheme {
+            get {
+                return ResourceManager.GetStream("GameBoardTheme", resourceCulture);
             }
         }
         
@@ -2039,18 +2148,9 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Turn_card1 {
+        internal static System.IO.UnmanagedMemoryStream Turn_card2 {
             get {
-                return ResourceManager.GetStream("Turn_card1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Wrong {
-            get {
-                return ResourceManager.GetStream("Wrong", resourceCulture);
+                return ResourceManager.GetStream("Turn_card2", resourceCulture);
             }
         }
     }

@@ -125,6 +125,7 @@
             this.comboBoxDecks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDecks.FormattingEnabled = true;
             this.comboBoxDecks.Items.AddRange(new object[] {
+            "Theme",
             "Gold & Blue",
             "Gold & Grey",
             "Black & Orange",
@@ -212,7 +213,7 @@
             this.comboBoxGameType.FormattingEnabled = true;
             this.comboBoxGameType.Items.AddRange(new object[] {
             "Classic",
-            "Combo score"});
+            "Combo Score"});
             this.comboBoxGameType.Location = new System.Drawing.Point(206, 345);
             this.comboBoxGameType.Name = "comboBoxGameType";
             this.comboBoxGameType.Size = new System.Drawing.Size(100, 21);
