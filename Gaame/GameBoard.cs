@@ -44,7 +44,7 @@ namespace Gaame
             // Background depending on chosen theme.
             if (SaveGameSettings.ThemeBg == 0)
             {
-                splitContainer1.Panel1.BackgroundImage = Properties.Resources.bg_hi_tech_1;
+                splitContainer1.Panel1.BackgroundImage = Properties.Resources.bg_hi_tech_2;
             }
 
             else if (SaveGameSettings.ThemeBg == 1)
