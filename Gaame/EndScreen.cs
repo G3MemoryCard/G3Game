@@ -38,7 +38,10 @@ namespace Gaame
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            EndScreenMusic.Play();
+            if (SaveGameSettings.music == true)
+            {
+                EndScreenMusic.Play();
+            }
             // Sorts the PlayerList and saves the result in WinnerList, ordered by score from high to low.
             var winner = from w in PlayerList.list
                          orderby w.Score descending

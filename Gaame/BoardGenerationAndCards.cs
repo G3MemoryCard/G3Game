@@ -148,11 +148,14 @@ namespace Gaame
             //AllowedToTurn = Gamemaster.AllowCardTurn
             if (AllowedToTurn)
             {
-                TurnCard.Play();
                 AllowedToTurn = false;
                 TurnUpCard();
+                if (SaveGameSettings.sfx == true)
+                {
+                    TurnCard.Play();
+                }
             }
-            else
+            else if(SaveGameSettings.sfx == true)
             {
                 WrongClick.Play();
             }
