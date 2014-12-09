@@ -105,7 +105,7 @@ namespace Gaame
             Board.update();
             
         }
-        static void GameOver()
+        public static void GameOver()
         {
             Board.timer1.Stop();
             EndScreen endS = new EndScreen();

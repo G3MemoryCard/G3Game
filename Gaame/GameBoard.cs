@@ -22,9 +22,7 @@ namespace Gaame
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            EndScreen frm3 = new EndScreen();
-            frm3.ShowDialog();
-            this.Hide();
+           GameMaster.GameOver();
         }
 
 
