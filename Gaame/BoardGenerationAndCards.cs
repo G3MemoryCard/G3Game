@@ -62,7 +62,7 @@ namespace Gaame
             int rowNr = 0;
             int columNr = 0;
 
-           
+            
             colums = BoardGenerationAssist.getColumnsFromPairs(x / 2);
             Point generateStartPoint = new Point(10, 10);
 
