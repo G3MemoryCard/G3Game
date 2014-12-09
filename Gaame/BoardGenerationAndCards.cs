@@ -134,7 +134,7 @@ namespace Gaame
         public bool Turned { get; set; }
         public int Tag { get; set; }
         public bool AllowedToTurn { get; set; }
-        SoundPlayer TurnCard = new SoundPlayer(Properties.Resources.Turn_card1);
+        SoundPlayer TurnCard = new SoundPlayer(Properties.Resources.Turn_card2);
         SoundPlayer WrongClick = new SoundPlayer(Properties.Resources.Wrong);
 
         public PlayCard(PictureBox pic)

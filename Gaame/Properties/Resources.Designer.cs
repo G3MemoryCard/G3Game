@@ -2079,9 +2079,9 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Turn_card1 {
+        internal static System.IO.UnmanagedMemoryStream Turn_card2 {
             get {
-                return ResourceManager.GetStream("Turn_card1", resourceCulture);
+                return ResourceManager.GetStream("Turn_card2", resourceCulture);
             }
         }
         
