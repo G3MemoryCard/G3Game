@@ -124,6 +124,8 @@
             // checkBoxSFX
             // 
             this.checkBoxSFX.AutoSize = true;
+            this.checkBoxSFX.Checked = true;
+            this.checkBoxSFX.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxSFX.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxSFX.ForeColor = System.Drawing.Color.DodgerBlue;
             this.checkBoxSFX.Location = new System.Drawing.Point(111, 223);
@@ -137,6 +139,8 @@
             // checkBoxMusic
             // 
             this.checkBoxMusic.AutoSize = true;
+            this.checkBoxMusic.Checked = true;
+            this.checkBoxMusic.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxMusic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMusic.ForeColor = System.Drawing.Color.DodgerBlue;
             this.checkBoxMusic.Location = new System.Drawing.Point(46, 223);
