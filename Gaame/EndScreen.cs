@@ -32,6 +32,7 @@ namespace Gaame
 
         private void btnPlayAgain_Click(object sender, EventArgs e) // Closes the current window and returns to the start window.
         {
+            
             EndScreenMusic.Stop();
             WinnerList.list.Clear();
             StartScreen frm2 = new StartScreen();
