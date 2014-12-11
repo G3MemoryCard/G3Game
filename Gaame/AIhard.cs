@@ -30,13 +30,15 @@ namespace Gaame
                 RndOne();
                 Card1.TurnUpCard();
             }
-            
+            CARDLIST.list.Clear();
             Board.timeLeftCard = 2;
             board.timer5.Start();
 
         }
         public static void NextCard()
         {
+            CheckifSafe();
+            RndOne();
 
             if (CheckCardListCARD2() == true)
                 Card2.TurnUpCard();

@@ -41,18 +41,24 @@ namespace Gaame
             {
                SaveGameSettings.addBot++;
                name = "BOT" + SaveGameSettings.addBot;
+               while (name.Contains(" ")) name = name.Replace(" ", "");
             }
             //Type in the Botplayer name.
             else if (textBox1.Text == "")
             {
                 SaveGameSettings.addPlayer++;
                 name = "Player" + SaveGameSettings.addPlayer;
+                while (name.Contains(" ")) name = name.Replace(" ", "");
             }
             else
-                name = textBox1.Text.Trim().ToString();
+                name = textBox1.Text.ToString();
+            while (name.Contains(" ")) name = name.Replace(" ", "");
 
             if (check == true)
-                name ="(BOT)" + name;
+            {
+                name = "(BOT)" + name;
+                while (name.Contains(" ")) name = name.Replace(" ", "");
+            }
 
             //IF is should be a AI
             if (check == true)
