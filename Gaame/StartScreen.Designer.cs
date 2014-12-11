@@ -56,11 +56,13 @@
             this.StartGame.BackColor = System.Drawing.Color.Transparent;
             this.StartGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.StartGame.FlatAppearance.BorderSize = 0;
+            this.StartGame.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.StartGame.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.StartGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.StartGame.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartGame.ForeColor = System.Drawing.SystemColors.ControlText;
             this.StartGame.Image = global::Gaame.Properties.Resources.bttn_StartGame;
-            this.StartGame.Location = new System.Drawing.Point(309, 350);
+            this.StartGame.Location = new System.Drawing.Point(309, 351);
             this.StartGame.Margin = new System.Windows.Forms.Padding(0);
             this.StartGame.Name = "StartGame";
             this.StartGame.Size = new System.Drawing.Size(120, 44);
@@ -166,14 +168,18 @@
             // AddPlayer
             // 
             this.AddPlayer.BackColor = System.Drawing.Color.Transparent;
+            this.AddPlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.AddPlayer.FlatAppearance.BorderSize = 0;
+            this.AddPlayer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.AddPlayer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.AddPlayer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddPlayer.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.AddPlayer.ForeColor = System.Drawing.Color.Black;
             this.AddPlayer.Image = global::Gaame.Properties.Resources.bttn_Add;
-            this.AddPlayer.Location = new System.Drawing.Point(309, 176);
+            this.AddPlayer.Location = new System.Drawing.Point(315, 175);
             this.AddPlayer.Margin = new System.Windows.Forms.Padding(0);
             this.AddPlayer.Name = "AddPlayer";
-            this.AddPlayer.Size = new System.Drawing.Size(120, 45);
+            this.AddPlayer.Size = new System.Drawing.Size(107, 36);
             this.AddPlayer.TabIndex = 13;
             this.AddPlayer.UseVisualStyleBackColor = false;
             this.AddPlayer.Click += new System.EventHandler(this.button2_Click);
@@ -183,10 +189,12 @@
             this.RemovePlayer.BackColor = System.Drawing.Color.Transparent;
             this.RemovePlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.RemovePlayer.FlatAppearance.BorderSize = 0;
+            this.RemovePlayer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.RemovePlayer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.RemovePlayer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RemovePlayer.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.RemovePlayer.Image = global::Gaame.Properties.Resources.bttn_Remove;
-            this.RemovePlayer.Location = new System.Drawing.Point(309, 221);
+            this.RemovePlayer.Location = new System.Drawing.Point(309, 211);
             this.RemovePlayer.Margin = new System.Windows.Forms.Padding(0);
             this.RemovePlayer.Name = "RemovePlayer";
             this.RemovePlayer.Size = new System.Drawing.Size(120, 43);
@@ -310,7 +318,6 @@
         private System.Windows.Forms.ComboBox comboBoxDecks;
         private System.Windows.Forms.Label labelTimer;
         private System.Windows.Forms.TextBox textBoxTimer;
-        private System.Windows.Forms.Button AddPlayer;
         private System.Windows.Forms.Button RemovePlayer;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ListView listView1;
@@ -319,6 +326,7 @@
         private System.Windows.Forms.Label labelGameType;
         private System.Windows.Forms.CheckBox checkBoxMusic;
         private System.Windows.Forms.CheckBox checkBoxSFX;
+        private System.Windows.Forms.Button AddPlayer;
     }
 }
 
