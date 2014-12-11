@@ -19,6 +19,7 @@ namespace Gaame
         SoundPlayer IntroMusic = new SoundPlayer(Properties.Resources.Intro);
         string Say;
         string SaySkill;
+        static bool FirstTurns = true;
 
         public StartScreen()
         {
@@ -129,6 +130,22 @@ namespace Gaame
 
         private void StartScreen_Load(object sender, EventArgs e)
         {
+            
+            if (FirstTurns == true)
+            {
+                this.comboBoxTheme.SelectedItem = "Social Icons";
+                this.comboBoxDecks.SelectedItem = "Theme";
+                this.comboBoxGameType.SelectedItem = "Classic";
+                SaveGameSettings.Timer = 20;
+                SaveGameSettings.Pairs = 4;
+                SaveGameSettings.GameType = 0;
+                SaveGameSettings.Deck = 0;
+                SaveGameSettings.Theme = 0;
+                FirstTurns = false;
+            }    
+
+
+
             if (checkBoxMusic.Checked)
             {
                 IntroMusic.PlayLooping();
@@ -167,11 +184,14 @@ namespace Gaame
                     listView1.Items[i].SubItems.Add(SaySkill);
                 }
                 StartButton();
-                this.comboBoxTheme.SelectedItem = "Social Icons";
-                this.comboBoxDecks.SelectedItem = "Theme";
-                this.comboBoxGameType.SelectedItem = "Classic";
+
                 SaveGameSettings.addBot = 0;
                 SaveGameSettings.addPlayer = 0;
+                textBoxPairs.Text = SaveGameSettings.Pairs.ToString();
+                comboBoxTheme.SelectedIndex = SaveGameSettings.Theme;
+                comboBoxDecks.SelectedIndex = SaveGameSettings.Deck;
+                comboBoxGameType.SelectedIndex = SaveGameSettings.GameType;
+                textBoxTimer.Text = SaveGameSettings.Timer.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -309,6 +329,7 @@ namespace Gaame
          public static int ThemeBg { get; set; }
          public static bool sfx { get; set; }
          public static bool music { get; set; }
+         
     }
 
     public class Player
