@@ -16,6 +16,7 @@ namespace Gaame
     {
         SoundPlayer EndScreenMusic = new SoundPlayer(Properties.Resources.EndScreen);
 
+        
         string Filename = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "MemoryHighScore.txt");
              
 
@@ -32,6 +33,7 @@ namespace Gaame
 
         private void btnPlayAgain_Click(object sender, EventArgs e) // Closes the current window and returns to the start window.
         {
+            
             EndScreenMusic.Stop();
             WinnerList.list.Clear();
             StartScreen frm2 = new StartScreen();
@@ -41,6 +43,7 @@ namespace Gaame
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             using (var sw = new StreamWriter(Filename, true))
             {
                 sw.WriteLine("HighScore! SECRET MESSAGE!");
@@ -58,13 +61,28 @@ namespace Gaame
             foreach (Player p in winner)
                 WinnerList.Record(p);
 
-            // Displays the winner alone on screen.
-            labelWinningPlayer.Text = WinnerList.list[0].Name + " has won with the score of: " + WinnerList.list[0].Score + "!";
+            if (WinnerList.list.Count > 1)
+            {
+                Console.WriteLine("not null");
+                if (WinnerList.list[0].Score == WinnerList.list[1].Score)
+                {
+                    labelWinningPlayer.Text = "The game is a draw";
+                }
+                else
+                {
+                    // Displays the winner alone on screen.
+                    labelWinningPlayer.Text = WinnerList.list[0].Name + " has won with the score of: " + WinnerList.list[0].Score + "!";
+                }
+            }
+            else
+            {
+                // Displays the winner alone on screen.
+                labelWinningPlayer.Text = WinnerList.list[0].Name + " has won with the score of: " + WinnerList.list[0].Score + "!";
+            }
 
             List<Player> currentHscore = new List<Player>();
 
             currentHscore = HighScore.ReadScoresFromFile(Filename);
-
 
 
             var winners = from w in currentHscore
@@ -72,11 +90,6 @@ namespace Gaame
                          select w;
             foreach (Player p in winners)
                 HighscoreList.Record(p);
-            //foreach (Player p in winners)
-            //{
-            //    MessageBox.Show(nr.ToString() + ". " + p.Name.ToString() + "\t" + p.Score.ToString());
-            //    nr++;
-            //}
 
             foreach (Player p in winner)
                 HighscoreList.Record(p);

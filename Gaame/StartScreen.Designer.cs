@@ -53,15 +53,19 @@
             // 
             // StartGame
             // 
+            this.StartGame.BackColor = System.Drawing.Color.Transparent;
+            this.StartGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.StartGame.FlatAppearance.BorderSize = 0;
             this.StartGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.StartGame.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartGame.ForeColor = System.Drawing.SystemColors.ControlText;
             this.StartGame.Image = global::Gaame.Properties.Resources.bttn_StartGame;
-            this.StartGame.Location = new System.Drawing.Point(324, 358);
+            this.StartGame.Location = new System.Drawing.Point(309, 350);
+            this.StartGame.Margin = new System.Windows.Forms.Padding(0);
             this.StartGame.Name = "StartGame";
-            this.StartGame.Size = new System.Drawing.Size(95, 31);
+            this.StartGame.Size = new System.Drawing.Size(120, 44);
             this.StartGame.TabIndex = 0;
-            this.StartGame.UseVisualStyleBackColor = true;
+            this.StartGame.UseVisualStyleBackColor = false;
             this.StartGame.Click += new System.EventHandler(this.button1_Click);
             // 
             // labelPairs
@@ -161,29 +165,31 @@
             // 
             // AddPlayer
             // 
-            this.AddPlayer.BackColor = System.Drawing.SystemColors.Control;
+            this.AddPlayer.BackColor = System.Drawing.Color.Transparent;
+            this.AddPlayer.FlatAppearance.BorderSize = 0;
             this.AddPlayer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddPlayer.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.AddPlayer.Image = global::Gaame.Properties.Resources.bttn_Add;
-            this.AddPlayer.Location = new System.Drawing.Point(324, 187);
-            this.AddPlayer.Margin = new System.Windows.Forms.Padding(2);
+            this.AddPlayer.Location = new System.Drawing.Point(309, 176);
+            this.AddPlayer.Margin = new System.Windows.Forms.Padding(0);
             this.AddPlayer.Name = "AddPlayer";
-            this.AddPlayer.Size = new System.Drawing.Size(68, 30);
+            this.AddPlayer.Size = new System.Drawing.Size(120, 45);
             this.AddPlayer.TabIndex = 13;
             this.AddPlayer.UseVisualStyleBackColor = false;
             this.AddPlayer.Click += new System.EventHandler(this.button2_Click);
             // 
             // RemovePlayer
             // 
-            this.RemovePlayer.BackColor = System.Drawing.SystemColors.Control;
-            this.RemovePlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.RemovePlayer.BackColor = System.Drawing.Color.Transparent;
+            this.RemovePlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.RemovePlayer.FlatAppearance.BorderSize = 0;
             this.RemovePlayer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RemovePlayer.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.RemovePlayer.Image = global::Gaame.Properties.Resources.bttn_Remove;
-            this.RemovePlayer.Location = new System.Drawing.Point(324, 221);
-            this.RemovePlayer.Margin = new System.Windows.Forms.Padding(2);
+            this.RemovePlayer.Location = new System.Drawing.Point(309, 221);
+            this.RemovePlayer.Margin = new System.Windows.Forms.Padding(0);
             this.RemovePlayer.Name = "RemovePlayer";
-            this.RemovePlayer.Size = new System.Drawing.Size(68, 30);
+            this.RemovePlayer.Size = new System.Drawing.Size(120, 43);
             this.RemovePlayer.TabIndex = 14;
             this.RemovePlayer.UseVisualStyleBackColor = false;
             this.RemovePlayer.Click += new System.EventHandler(this.button3_Click);
@@ -262,7 +268,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(428, 409);
+            this.ClientSize = new System.Drawing.Size(434, 409);
             this.Controls.Add(this.checkBoxSFX);
             this.Controls.Add(this.checkBoxMusic);
             this.Controls.Add(this.labelGameType);

@@ -17,6 +17,7 @@ namespace Gaame
         public static bool GameSetOver { get; set; }
         public static bool GameStarted { get; set; }
 
+        //Start the gamemaster
         public static void Start(GameBoard board)
         {
             ActivePlayerIndex = 0;
@@ -29,9 +30,12 @@ namespace Gaame
 
         }
 
+        //Cards call this function when clicked
         public static void CardCLicked(PlayCard sender) 
         {
+            //Sends the clicked card for the hard ai to rember
             AIhard.RemeberCard(sender);
+
             if(FirstTurn)
             {
                 FirstTurn = false;
@@ -40,6 +44,8 @@ namespace Gaame
                 Board.timer1.Start();
             }
             PickedCardsCount++;
+
+            //When 2 cards have been picked locks cards and ends turn while checking if a pair has been chosen
             if(PickedCardsCount == 2)
             {
                 CardClickAllowence(false);
@@ -57,8 +63,10 @@ namespace Gaame
             
         }
 
+        //Hides pairs that have been picked
         static void HideClickedCards()
         {
+            //Each card that is currently turned up becomeds invisable
             foreach(PlayCard card in CardList.Cards)
             {
                 if(card.Turned)
@@ -68,6 +76,7 @@ namespace Gaame
             }
         }
 
+        //Checks if all cards are invisable resulting in a game over
         public static bool CheckGameOver()
         {
             foreach(PlayCard card in CardList.Cards)
@@ -80,11 +89,13 @@ namespace Gaame
             return true;
         }
 
+        // Gets called by a timer that ends the turn
         public static void TimeOver()
         {
             EndTurn(false);
         }
 
+        //Ends the turn and takes a bool that says if the current player has scored
         static void EndTurn(bool playerHasScored)
         {
             if(playerHasScored)
@@ -98,6 +109,7 @@ namespace Gaame
             }
             else
             {
+                PickedCardsCount = 0;
                 PairMultiplier = 0;
                 NextPlayer();
                 Board.timeLeft = SaveGameSettings.Timer;
@@ -109,6 +121,8 @@ namespace Gaame
             Board.update();
             
         }
+
+        //Game over stops the game and goes to the end screen
         public static void GameOver()
         {
             Board.timer1.Stop();
@@ -117,6 +131,7 @@ namespace Gaame
             Board.Hide();
         }
 
+        //Sets if cards on the board are allowed to be clicked depening on the ingcoming bool
         static void CardClickAllowence(bool set)
         {
             foreach(PlayCard card in CardList.Cards)
@@ -125,8 +140,10 @@ namespace Gaame
             }
         }
 
+        //Starts a new turn
         public static void NewTurn()
         {
+            //Checks if the game is over
             if (CheckGameOver() || GameSetOver)
             {
                 GameOver();
@@ -136,6 +153,8 @@ namespace Gaame
                 CardClickAllowence(true);
                 TurnBackCards();
                 Board.Namechange(ActivePlayerIndex);
+
+                //Check if the active player is an AI player and what difficulty if so
                 if (PlayerList.list[ActivePlayerIndex].AI == true && PlayerList.list[ActivePlayerIndex].Skill == 1)
                 {
                     CardClickAllowence(false);
@@ -150,6 +169,7 @@ namespace Gaame
 
         }
 
+        //Tells each card on the board to turn back
         static void TurnBackCards()
         {
             foreach(PlayCard card in CardList.Cards)
@@ -158,6 +178,7 @@ namespace Gaame
             }
         }
 
+        //Switches to the next player
         static void NextPlayer()
         {
             if(ActivePlayerIndex < PlayerCount)
@@ -169,10 +190,14 @@ namespace Gaame
                 ActivePlayerIndex = 0;
             }
         }
+
+        //Gets called by a timer that starts at the end of the turn to create a paus before each new turn
         public static void TimerCard()
         {
             NewTurn();
         }
+
+        //Same function as the above but gets called by a timer that starts when a player gets a pair
         public static void TimerCardScore()
         {
             HideClickedCards();

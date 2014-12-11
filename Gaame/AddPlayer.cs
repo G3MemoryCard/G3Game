@@ -51,6 +51,9 @@ namespace Gaame
             else
                 name = textBox1.Text.Trim().ToString();
 
+            if (check == true)
+                name ="(BOT)" + name;
+
             //IF is should be a AI
             if (check == true)
                 ai = true;
