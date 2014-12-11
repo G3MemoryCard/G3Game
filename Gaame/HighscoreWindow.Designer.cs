@@ -37,15 +37,15 @@
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(448, 399);
+            this.listView1.Size = new System.Drawing.Size(412, 383);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(168, 326);
+            this.button1.Location = new System.Drawing.Point(92, 311);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(221, 28);
             this.button1.TabIndex = 1;
             this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = true;
@@ -55,7 +55,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(448, 399);
+            this.ClientSize = new System.Drawing.Size(412, 383);
             this.ControlBox = false;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listView1);

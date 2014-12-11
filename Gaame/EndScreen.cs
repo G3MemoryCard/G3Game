@@ -69,17 +69,11 @@ namespace Gaame
             currentHscore = HighScore.ReadScoresFromFile(Filename);
 
 
-
             var winners = from w in currentHscore
                          orderby w.Score descending
                          select w;
             foreach (Player p in winners)
                 HighscoreList.Record(p);
-            //foreach (Player p in winners)
-            //{
-            //    MessageBox.Show(nr.ToString() + ". " + p.Name.ToString() + "\t" + p.Score.ToString());
-            //    nr++;
-            //}
 
             foreach (Player p in winner)
                 HighscoreList.Record(p);
