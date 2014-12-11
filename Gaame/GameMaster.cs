@@ -109,6 +109,7 @@ namespace Gaame
             }
             else
             {
+                PickedCardsCount = 0;
                 PairMultiplier = 0;
                 NextPlayer();
                 Board.timeLeft = SaveGameSettings.Timer;

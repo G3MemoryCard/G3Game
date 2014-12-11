@@ -61,8 +61,24 @@ namespace Gaame
             foreach (Player p in winner)
                 WinnerList.Record(p);
 
-            // Displays the winner alone on screen.
-            labelWinningPlayer.Text = WinnerList.list[0].Name + " has won with the score of: " + WinnerList.list[0].Score + "!";
+            if (WinnerList.list.Count > 1)
+            {
+                Console.WriteLine("not null");
+                if (WinnerList.list[0].Score == WinnerList.list[1].Score)
+                {
+                    labelWinningPlayer.Text = "The game is a draw";
+                }
+                else
+                {
+                    // Displays the winner alone on screen.
+                    labelWinningPlayer.Text = WinnerList.list[0].Name + " has won with the score of: " + WinnerList.list[0].Score + "!";
+                }
+            }
+            else
+            {
+                // Displays the winner alone on screen.
+                labelWinningPlayer.Text = WinnerList.list[0].Name + " has won with the score of: " + WinnerList.list[0].Score + "!";
+            }
 
             List<Player> currentHscore = new List<Player>();
 
