@@ -9,6 +9,8 @@ namespace Gaame
 {
     public class HighScore
     {
+        static string Filename = Path.Combine((Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\G3Memory"), "MemoryHighScoreClassicList.txt");
+        static string Filename1 = Path.Combine((Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\G3Memory"), "MemoryHighScoreComboList.txt");
         public string Name { get; set; }
         public int Score { get; set; }
 
@@ -38,9 +40,11 @@ namespace Gaame
         }
 
         public static List<Player> ReadScoresFromFile(string path)
+
         {
             var pList = new List<Player>();
-            
+
+            if(SaveGameSettings.GameType == 0)
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
@@ -57,8 +61,28 @@ namespace Gaame
                         Console.WriteLine("Invalid score at line \"{0}\": {1}", line, ex);
                     }
                 }
+                reader.Dispose();
             }
 
+            else if(SaveGameSettings.GameType == 1)
+                using (StreamReader reader = new StreamReader(path))
+                {
+                    string line;
+                    while (!reader.EndOfStream)
+                    {
+                        line = reader.ReadLine();
+                        try
+                        {
+                            var hScore = new HighScore(line);
+                            pList.Add(new Player(hScore.Name, false, 0, hScore.Score));
+                        }
+                        catch (ArgumentException ex)
+                        {
+                            Console.WriteLine("Invalid score at line \"{0}\": {1}", line, ex);
+                        }
+                    }
+                    reader.Dispose();
+                }
             return pList;
         }
 
@@ -86,7 +110,82 @@ namespace Gaame
             }
             finally { }
         }
-    }
+        
 
+        public static void SortPlayer()
+        {
+            // Sorts the PlayerList and saves the result in WinnerList, ordered by score from high to low.
+            var winner = from w in PlayerList.list
+                         orderby w.Score descending
+                         select w;
+
+            foreach (Player p in winner)
+                WinnerList.Record(p);
+
+            if(SaveGameSettings.GameType == 0)
+                currentScore.currentHscore = HighScore.ReadScoresFromFile(Filename);
+
+            else if(SaveGameSettings.GameType == 1)
+                currentScore.currentHscore = HighScore.ReadScoresFromFile(Filename1);
+
+            var winners = from w in currentScore.currentHscore
+                          orderby w.Score descending
+                          select w;
+
+            foreach (Player p in winners)
+                HighscoreList.Record(p);
+
+            foreach (Player p in winner)
+                HighscoreList.Record(p);
+
+        }
+
+        public static void PickHighscoreList()
+        {
+
+            if(SaveGameSettings.GameType == 0)
+                using (var sw = new StreamWriter(Filename, false))
+                {
+                    sw.WriteLine("CLASSICHIGHSCORE");
+                    for (int i = 0; i < HighscoreList.list.Count; i++)
+                    {
+                        sw.WriteLine(HighscoreList.list[i].Name.ToString() + " " + HighscoreList.list[i].Score.ToString());
+                    }
+                    sw.Flush();
+                    sw.Close();
+                }
+
+            else if(SaveGameSettings.GameType == 1)
+                using (var sw = new StreamWriter(Filename1, false))
+                {
+                    sw.WriteLine("COMBOHIGHSCORE");
+                    for (int i = 0; i < HighscoreList.list.Count; i++)
+                    {
+                        sw.WriteLine(HighscoreList.list[i].Name.ToString() + " " + HighscoreList.list[i].Score.ToString());
+                    }
+                    sw.Flush();
+                    sw.Close();
+                }
+            
+        }
+
+        public static void CheckHighscoreExsist()
+        {
+            if (SaveGameSettings.GameType == 0)
+            using (var sw = new StreamWriter(HighScore.Filename, true))
+            {
+                sw.WriteLine(" ");
+            }
+            else if (SaveGameSettings.GameType == 1)
+            using (var sw = new StreamWriter(HighScore.Filename1, true))
+            {
+                sw.WriteLine(" ");
+            }
+        }
+
+
+
+    }
+    
 
 }

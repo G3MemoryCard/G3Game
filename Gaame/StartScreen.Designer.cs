@@ -213,7 +213,7 @@
             this.comboBoxGameType.FormattingEnabled = true;
             this.comboBoxGameType.Items.AddRange(new object[] {
             "Classic",
-            "Combo Score"});
+            "ComboScore"});
             this.comboBoxGameType.Location = new System.Drawing.Point(206, 345);
             this.comboBoxGameType.Name = "comboBoxGameType";
             this.comboBoxGameType.Size = new System.Drawing.Size(100, 21);
