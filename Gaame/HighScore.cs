@@ -62,16 +62,30 @@ namespace Gaame
             return pList;
         }
 
-        //static List<Player> SortAndPositionHighscores(List<Player> scores)
-        //{
-        //    scores = scores.OrderByDescending(s => s.Score).ToList();
+        static public void CreateFolders()
+        {
+            //Variabel for the FolderPath.
+            var CreateFolder = (Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\G3Memory");
 
-        //    int pos = 1;
+            try
+            {
+                // Determine whether the directory exists. 
+                if (Directory.Exists(CreateFolder))
+                {
+                    Console.WriteLine("That path exists already.");
+                    return;
+                }
+                //Create a Directory.
+                Directory.CreateDirectory(CreateFolder);
 
-        //    scores.ForEach(s => s.Position = pos++);
-
-        //    return scores.ToList();
-        //}
+            }
+            //Catches Exceptions.
+            catch (Exception e)
+            {
+                Console.WriteLine("The process failed: {0}", e.ToString());
+            }
+            finally { }
+        }
     }
 
 
