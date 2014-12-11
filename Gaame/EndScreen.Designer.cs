@@ -40,35 +40,47 @@
             // 
             // btnPlayAgain
             // 
-            this.btnPlayAgain.Location = new System.Drawing.Point(164, 176);
-            this.btnPlayAgain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPlayAgain.BackColor = System.Drawing.Color.Transparent;
+            this.btnPlayAgain.BackgroundImage = global::Gaame.Properties.Resources.bttn_playAgain;
+            this.btnPlayAgain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnPlayAgain.FlatAppearance.BorderSize = 0;
+            this.btnPlayAgain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlayAgain.ForeColor = System.Drawing.Color.Transparent;
+            this.btnPlayAgain.Location = new System.Drawing.Point(79, 142);
+            this.btnPlayAgain.Margin = new System.Windows.Forms.Padding(0);
             this.btnPlayAgain.Name = "btnPlayAgain";
-            this.btnPlayAgain.Size = new System.Drawing.Size(88, 31);
+            this.btnPlayAgain.Size = new System.Drawing.Size(106, 37);
             this.btnPlayAgain.TabIndex = 3;
-            this.btnPlayAgain.Text = "&Play Again";
-            this.btnPlayAgain.UseVisualStyleBackColor = true;
+            this.btnPlayAgain.UseVisualStyleBackColor = false;
             this.btnPlayAgain.Click += new System.EventHandler(this.btnPlayAgain_Click);
             // 
             // btnExit
             // 
+            this.btnExit.BackgroundImage = global::Gaame.Properties.Resources.bttn_Exit;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(257, 176);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.ForeColor = System.Drawing.Color.Black;
+            this.btnExit.Location = new System.Drawing.Point(192, 142);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(0);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(88, 31);
+            this.btnExit.Size = new System.Drawing.Size(107, 37);
             this.btnExit.TabIndex = 4;
-            this.btnExit.Text = "&Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnScrBoard
             // 
-            this.btnScrBoard.Location = new System.Drawing.Point(188, 212);
-            this.btnScrBoard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnScrBoard.BackgroundImage = global::Gaame.Properties.Resources.bttn_Scoreboard;
+            this.btnScrBoard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnScrBoard.FlatAppearance.BorderSize = 0;
+            this.btnScrBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnScrBoard.Location = new System.Drawing.Point(192, 187);
+            this.btnScrBoard.Margin = new System.Windows.Forms.Padding(0);
             this.btnScrBoard.Name = "btnScrBoard";
-            this.btnScrBoard.Size = new System.Drawing.Size(133, 31);
+            this.btnScrBoard.Size = new System.Drawing.Size(107, 37);
             this.btnScrBoard.TabIndex = 7;
-            this.btnScrBoard.Text = "View &Scoreboard";
             this.btnScrBoard.UseVisualStyleBackColor = true;
             this.btnScrBoard.Click += new System.EventHandler(this.btnScrBoard_Click);
             // 
@@ -78,10 +90,9 @@
             this.pictureBox1.BackgroundImage = global::Gaame.Properties.Resources.Banner_Congrats;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(64, 6);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(48, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(380, 92);
+            this.pictureBox1.Size = new System.Drawing.Size(285, 75);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -89,32 +100,36 @@
             // 
             this.labelWinningPlayer.BackColor = System.Drawing.Color.Transparent;
             this.labelWinningPlayer.Font = new System.Drawing.Font("Buxton Sketch", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWinningPlayer.Location = new System.Drawing.Point(1, 117);
-            this.labelWinningPlayer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelWinningPlayer.Location = new System.Drawing.Point(1, 95);
             this.labelWinningPlayer.Name = "labelWinningPlayer";
-            this.labelWinningPlayer.Size = new System.Drawing.Size(507, 57);
+            this.labelWinningPlayer.Size = new System.Drawing.Size(380, 46);
             this.labelWinningPlayer.TabIndex = 9;
             this.labelWinningPlayer.Text = "WinningPlayer";
             this.labelWinningPlayer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(95, 212);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::Gaame.Properties.Resources.bttn_Highscore;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(79, 187);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 31);
+            this.button1.Size = new System.Drawing.Size(106, 37);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Highscore";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // EndScreen
             // 
             this.AcceptButton = this.btnPlayAgain;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(512, 275);
+            this.ClientSize = new System.Drawing.Size(384, 231);
             this.ControlBox = false;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.labelWinningPlayer);
@@ -123,7 +138,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnPlayAgain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EndScreen";
