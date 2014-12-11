@@ -288,6 +288,11 @@ namespace Gaame
             SortedHighscoreList.list.Clear();
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 
     public static class SaveGameSettings
