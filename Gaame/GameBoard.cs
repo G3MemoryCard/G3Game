@@ -10,13 +10,14 @@ using System.Windows.Forms;
 using System.Media;
 using AxWMPLib;
 using WMPLib;
+using System.IO;
 
 namespace Gaame
 {
     public partial class GameBoard : Form
     {
         public int timeLeft = SaveGameSettings.Timer; // parameter used for the timer.
-        public int timeLeftCard = 5;       
+        public int timeLeftCard = 5;
 
         public GameBoard()
         {
@@ -54,7 +55,7 @@ namespace Gaame
             if (SaveGameSettings.music == true)
             {
                 checkBoxMusic.Checked = true;
-                WMPlayer.URL = (@"C:\Users\Stefan\Desktop\C#\GitHub\G3Game\Gaame\Resources\GameBoardTheme.wav");
+                WMPlayer.URL = (Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "GameBoardTheme.wav"));
                 WMPlayer.Ctlcontrols.play();
             }
             else
@@ -215,7 +216,7 @@ namespace Gaame
             if (checkBoxMusic.Checked)
             {
                 SaveGameSettings.music = true;
-                WMPlayer.URL = (@"C:\Users\Stefan\Desktop\C#\GitHub\G3Game\Gaame\Resources\GameBoardTheme.wav");
+                WMPlayer.URL = (Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "GameBoardTheme.wav"));
                 WMPlayer.Ctlcontrols.play();
                 WMPlayer.settings.setMode("loop", true);
             }
