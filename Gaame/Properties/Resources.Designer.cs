@@ -263,6 +263,16 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bttn_endGame {
+            get {
+                object obj = ResourceManager.GetObject("bttn_endGame", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bttn_Exit {
             get {
                 object obj = ResourceManager.GetObject("bttn_Exit", resourceCulture);
