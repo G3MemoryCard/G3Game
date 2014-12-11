@@ -257,9 +257,10 @@ namespace Gaame
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            SaveGameSettings.GameType = 0;
             HighScore.CreateFolders();
             HighScore.CheckHighscoreExsist();
-
+            
             currentScore.currentHscore = HighScore.ReadScoresFromFile(HighScore.Filename);
             var sorted = from s in currentScore.currentHscore
                          orderby s.Score descending
@@ -276,9 +277,10 @@ namespace Gaame
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            SaveGameSettings.GameType = 1;
             HighScore.CreateFolders();
             HighScore.CheckHighscoreExsist();
-
+            
             currentScore.currentHscore = HighScore.ReadScoresFromFile(HighScore.Filename1);
             var sorted = from s in currentScore.currentHscore
                          orderby s.Score descending
