@@ -73,8 +73,8 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Panel2MinSize = 200;
-            this.splitContainer1.Size = new System.Drawing.Size(858, 640);
-            this.splitContainer1.SplitterDistance = 639;
+            this.splitContainer1.Size = new System.Drawing.Size(1144, 788);
+            this.splitContainer1.SplitterDistance = 852;
             this.splitContainer1.SplitterWidth = 1;
             this.splitContainer1.TabIndex = 4;
             // 
@@ -84,7 +84,7 @@
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.IsSplitterFixed = true;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Margin = new System.Windows.Forms.Padding(4);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -103,8 +103,8 @@
             this.splitContainer2.Panel2.Controls.Add(this.label1);
             this.splitContainer2.Panel2.Controls.Add(this.timeLabel);
             this.splitContainer2.Panel2.Controls.Add(this.button1);
-            this.splitContainer2.Size = new System.Drawing.Size(218, 640);
-            this.splitContainer2.SplitterDistance = 380;
+            this.splitContainer2.Size = new System.Drawing.Size(291, 788);
+            this.splitContainer2.SplitterDistance = 467;
             this.splitContainer2.SplitterWidth = 1;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -117,9 +117,9 @@
             this.listView1.ForeColor = System.Drawing.Color.DodgerBlue;
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Margin = new System.Windows.Forms.Padding(0);
-            this.listView1.MinimumSize = new System.Drawing.Size(215, 382);
+            this.listView1.MinimumSize = new System.Drawing.Size(287, 470);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(216, 382);
+            this.listView1.Size = new System.Drawing.Size(289, 470);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -128,6 +128,7 @@
             // 
             this.WMPlayer.Enabled = true;
             this.WMPlayer.Location = new System.Drawing.Point(167, 97);
+            this.WMPlayer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WMPlayer.Name = "WMPlayer";
             this.WMPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("WMPlayer.OcxState")));
             this.WMPlayer.Size = new System.Drawing.Size(38, 32);
@@ -139,9 +140,10 @@
             this.checkBoxMusic.AutoSize = true;
             this.checkBoxMusic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMusic.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.checkBoxMusic.Location = new System.Drawing.Point(77, 229);
+            this.checkBoxMusic.Location = new System.Drawing.Point(103, 282);
+            this.checkBoxMusic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxMusic.Name = "checkBoxMusic";
-            this.checkBoxMusic.Size = new System.Drawing.Size(59, 17);
+            this.checkBoxMusic.Size = new System.Drawing.Size(71, 21);
             this.checkBoxMusic.TabIndex = 15;
             this.checkBoxMusic.Text = "Music";
             this.checkBoxMusic.UseVisualStyleBackColor = true;
@@ -152,10 +154,10 @@
             this.checkBoxSFX.AutoSize = true;
             this.checkBoxSFX.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxSFX.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.checkBoxSFX.Location = new System.Drawing.Point(77, 210);
-            this.checkBoxSFX.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBoxSFX.Location = new System.Drawing.Point(103, 258);
+            this.checkBoxSFX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBoxSFX.Name = "checkBoxSFX";
-            this.checkBoxSFX.Size = new System.Drawing.Size(49, 17);
+            this.checkBoxSFX.Size = new System.Drawing.Size(59, 21);
             this.checkBoxSFX.TabIndex = 13;
             this.checkBoxSFX.Text = "SFX";
             this.checkBoxSFX.UseVisualStyleBackColor = true;
@@ -167,8 +169,9 @@
             this.label2.Font = new System.Drawing.Font("Buxton Sketch", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(216, 24);
+            this.label2.Size = new System.Drawing.Size(289, 30);
             this.label2.TabIndex = 11;
             this.label2.Text = "Current Player:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -178,9 +181,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Buxton Sketch", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(48, 43);
+            this.label1.Location = new System.Drawing.Point(64, 53);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 23);
+            this.label1.Size = new System.Drawing.Size(72, 29);
             this.label1.TabIndex = 10;
             this.label1.Text = "Player";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -190,10 +194,9 @@
             this.timeLabel.AutoSize = true;
             this.timeLabel.Font = new System.Drawing.Font("Buxton Sketch", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.timeLabel.Location = new System.Drawing.Point(51, 97);
-            this.timeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.timeLabel.Location = new System.Drawing.Point(68, 119);
             this.timeLabel.Name = "timeLabel";
-            this.timeLabel.Size = new System.Drawing.Size(98, 26);
+            this.timeLabel.Size = new System.Drawing.Size(122, 33);
             this.timeLabel.TabIndex = 9;
             this.timeLabel.Text = "0 seconds";
             this.timeLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -208,10 +211,10 @@
             this.button1.Font = new System.Drawing.Font("Buxton Sketch", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button1.Image = global::Gaame.Properties.Resources.bttn_endGame;
-            this.button1.Location = new System.Drawing.Point(52, 140);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(69, 172);
+            this.button1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 50);
+            this.button1.Size = new System.Drawing.Size(148, 62);
             this.button1.TabIndex = 8;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
@@ -239,14 +242,14 @@
             // 
             // GameBoard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(858, 640);
+            this.ClientSize = new System.Drawing.Size(1144, 788);
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MaximizeBox = false;
             this.Name = "GameBoard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

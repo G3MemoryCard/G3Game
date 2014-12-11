@@ -43,6 +43,10 @@ namespace Gaame
 
         private void GameBoard_Load(object sender, EventArgs e)
         {
+            if (SaveGameSettings.GameType == 0)
+                this.Text = "G3 Memory Game (Classic)";
+            else
+                this.Text = "G3 Memory Game (Combo)";
             if (SaveGameSettings.sfx == true)
             {
                 checkBoxSFX.Checked = true;
