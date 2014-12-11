@@ -90,6 +90,10 @@ namespace Gaame
                 SortedHighscoreList.Record(p);
 
             HighscoreWindow hsw = new HighscoreWindow();
+            if(SaveGameSettings.GameType == 0)
+                hsw.Text = "HighScore Classic";
+            else if(SaveGameSettings.GameType == 1)
+                hsw.Text = "HighScore Combo";
             hsw.ShowDialog();
             SortedHighscoreList.list.Clear();
         }
