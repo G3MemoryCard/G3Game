@@ -243,6 +243,16 @@ namespace Gaame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bttn_bg_round_1 {
+            get {
+                object obj = ResourceManager.GetObject("bttn_bg_round_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bttn_Cancel {
             get {
                 object obj = ResourceManager.GetObject("bttn_Cancel", resourceCulture);
@@ -336,6 +346,25 @@ namespace Gaame.Properties {
             get {
                 object obj = ResourceManager.GetObject("FINAL_FANTASY_VII_Victory_Fanfare", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream GameBoardTheme {
+            get {
+                return ResourceManager.GetStream("GameBoardTheme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_doc {
+            get {
+                object obj = ResourceManager.GetObject("icon_doc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
