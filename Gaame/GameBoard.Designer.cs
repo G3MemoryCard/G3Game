@@ -145,6 +145,7 @@
             this.checkBoxMusic.TabIndex = 15;
             this.checkBoxMusic.Text = "Music";
             this.checkBoxMusic.UseVisualStyleBackColor = true;
+            this.checkBoxMusic.CheckedChanged += new System.EventHandler(this.checkBoxMusic_CheckedChanged_1);
             // 
             // checkBoxSFX
             // 
@@ -277,6 +278,6 @@
         public System.Windows.Forms.Timer timer5;
         private System.Windows.Forms.CheckBox checkBoxSFX;
         private System.Windows.Forms.CheckBox checkBoxMusic;
-        private AxWMPLib.AxWindowsMediaPlayer WMPlayer;
+        public AxWMPLib.AxWindowsMediaPlayer WMPlayer;
     }
 }

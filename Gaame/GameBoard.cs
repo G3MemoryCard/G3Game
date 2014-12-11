@@ -16,8 +16,7 @@ namespace Gaame
     public partial class GameBoard : Form
     {
         public int timeLeft = SaveGameSettings.Timer; // parameter used for the timer.
-        public int timeLeftCard = 5;
-        public WindowsMediaPlayer GBMusic = new WindowsMediaPlayer();
+        public int timeLeftCard = 5;       
 
         public GameBoard()
         {
@@ -210,13 +209,14 @@ namespace Gaame
             }
         }
 
-        private void checkBoxMusic_CheckedChanged(object sender, EventArgs e)
+        private void checkBoxMusic_CheckedChanged_1(object sender, EventArgs e)
         {
             if (checkBoxMusic.Checked)
             {
                 SaveGameSettings.music = true;
                 WMPlayer.URL = (@"C:\Users\Stefan\Desktop\C#\GitHub\G3Game\Gaame\Resources\GameBoardTheme.wav");
                 WMPlayer.Ctlcontrols.play();
+                WMPlayer.settings.setMode("loop", true);
             }
             else
             {

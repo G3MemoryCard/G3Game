@@ -126,6 +126,7 @@ namespace Gaame
         public static void GameOver()
         {
             Board.timer1.Stop();
+            Board.WMPlayer.Ctlcontrols.stop();
             EndScreen endS = new EndScreen();
             endS.ShowDialog();
             Board.Hide();
