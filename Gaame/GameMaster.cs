@@ -16,10 +16,12 @@ namespace Gaame
         static bool FirstTurn { get; set; }
         public static bool GameSetOver { get; set; }
         public static bool GameStarted { get; set; }
+        public static bool GameHasEnded { get; set; }
 
         //Start the gamemaster
         public static void Start(GameBoard board)
         {
+            GameHasEnded = false;
             ActivePlayerIndex = 0;
             PlayerCount = PlayerList.list.Count - 1;
             Board = board;
@@ -125,11 +127,16 @@ namespace Gaame
         //Game over stops the game and goes to the end screen
         public static void GameOver()
         {
-            Board.timer1.Stop();
-            Board.WMPlayer.Ctlcontrols.stop();
-            EndScreen endS = new EndScreen();
-            endS.ShowDialog();
-            Board.Hide();
+            if (!GameHasEnded)
+            {
+                GameHasEnded = true;
+                Board.timer1.Stop();
+                Board.WMPlayer.Ctlcontrols.stop();
+                EndScreen endS = new EndScreen();
+                endS.ShowDialog();
+                Board.Hide();
+                
+            }
         }
 
         //Sets if cards on the board are allowed to be clicked depening on the ingcoming bool
