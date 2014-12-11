@@ -267,6 +267,7 @@ namespace Gaame
                 SortedHighscoreList.Record(p);
 
             HighscoreWindow hsw = new HighscoreWindow();
+            hsw.Text = "HighScore Classic";
             hsw.ShowDialog();
             SortedHighscoreList.list.Clear();
         }
@@ -282,6 +283,7 @@ namespace Gaame
                 SortedHighscoreList.Record(p);
 
             HighscoreWindow hsw = new HighscoreWindow();
+            hsw.Text = "HighScore Combo";
             hsw.ShowDialog();
             SortedHighscoreList.list.Clear();
         }
