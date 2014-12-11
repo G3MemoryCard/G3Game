@@ -175,11 +175,15 @@ namespace Gaame
             using (var sw = new StreamWriter(HighScore.Filename, true))
             {
                 sw.WriteLine(" ");
+                sw.Flush();
+                sw.Close();
             }
             else if (SaveGameSettings.GameType == 1)
             using (var sw = new StreamWriter(HighScore.Filename1, true))
             {
                 sw.WriteLine(" ");
+                sw.Flush();
+                sw.Close();
             }
         }
 
