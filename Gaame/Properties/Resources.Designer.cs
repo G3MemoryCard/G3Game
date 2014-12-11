@@ -350,11 +350,12 @@ namespace Gaame.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream GameBoardTheme {
+        internal static System.Drawing.Bitmap icon_arrowR {
             get {
-                return ResourceManager.GetStream("GameBoardTheme", resourceCulture);
+                object obj = ResourceManager.GetObject("icon_arrowR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
