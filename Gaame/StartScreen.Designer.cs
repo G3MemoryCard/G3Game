@@ -62,6 +62,7 @@
             // 
             this.StartGame.BackColor = System.Drawing.Color.Transparent;
             this.StartGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.StartGame.Cursor = System.Windows.Forms.Cursors.Hand;
             this.StartGame.FlatAppearance.BorderSize = 0;
             this.StartGame.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.StartGame.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -69,10 +70,10 @@
             this.StartGame.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartGame.ForeColor = System.Drawing.SystemColors.ControlText;
             this.StartGame.Image = global::Gaame.Properties.Resources.bttn_StartGame;
-            this.StartGame.Location = new System.Drawing.Point(310, 280);
+            this.StartGame.Location = new System.Drawing.Point(413, 345);
             this.StartGame.Margin = new System.Windows.Forms.Padding(0);
             this.StartGame.Name = "StartGame";
-            this.StartGame.Size = new System.Drawing.Size(120, 44);
+            this.StartGame.Size = new System.Drawing.Size(160, 54);
             this.StartGame.TabIndex = 0;
             this.StartGame.UseVisualStyleBackColor = false;
             this.StartGame.Click += new System.EventHandler(this.button1_Click);
@@ -82,9 +83,10 @@
             this.labelPairs.AutoSize = true;
             this.labelPairs.BackColor = System.Drawing.Color.Transparent;
             this.labelPairs.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPairs.Location = new System.Drawing.Point(63, 268);
+            this.labelPairs.Location = new System.Drawing.Point(84, 330);
+            this.labelPairs.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPairs.Name = "labelPairs";
-            this.labelPairs.Size = new System.Drawing.Size(137, 19);
+            this.labelPairs.Size = new System.Drawing.Size(169, 24);
             this.labelPairs.TabIndex = 2;
             this.labelPairs.Text = "Number of pairs:";
             // 
@@ -93,18 +95,20 @@
             this.labelTheme.AutoSize = true;
             this.labelTheme.BackColor = System.Drawing.Color.Transparent;
             this.labelTheme.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTheme.Location = new System.Drawing.Point(133, 292);
+            this.labelTheme.Location = new System.Drawing.Point(177, 359);
+            this.labelTheme.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTheme.Name = "labelTheme";
-            this.labelTheme.Size = new System.Drawing.Size(67, 19);
+            this.labelTheme.Size = new System.Drawing.Size(81, 24);
             this.labelTheme.TabIndex = 3;
             this.labelTheme.Text = "Theme:";
             // 
             // textBoxPairs
             // 
-            this.textBoxPairs.Location = new System.Drawing.Point(206, 267);
+            this.textBoxPairs.Location = new System.Drawing.Point(275, 329);
+            this.textBoxPairs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPairs.MaxLength = 3;
             this.textBoxPairs.Name = "textBoxPairs";
-            this.textBoxPairs.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPairs.Size = new System.Drawing.Size(132, 22);
             this.textBoxPairs.TabIndex = 5;
             this.textBoxPairs.Text = "4";
             this.textBoxPairs.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -117,9 +121,10 @@
             "Social Icons",
             "Smileys",
             "Flags"});
-            this.comboBoxTheme.Location = new System.Drawing.Point(206, 292);
+            this.comboBoxTheme.Location = new System.Drawing.Point(275, 359);
+            this.comboBoxTheme.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxTheme.Name = "comboBoxTheme";
-            this.comboBoxTheme.Size = new System.Drawing.Size(100, 21);
+            this.comboBoxTheme.Size = new System.Drawing.Size(132, 24);
             this.comboBoxTheme.TabIndex = 6;
             // 
             // labelDecks
@@ -127,9 +132,10 @@
             this.labelDecks.AutoSize = true;
             this.labelDecks.BackColor = System.Drawing.Color.Transparent;
             this.labelDecks.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDecks.Location = new System.Drawing.Point(139, 318);
+            this.labelDecks.Location = new System.Drawing.Point(185, 391);
+            this.labelDecks.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDecks.Name = "labelDecks";
-            this.labelDecks.Size = new System.Drawing.Size(63, 19);
+            this.labelDecks.Size = new System.Drawing.Size(75, 24);
             this.labelDecks.TabIndex = 7;
             this.labelDecks.Text = "Decks:";
             // 
@@ -144,9 +150,10 @@
             "Black & Orange",
             "Brown & Beige",
             "Gold & Purple"});
-            this.comboBoxDecks.Location = new System.Drawing.Point(206, 318);
+            this.comboBoxDecks.Location = new System.Drawing.Point(275, 391);
+            this.comboBoxDecks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxDecks.Name = "comboBoxDecks";
-            this.comboBoxDecks.Size = new System.Drawing.Size(100, 21);
+            this.comboBoxDecks.Size = new System.Drawing.Size(132, 24);
             this.comboBoxDecks.TabIndex = 9;
             // 
             // labelTimer
@@ -154,20 +161,19 @@
             this.labelTimer.AutoSize = true;
             this.labelTimer.BackColor = System.Drawing.Color.Transparent;
             this.labelTimer.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTimer.Location = new System.Drawing.Point(88, 370);
-            this.labelTimer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTimer.Location = new System.Drawing.Point(117, 455);
             this.labelTimer.Name = "labelTimer";
-            this.labelTimer.Size = new System.Drawing.Size(114, 19);
+            this.labelTimer.Size = new System.Drawing.Size(139, 24);
             this.labelTimer.TabIndex = 10;
             this.labelTimer.Text = "Round Timer:";
             // 
             // textBoxTimer
             // 
-            this.textBoxTimer.Location = new System.Drawing.Point(206, 371);
-            this.textBoxTimer.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxTimer.Location = new System.Drawing.Point(275, 457);
+            this.textBoxTimer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxTimer.MaxLength = 5;
             this.textBoxTimer.Name = "textBoxTimer";
-            this.textBoxTimer.Size = new System.Drawing.Size(100, 20);
+            this.textBoxTimer.Size = new System.Drawing.Size(132, 22);
             this.textBoxTimer.TabIndex = 11;
             this.textBoxTimer.Text = "20";
             this.textBoxTimer.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
@@ -176,6 +182,7 @@
             // 
             this.AddPlayer.BackColor = System.Drawing.Color.Transparent;
             this.AddPlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.AddPlayer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AddPlayer.FlatAppearance.BorderSize = 0;
             this.AddPlayer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.AddPlayer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -183,10 +190,10 @@
             this.AddPlayer.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.AddPlayer.ForeColor = System.Drawing.Color.Black;
             this.AddPlayer.Image = global::Gaame.Properties.Resources.bttn_Add;
-            this.AddPlayer.Location = new System.Drawing.Point(313, 175);
+            this.AddPlayer.Location = new System.Drawing.Point(417, 215);
             this.AddPlayer.Margin = new System.Windows.Forms.Padding(0);
             this.AddPlayer.Name = "AddPlayer";
-            this.AddPlayer.Size = new System.Drawing.Size(107, 36);
+            this.AddPlayer.Size = new System.Drawing.Size(143, 44);
             this.AddPlayer.TabIndex = 13;
             this.AddPlayer.UseVisualStyleBackColor = false;
             this.AddPlayer.Click += new System.EventHandler(this.button2_Click);
@@ -195,26 +202,29 @@
             // 
             this.RemovePlayer.BackColor = System.Drawing.Color.Transparent;
             this.RemovePlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.RemovePlayer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RemovePlayer.FlatAppearance.BorderSize = 0;
             this.RemovePlayer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.RemovePlayer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.RemovePlayer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RemovePlayer.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
             this.RemovePlayer.Image = global::Gaame.Properties.Resources.bttn_Remove;
-            this.RemovePlayer.Location = new System.Drawing.Point(309, 211);
+            this.RemovePlayer.Location = new System.Drawing.Point(412, 260);
             this.RemovePlayer.Margin = new System.Windows.Forms.Padding(0);
             this.RemovePlayer.Name = "RemovePlayer";
-            this.RemovePlayer.Size = new System.Drawing.Size(120, 43);
+            this.RemovePlayer.Size = new System.Drawing.Size(160, 53);
             this.RemovePlayer.TabIndex = 14;
             this.RemovePlayer.UseVisualStyleBackColor = false;
             this.RemovePlayer.Click += new System.EventHandler(this.button3_Click);
             // 
             // listView1
             // 
+            this.listView1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.listView1.FullRowSelect = true;
-            this.listView1.Location = new System.Drawing.Point(106, 119);
+            this.listView1.Location = new System.Drawing.Point(141, 146);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(200, 132);
+            this.listView1.Size = new System.Drawing.Size(265, 162);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -222,9 +232,10 @@
             // 
             this.pictureBoxBanner.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxBanner.Image = global::Gaame.Properties.Resources.Banner_;
-            this.pictureBoxBanner.Location = new System.Drawing.Point(44, 3);
+            this.pictureBoxBanner.Location = new System.Drawing.Point(59, 4);
+            this.pictureBoxBanner.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxBanner.Name = "pictureBoxBanner";
-            this.pictureBoxBanner.Size = new System.Drawing.Size(348, 110);
+            this.pictureBoxBanner.Size = new System.Drawing.Size(464, 135);
             this.pictureBoxBanner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxBanner.TabIndex = 15;
             this.pictureBoxBanner.TabStop = false;
@@ -236,9 +247,10 @@
             this.comboBoxGameType.Items.AddRange(new object[] {
             "Classic",
             "ComboScore"});
-            this.comboBoxGameType.Location = new System.Drawing.Point(206, 345);
+            this.comboBoxGameType.Location = new System.Drawing.Point(275, 425);
+            this.comboBoxGameType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxGameType.Name = "comboBoxGameType";
-            this.comboBoxGameType.Size = new System.Drawing.Size(100, 21);
+            this.comboBoxGameType.Size = new System.Drawing.Size(132, 24);
             this.comboBoxGameType.TabIndex = 16;
             // 
             // labelGameType
@@ -246,9 +258,10 @@
             this.labelGameType.AutoSize = true;
             this.labelGameType.BackColor = System.Drawing.Color.Transparent;
             this.labelGameType.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGameType.Location = new System.Drawing.Point(100, 345);
+            this.labelGameType.Location = new System.Drawing.Point(133, 425);
+            this.labelGameType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGameType.Name = "labelGameType";
-            this.labelGameType.Size = new System.Drawing.Size(100, 19);
+            this.labelGameType.Size = new System.Drawing.Size(124, 24);
             this.labelGameType.TabIndex = 17;
             this.labelGameType.Text = "Game Type:";
             // 
@@ -256,10 +269,12 @@
             // 
             this.checkBoxMusic.AutoSize = true;
             this.checkBoxMusic.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxMusic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBoxMusic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxMusic.Location = new System.Drawing.Point(12, 372);
+            this.checkBoxMusic.Location = new System.Drawing.Point(16, 458);
+            this.checkBoxMusic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxMusic.Name = "checkBoxMusic";
-            this.checkBoxMusic.Size = new System.Drawing.Size(59, 17);
+            this.checkBoxMusic.Size = new System.Drawing.Size(71, 21);
             this.checkBoxMusic.TabIndex = 18;
             this.checkBoxMusic.Text = "Music";
             this.checkBoxMusic.UseVisualStyleBackColor = false;
@@ -269,10 +284,12 @@
             // 
             this.checkBoxSFX.AutoSize = true;
             this.checkBoxSFX.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxSFX.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBoxSFX.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxSFX.Location = new System.Drawing.Point(12, 347);
+            this.checkBoxSFX.Location = new System.Drawing.Point(16, 427);
+            this.checkBoxSFX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxSFX.Name = "checkBoxSFX";
-            this.checkBoxSFX.Size = new System.Drawing.Size(49, 17);
+            this.checkBoxSFX.Size = new System.Drawing.Size(59, 21);
             this.checkBoxSFX.TabIndex = 19;
             this.checkBoxSFX.Text = "SFX";
             this.checkBoxSFX.UseVisualStyleBackColor = false;
@@ -287,9 +304,10 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(340, 351);
+            this.button1.Location = new System.Drawing.Point(453, 432);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(51, 20);
+            this.button1.Size = new System.Drawing.Size(68, 25);
             this.button1.TabIndex = 20;
             this.button1.Text = "Classic";
             this.button1.UseVisualStyleBackColor = false;
@@ -304,10 +322,10 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(340, 370);
+            this.button2.Location = new System.Drawing.Point(453, 455);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(53, 20);
+            this.button2.Size = new System.Drawing.Size(71, 25);
             this.button2.TabIndex = 21;
             this.button2.Text = "Combo";
             this.button2.UseVisualStyleBackColor = false;
@@ -319,9 +337,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(324, 338);
+            this.label1.Location = new System.Drawing.Point(432, 416);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 13);
+            this.label1.Size = new System.Drawing.Size(109, 17);
             this.label1.TabIndex = 22;
             this.label1.Text = "HighScore list";
             // 
@@ -329,9 +348,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Gaame.Properties.Resources.icon_arrowR;
-            this.pictureBox2.Location = new System.Drawing.Point(327, 354);
+            this.pictureBox2.Location = new System.Drawing.Point(436, 436);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(17, 15);
+            this.pictureBox2.Size = new System.Drawing.Size(23, 18);
             this.pictureBox2.TabIndex = 24;
             this.pictureBox2.TabStop = false;
             // 
@@ -339,19 +359,20 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::Gaame.Properties.Resources.icon_arrowR;
-            this.pictureBox3.Location = new System.Drawing.Point(327, 372);
+            this.pictureBox3.Location = new System.Drawing.Point(436, 458);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(17, 15);
+            this.pictureBox3.Size = new System.Drawing.Size(23, 18);
             this.pictureBox3.TabIndex = 25;
             this.pictureBox3.TabStop = false;
             // 
             // StartScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(434, 409);
+            this.ClientSize = new System.Drawing.Size(579, 503);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
@@ -375,6 +396,7 @@
             this.Controls.Add(this.labelPairs);
             this.Controls.Add(this.StartGame);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "StartScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
