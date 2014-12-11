@@ -16,10 +16,6 @@ namespace Gaame
     {
         SoundPlayer EndScreenMusic = new SoundPlayer(Properties.Resources.EndScreen);
 
-        
-        string Filename = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "MemoryHighScore.txt");
-             
-
         public EndScreen()
         {
             InitializeComponent();
@@ -33,9 +29,11 @@ namespace Gaame
 
         private void btnPlayAgain_Click(object sender, EventArgs e) // Closes the current window and returns to the start window.
         {
-            
-            EndScreenMusic.Stop();
+            HighscoreList.list.Clear();
+            SortedHighscoreList.list.Clear();
+            currentScore.currentHscore.Clear();
             WinnerList.list.Clear();
+
             StartScreen frm2 = new StartScreen();
             frm2.Show();
             this.Close();
@@ -43,23 +41,16 @@ namespace Gaame
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-            using (var sw = new StreamWriter(Filename, true))
-            {
-                sw.WriteLine("HighScore! SECRET MESSAGE!");
-            }
+            HighScore.CreateFolders();
+
+            HighScore.CheckHighscoreExsist();
 
             if (SaveGameSettings.music == true)
             {
                 EndScreenMusic.Play();
             }
 
-            // Sorts the PlayerList and saves the result in WinnerList, ordered by score from high to low.
-            var winner = from w in PlayerList.list
-                         orderby w.Score descending
-                         select w;
-            foreach (Player p in winner)
-                WinnerList.Record(p);
+            HighScore.SortPlayer();
 
             if (WinnerList.list.Count > 1)
             {
@@ -79,32 +70,8 @@ namespace Gaame
                 // Displays the winner alone on screen.
                 labelWinningPlayer.Text = WinnerList.list[0].Name + " has won with the score of: " + WinnerList.list[0].Score + "!";
             }
-
-            List<Player> currentHscore = new List<Player>();
-
-            currentHscore = HighScore.ReadScoresFromFile(Filename);
-
-
-            var winners = from w in currentHscore
-                         orderby w.Score descending
-                         select w;
-            foreach (Player p in winners)
-                HighscoreList.Record(p);
-
-            foreach (Player p in winner)
-                HighscoreList.Record(p);
-
-
-            using (var sw = new StreamWriter(Filename, true))
-            {
-                
-                for (int i = 0; i < HighscoreList.list.Count; i++)
-                {
-                    sw.WriteLine(HighscoreList.list[i].Name.ToString() + " " + HighscoreList.list[i].Score.ToString());
-                }
-                sw.Flush();
-                sw.Close();
-            }
+            HighScore.PickHighscoreList();
+            
         }
 
         private void btnScrBoard_Click(object sender, EventArgs e)
@@ -118,12 +85,13 @@ namespace Gaame
             var sorted = from s in HighscoreList.list
                           orderby s.Score descending
                           select s;
+
             foreach (Player p in sorted)
                 SortedHighscoreList.Record(p);
 
             HighscoreWindow hsw = new HighscoreWindow();
             hsw.ShowDialog();
-
+            SortedHighscoreList.list.Clear();
         }
 
     }
@@ -170,6 +138,19 @@ namespace Gaame
         public static void Record(Player value)
         {
             list.Add(value);
+        }
+    }
+    public static class currentScore
+    {
+        public static List<Player> currentHscore { get; set; }
+
+        static currentScore()
+        {
+            currentHscore = new List<Player>();
+        }
+        public static void Record(Player value)
+        {
+            currentHscore.Add(value);
         }
     }
 }

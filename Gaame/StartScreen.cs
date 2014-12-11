@@ -68,7 +68,7 @@ namespace Gaame
                     SaveGameSettings.Deck = 4;
                 if (comboBoxGameType.Text == "Classic")
                     SaveGameSettings.GameType = 0;
-                else if (comboBoxGameType.Text == "Combo score")
+                else if (comboBoxGameType.Text == "ComboScore")
                     SaveGameSettings.GameType = 1;
 
                 SaveGameSettings.Timer = int.Parse(textBoxTimer.Text);
