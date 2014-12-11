@@ -256,6 +256,36 @@ namespace Gaame
             }
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            currentScore.currentHscore = HighScore.ReadScoresFromFile(HighScore.Filename);
+            var sorted = from s in currentScore.currentHscore
+                         orderby s.Score descending
+                         select s;
+
+            foreach (Player p in sorted)
+                SortedHighscoreList.Record(p);
+
+            HighscoreWindow hsw = new HighscoreWindow();
+            hsw.ShowDialog();
+            SortedHighscoreList.list.Clear();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            currentScore.currentHscore = HighScore.ReadScoresFromFile(HighScore.Filename1);
+            var sorted = from s in currentScore.currentHscore
+                         orderby s.Score descending
+                         select s;
+
+            foreach (Player p in sorted)
+                SortedHighscoreList.Record(p);
+
+            HighscoreWindow hsw = new HighscoreWindow();
+            hsw.ShowDialog();
+            SortedHighscoreList.list.Clear();
+        }
+
     }
 
     public static class SaveGameSettings
