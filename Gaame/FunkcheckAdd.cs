@@ -8,7 +8,7 @@ namespace Gaame
 {
     public static class FunkcheckAdd
     {
-
+        //Check if two picks have the same TAG.
         public static bool Checkpic()
         {
             int[] Cards = CardList.SearchForPairs();
