@@ -129,7 +129,6 @@ namespace Gaame
 
         private void StartScreen_Load(object sender, EventArgs e)
         {
-
             if (checkBoxMusic.Checked)
             {
                 IntroMusic.PlayLooping();
@@ -258,6 +257,7 @@ namespace Gaame
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            HighScore.CheckHighscoreExsist();
             currentScore.currentHscore = HighScore.ReadScoresFromFile(HighScore.Filename);
             var sorted = from s in currentScore.currentHscore
                          orderby s.Score descending
@@ -274,6 +274,7 @@ namespace Gaame
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            HighScore.CheckHighscoreExsist();
             currentScore.currentHscore = HighScore.ReadScoresFromFile(HighScore.Filename1);
             var sorted = from s in currentScore.currentHscore
                          orderby s.Score descending
@@ -287,7 +288,6 @@ namespace Gaame
             hsw.ShowDialog();
             SortedHighscoreList.list.Clear();
         }
-
     }
 
     public static class SaveGameSettings

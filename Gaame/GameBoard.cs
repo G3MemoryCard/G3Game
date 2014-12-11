@@ -212,6 +212,7 @@ namespace Gaame
 
         private void checkBoxMusic_CheckedChanged_1(object sender, EventArgs e)
         {
+            
             if (checkBoxMusic.Checked)
             {
                 SaveGameSettings.music = true;
