@@ -16,6 +16,7 @@ namespace Gaame
     {
         SoundPlayer EndScreenMusic = new SoundPlayer(Properties.Resources.EndScreen);
 
+        
         string Filename = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "MemoryHighScore.txt");
              
 
@@ -41,6 +42,7 @@ namespace Gaame
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             using (var sw = new StreamWriter(Filename, true))
             {
                 sw.WriteLine("HighScore! SECRET MESSAGE!");
