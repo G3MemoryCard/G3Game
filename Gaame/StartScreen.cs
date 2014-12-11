@@ -132,7 +132,7 @@ namespace Gaame
 
             if (checkBoxMusic.Checked)
             {
-                IntroMusic.Play();
+                IntroMusic.PlayLooping();
             }
             checkBoxMusic.Checked = SaveGameSettings.music; // Saves the music settings
             checkBoxSFX.Checked = SaveGameSettings.sfx; // Saves the setings for sound effects
@@ -234,7 +234,7 @@ namespace Gaame
             if (checkBoxMusic.Checked)
             {
                 SaveGameSettings.music = true;
-                IntroMusic.Play();
+                IntroMusic.PlayLooping();
             }
             else
             {
@@ -303,7 +303,6 @@ namespace Gaame
          public static int ThemeBg { get; set; }
          public static bool sfx { get; set; }
          public static bool music { get; set; }
-         public static bool GBmusic { get; set; }
     }
 
     public class Player
