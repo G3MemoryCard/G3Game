@@ -9,8 +9,8 @@ namespace Gaame
 {
     public class HighScore
     {
-        static string Filename = Path.Combine((Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\G3Memory"), "MemoryHighScoreClassicList.txt");
-        static string Filename1 = Path.Combine((Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\G3Memory"), "MemoryHighScoreComboList.txt");
+        public static string Filename = Path.Combine((Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\G3Memory"), "MemoryHighScoreClassicList.txt");
+        public static string Filename1 = Path.Combine((Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\G3Memory"), "MemoryHighScoreComboList.txt");
         public string Name { get; set; }
         public int Score { get; set; }
 

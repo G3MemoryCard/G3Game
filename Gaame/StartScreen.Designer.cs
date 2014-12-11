@@ -48,6 +48,8 @@
             this.labelGameType = new System.Windows.Forms.Label();
             this.checkBoxMusic = new System.Windows.Forms.CheckBox();
             this.checkBoxSFX = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBanner)).BeginInit();
             this.SuspendLayout();
             // 
@@ -270,6 +272,26 @@
             this.checkBoxSFX.UseVisualStyleBackColor = false;
             this.checkBoxSFX.CheckedChanged += new System.EventHandler(this.checkBoxSFX_CheckedChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(315, 308);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(50, 40);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Classic";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(371, 308);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(50, 40);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "Combo";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // StartScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -277,6 +299,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(434, 409);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBoxSFX);
             this.Controls.Add(this.checkBoxMusic);
             this.Controls.Add(this.labelGameType);
@@ -327,6 +351,8 @@
         private System.Windows.Forms.CheckBox checkBoxMusic;
         private System.Windows.Forms.CheckBox checkBoxSFX;
         private System.Windows.Forms.Button AddPlayer;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
