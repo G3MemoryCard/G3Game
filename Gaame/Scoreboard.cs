@@ -17,11 +17,6 @@ namespace Gaame
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void Scoreboard_Load(object sender, EventArgs e)
         {
             // Sets columns to the listview and adds results from WinnerList
@@ -35,6 +30,11 @@ namespace Gaame
                 listView1.Items.Add(WinnerList.list[i].Name.ToString());
                 listView1.Items[i].SubItems.Add(WinnerList.list[i].Score.ToString());
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

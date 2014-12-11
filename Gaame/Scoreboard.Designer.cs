@@ -38,7 +38,7 @@
             this.listView1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listView1.BackgroundImage")));
             this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.Font = new System.Drawing.Font("Buxton Sketch", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.Location = new System.Drawing.Point(0, 0);
             this.listView1.Margin = new System.Windows.Forms.Padding(2);
             this.listView1.Name = "listView1";
@@ -55,6 +55,7 @@
             this.button2.Size = new System.Drawing.Size(161, 23);
             this.button2.TabIndex = 2;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Scoreboard
             // 
