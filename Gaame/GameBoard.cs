@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using AxWMPLib;
+using WMPLib;
 
 namespace Gaame
 {
@@ -15,7 +17,7 @@ namespace Gaame
     {
         public int timeLeft = SaveGameSettings.Timer; // parameter used for the timer.
         public int timeLeftCard = 5;
-        SoundPlayer GBMusic = new SoundPlayer(Properties.Resources.GameBoardTheme);
+        public WindowsMediaPlayer GBMusic = new WindowsMediaPlayer();
 
         public GameBoard()
         {
@@ -41,13 +43,25 @@ namespace Gaame
 
         private void GameBoard_Load(object sender, EventArgs e)
         {
-            if(SaveGameSettings.sfx == true)
+            if (SaveGameSettings.sfx == true)
             {
                 checkBoxSFX.Checked = true;
             }
             else
             {
                 checkBoxSFX.Checked = false;
+            }
+
+            if (SaveGameSettings.music == true)
+            {
+                checkBoxMusic.Checked = true;
+                WMPlayer.URL = (@"C:\Users\Stefan\Desktop\C#\GitHub\G3Game\Gaame\Resources\GameBoardTheme.wav");
+                WMPlayer.Ctlcontrols.play();
+            }
+            else
+            {
+                checkBoxMusic.Checked = false;
+                WMPlayer.Ctlcontrols.stop();
             }
 
             AIhard.RememberTag.list = new List<PlayCard>();
@@ -71,13 +85,13 @@ namespace Gaame
             {
                 splitContainer1.Panel1.BackgroundImage = Properties.Resources.bg_worldmap_2;
             }
-            
+
 
             // Show timer as "selected value" seconds, before countdown begins.
             timeLabel.Text = SaveGameSettings.Timer.ToString() + " seconds";
 
             listView1.View = View.Details;
-            
+
             listView1.Columns.Add("PLAYER", 100, HorizontalAlignment.Left);
             listView1.Columns.Add("SCORE", 100, HorizontalAlignment.Left);
 
@@ -90,14 +104,14 @@ namespace Gaame
         private void timer1_Tick_1(object sender, EventArgs e)
         {
             if (timeLeft > 0)
-                // if there's time left reduce time by 1 and update label every sec.
+            // if there's time left reduce time by 1 and update label every sec.
             {
                 timeLeft = timeLeft - 1;
                 timeLabel.Text = timeLeft + " seconds";
 
             }
             else
-                // If time's up announce by changing label.
+            // If time's up announce by changing label.
             {
                 timer1.Stop();
                 timeLabel.Text = "Time's up!";
@@ -131,7 +145,7 @@ namespace Gaame
             }
 
         }
-        
+
         public void Namechange(int player)
         {
             label1.Text = PlayerList.list[player].Name.ToString();
@@ -196,5 +210,19 @@ namespace Gaame
             }
         }
 
+        private void checkBoxMusic_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxMusic.Checked)
+            {
+                SaveGameSettings.music = true;
+                WMPlayer.URL = (@"C:\Users\Stefan\Desktop\C#\GitHub\G3Game\Gaame\Resources\GameBoardTheme.wav");
+                WMPlayer.Ctlcontrols.play();
+            }
+            else
+            {
+                SaveGameSettings.music = false;
+                WMPlayer.Ctlcontrols.stop();
+            }
         }
     }
+}

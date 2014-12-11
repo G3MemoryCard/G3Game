@@ -29,9 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameBoard));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.WMPlayer = new AxWMPLib.AxWindowsMediaPlayer();
+            this.checkBoxMusic = new System.Windows.Forms.CheckBox();
             this.checkBoxSFX = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,6 +52,7 @@
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WMPlayer)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -80,7 +84,7 @@
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.IsSplitterFixed = true;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -92,6 +96,8 @@
             // 
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.Black;
             this.splitContainer2.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.splitContainer2.Panel2.Controls.Add(this.WMPlayer);
+            this.splitContainer2.Panel2.Controls.Add(this.checkBoxMusic);
             this.splitContainer2.Panel2.Controls.Add(this.checkBoxSFX);
             this.splitContainer2.Panel2.Controls.Add(this.label2);
             this.splitContainer2.Panel2.Controls.Add(this.label1);
@@ -118,13 +124,35 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
+            // WMPlayer
+            // 
+            this.WMPlayer.Enabled = true;
+            this.WMPlayer.Location = new System.Drawing.Point(167, 97);
+            this.WMPlayer.Name = "WMPlayer";
+            this.WMPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("WMPlayer.OcxState")));
+            this.WMPlayer.Size = new System.Drawing.Size(38, 32);
+            this.WMPlayer.TabIndex = 16;
+            this.WMPlayer.Visible = false;
+            // 
+            // checkBoxMusic
+            // 
+            this.checkBoxMusic.AutoSize = true;
+            this.checkBoxMusic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxMusic.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.checkBoxMusic.Location = new System.Drawing.Point(77, 229);
+            this.checkBoxMusic.Name = "checkBoxMusic";
+            this.checkBoxMusic.Size = new System.Drawing.Size(59, 17);
+            this.checkBoxMusic.TabIndex = 15;
+            this.checkBoxMusic.Text = "Music";
+            this.checkBoxMusic.UseVisualStyleBackColor = true;
+            // 
             // checkBoxSFX
             // 
             this.checkBoxSFX.AutoSize = true;
             this.checkBoxSFX.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxSFX.ForeColor = System.Drawing.Color.DodgerBlue;
             this.checkBoxSFX.Location = new System.Drawing.Point(77, 210);
-            this.checkBoxSFX.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxSFX.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxSFX.Name = "checkBoxSFX";
             this.checkBoxSFX.Size = new System.Drawing.Size(49, 17);
             this.checkBoxSFX.TabIndex = 13;
@@ -149,11 +177,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Buxton Sketch", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(73, 43);
+            this.label1.Location = new System.Drawing.Point(48, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 23);
             this.label1.TabIndex = 10;
             this.label1.Text = "Player";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // timeLabel
             // 
@@ -175,7 +204,7 @@
             this.button1.Font = new System.Drawing.Font("Buxton Sketch", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button1.Location = new System.Drawing.Point(52, 140);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 50);
             this.button1.TabIndex = 8;
@@ -212,7 +241,7 @@
             this.ClientSize = new System.Drawing.Size(858, 640);
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "GameBoard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -227,6 +256,7 @@
             this.splitContainer2.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.WMPlayer)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -246,5 +276,7 @@
         public System.Windows.Forms.Timer timer4;
         public System.Windows.Forms.Timer timer5;
         private System.Windows.Forms.CheckBox checkBoxSFX;
+        private System.Windows.Forms.CheckBox checkBoxMusic;
+        private AxWMPLib.AxWindowsMediaPlayer WMPlayer;
     }
 }
