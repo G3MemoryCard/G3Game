@@ -329,6 +329,8 @@
     <None Include="Resources\CardBackPurpleGold.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icon_doc.png" />
+    <None Include="Resources\bttn_bg_round_1.png" />
     <None Include="Resources\bttn_Cancel.png" />
     <None Include="Resources\bttn_StartGame.png" />
     <None Include="Resources\bttn_Remove.png" />
