@@ -329,6 +329,9 @@
     <None Include="Resources\CardBackPurpleGold.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bttn_StartGame.png" />
+    <None Include="Resources\bttn_Remove.png" />
+    <None Include="Resources\bttn_Add.png" />
     <None Include="Resources\bttn_Scoreboard.png" />
     <None Include="Resources\bttn_Highscore.png" />
     <None Include="Resources\bttn_playAgain.png" />
@@ -350,9 +353,6 @@
     <None Include="Resources\FINAL FANTASY VII-Victory Fanfare.mp3" />
     <None Include="Resources\FINAL FANTASY VII-Victory Fanfare %28www.myfreesongs.cc%29.mp3" />
     <None Include="Resources\Banner_Congrats.png" />
-    <None Include="Resources\bttn_Remove.png" />
-    <None Include="Resources\bttn_StartGame.png" />
-    <None Include="Resources\bttn_Add.png" />
     <None Include="Resources\bttn_StartGame_nonClick.png" />
     <None Include="Resources\Banner_.png" />
     <None Include="Resources\Vietnam.png" />
