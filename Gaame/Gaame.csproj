@@ -329,6 +329,9 @@
     <None Include="Resources\CardBackPurpleGold.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bttn_StartGame.png" />
+    <None Include="Resources\bttn_Remove.png" />
+    <None Include="Resources\bttn_Add.png" />
     <None Include="Resources\bttn_Scoreboard.png" />
     <None Include="Resources\bttn_Highscore.png" />
     <None Include="Resources\bttn_playAgain.png" />
@@ -350,9 +353,6 @@
     <None Include="Resources\FINAL FANTASY VII-Victory Fanfare.mp3" />
     <None Include="Resources\FINAL FANTASY VII-Victory Fanfare %28www.myfreesongs.cc%29.mp3" />
     <None Include="Resources\Banner_Congrats.png" />
-    <None Include="Resources\bttn_Remove.png" />
-    <None Include="Resources\bttn_StartGame.png" />
-    <None Include="Resources\bttn_Add.png" />
     <None Include="Resources\bttn_StartGame_nonClick.png" />
     <None Include="Resources\Banner_.png" />
     <None Include="Resources\Vietnam.png" />
@@ -481,6 +481,25 @@
     <Content Include="Resources\Backside\backside4.png" />
     <Content Include="Resources\Backside\backside5.png" />
     <Content Include="Resources\Backside\Backside6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
