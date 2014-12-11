@@ -34,18 +34,21 @@
             // 
             // listView1
             // 
+            this.listView1.BackgroundImage = global::Gaame.Properties.Resources.BG_Blue_pic1;
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.Location = new System.Drawing.Point(0, 0);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(412, 383);
+            this.listView1.Size = new System.Drawing.Size(309, 311);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(92, 311);
+            this.button1.Location = new System.Drawing.Point(69, 253);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(221, 28);
+            this.button1.Size = new System.Drawing.Size(166, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = true;
@@ -53,13 +56,15 @@
             // 
             // HighscoreWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 383);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(309, 311);
             this.ControlBox = false;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "HighscoreWindow";
