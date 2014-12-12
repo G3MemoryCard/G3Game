@@ -130,9 +130,9 @@ namespace Gaame
             if (!GameHasEnded)
             {
                 GameHasEnded = true;
-                Board.timer1.Stop();
                 Board.WMPlayer.Ctlcontrols.stop();
                 EndScreen endS = new EndScreen();
+                Board.timer1.Stop();
                 endS.ShowDialog();
                 Board.Hide();
                 
@@ -155,6 +155,7 @@ namespace Gaame
             if (CheckGameOver() || GameSetOver)
             {
                 GameOver();
+                Board.timer1.Stop();
             }
             else
             {
