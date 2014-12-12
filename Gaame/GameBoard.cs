@@ -96,8 +96,8 @@ namespace Gaame
 
             listView1.View = View.Details;
 
-            listView1.Columns.Add("PLAYER", 100, HorizontalAlignment.Left);
-            listView1.Columns.Add("SCORE", 100, HorizontalAlignment.Left);
+            listView1.Columns.Add("PLAYER", 150, HorizontalAlignment.Left);
+            listView1.Columns.Add("SCORE", 80, HorizontalAlignment.Left);
 
             for (int i = 0; i < PlayerList.list.Count; i++)
             {
