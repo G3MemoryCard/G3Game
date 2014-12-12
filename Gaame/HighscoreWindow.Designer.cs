@@ -47,6 +47,7 @@
             // buttonHSClose
             // 
             this.buttonHSClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonHSClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHSClose.Image = global::Gaame.Properties.Resources.bttn_Close;
             this.buttonHSClose.Location = new System.Drawing.Point(105, 254);
             this.buttonHSClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
