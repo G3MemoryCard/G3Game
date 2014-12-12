@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddPlayer));
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAI = new System.Windows.Forms.CheckBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonAPAdd = new System.Windows.Forms.Button();
+            this.buttonAPCancel = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -46,15 +46,16 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
             // 
-            // checkBox1
+            // checkBoxAI
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(118, 46);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBoxAI.AutoSize = true;
+            this.checkBoxAI.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBoxAI.Location = new System.Drawing.Point(118, 46);
+            this.checkBoxAI.Name = "checkBoxAI";
+            this.checkBoxAI.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxAI.TabIndex = 1;
+            this.checkBoxAI.UseVisualStyleBackColor = true;
+            this.checkBoxAI.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // comboBox1
             // 
@@ -76,40 +77,42 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Name";
             // 
-            // button1
+            // buttonAPAdd
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::Gaame.Properties.Resources.bttn_Add;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.Location = new System.Drawing.Point(31, 82);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 48);
-            this.button1.TabIndex = 4;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonAPAdd.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAPAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAPAdd.FlatAppearance.BorderSize = 0;
+            this.buttonAPAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonAPAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonAPAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAPAdd.Image = global::Gaame.Properties.Resources.bttn_Add;
+            this.buttonAPAdd.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.buttonAPAdd.Location = new System.Drawing.Point(31, 82);
+            this.buttonAPAdd.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonAPAdd.Name = "buttonAPAdd";
+            this.buttonAPAdd.Size = new System.Drawing.Size(118, 48);
+            this.buttonAPAdd.TabIndex = 4;
+            this.buttonAPAdd.UseVisualStyleBackColor = false;
+            this.buttonAPAdd.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // buttonAPCancel
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Image = global::Gaame.Properties.Resources.bttn_Cancel;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button2.Location = new System.Drawing.Point(149, 82);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 45);
-            this.button2.TabIndex = 5;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonAPCancel.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAPCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAPCancel.FlatAppearance.BorderSize = 0;
+            this.buttonAPCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonAPCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonAPCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAPCancel.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonAPCancel.Image = global::Gaame.Properties.Resources.bttn_Cancel;
+            this.buttonAPCancel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.buttonAPCancel.Location = new System.Drawing.Point(149, 82);
+            this.buttonAPCancel.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonAPCancel.Name = "buttonAPCancel";
+            this.buttonAPCancel.Size = new System.Drawing.Size(117, 45);
+            this.buttonAPCancel.TabIndex = 5;
+            this.buttonAPCancel.UseVisualStyleBackColor = false;
+            this.buttonAPCancel.Click += new System.EventHandler(this.button2_Click);
             // 
             // label2
             // 
@@ -142,11 +145,11 @@
             this.ClientSize = new System.Drawing.Size(297, 139);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonAPCancel);
+            this.Controls.Add(this.buttonAPAdd);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.checkBoxAI);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -164,12 +167,12 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBoxAI;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonAPAdd;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonAPCancel;
     }
 }

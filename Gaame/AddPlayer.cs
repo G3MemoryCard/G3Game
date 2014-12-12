@@ -81,7 +81,7 @@ namespace Gaame
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             //If the checkbox is checked unlock combobox1. change the state for Check from false <-> ture
-            comboBox1.Enabled = checkBox1.Checked;
+            comboBox1.Enabled = checkBoxAI.Checked;
             check = !check;
 
         }
