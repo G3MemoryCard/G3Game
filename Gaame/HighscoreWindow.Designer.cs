@@ -48,10 +48,10 @@
             // 
             this.buttonHSClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonHSClose.Image = global::Gaame.Properties.Resources.bttn_Close;
-            this.buttonHSClose.Location = new System.Drawing.Point(69, 254);
+            this.buttonHSClose.Location = new System.Drawing.Point(105, 254);
             this.buttonHSClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonHSClose.Name = "buttonHSClose";
-            this.buttonHSClose.Size = new System.Drawing.Size(161, 23);
+            this.buttonHSClose.Size = new System.Drawing.Size(108, 23);
             this.buttonHSClose.TabIndex = 1;
             this.buttonHSClose.UseVisualStyleBackColor = true;
             this.buttonHSClose.Click += new System.EventHandler(this.button1_Click);

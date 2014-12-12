@@ -48,12 +48,14 @@
             // 
             // buttonSBClose
             // 
+            this.buttonSBClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonSBClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSBClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSBClose.Image = global::Gaame.Properties.Resources.bttn_Close;
-            this.buttonSBClose.Location = new System.Drawing.Point(70, 263);
+            this.buttonSBClose.Location = new System.Drawing.Point(103, 263);
             this.buttonSBClose.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSBClose.Name = "buttonSBClose";
-            this.buttonSBClose.Size = new System.Drawing.Size(161, 23);
+            this.buttonSBClose.Size = new System.Drawing.Size(108, 23);
             this.buttonSBClose.TabIndex = 2;
             this.buttonSBClose.UseVisualStyleBackColor = true;
             this.buttonSBClose.Click += new System.EventHandler(this.button2_Click);

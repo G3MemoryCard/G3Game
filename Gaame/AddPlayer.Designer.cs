@@ -87,7 +87,7 @@
             this.buttonAPAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAPAdd.Image = global::Gaame.Properties.Resources.bttn_Add;
             this.buttonAPAdd.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.buttonAPAdd.Location = new System.Drawing.Point(31, 82);
+            this.buttonAPAdd.Location = new System.Drawing.Point(34, 82);
             this.buttonAPAdd.Margin = new System.Windows.Forms.Padding(0);
             this.buttonAPAdd.Name = "buttonAPAdd";
             this.buttonAPAdd.Size = new System.Drawing.Size(118, 48);
@@ -106,7 +106,7 @@
             this.buttonAPCancel.ForeColor = System.Drawing.Color.Transparent;
             this.buttonAPCancel.Image = global::Gaame.Properties.Resources.bttn_Cancel;
             this.buttonAPCancel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.buttonAPCancel.Location = new System.Drawing.Point(149, 82);
+            this.buttonAPCancel.Location = new System.Drawing.Point(152, 82);
             this.buttonAPCancel.Margin = new System.Windows.Forms.Padding(0);
             this.buttonAPCancel.Name = "buttonAPCancel";
             this.buttonAPCancel.Size = new System.Drawing.Size(117, 45);
