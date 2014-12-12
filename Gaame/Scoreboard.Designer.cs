@@ -52,7 +52,7 @@
             this.buttonSBClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSBClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSBClose.Image = global::Gaame.Properties.Resources.bttn_Close;
-            this.buttonSBClose.Location = new System.Drawing.Point(103, 263);
+            this.buttonSBClose.Location = new System.Drawing.Point(105, 254);
             this.buttonSBClose.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSBClose.Name = "buttonSBClose";
             this.buttonSBClose.Size = new System.Drawing.Size(108, 23);

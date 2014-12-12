@@ -35,6 +35,7 @@
             // listView1
             // 
             this.listView1.BackgroundImage = global::Gaame.Properties.Resources.BG_Blue_pic1;
+            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.Font = new System.Drawing.Font("Buxton Sketch", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.Location = new System.Drawing.Point(0, 0);
