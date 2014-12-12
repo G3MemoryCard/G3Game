@@ -137,6 +137,7 @@
             // checkBoxMusic
             // 
             this.checkBoxMusic.AutoSize = true;
+            this.checkBoxMusic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBoxMusic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMusic.ForeColor = System.Drawing.Color.DodgerBlue;
             this.checkBoxMusic.Location = new System.Drawing.Point(77, 229);
@@ -150,6 +151,7 @@
             // checkBoxSFX
             // 
             this.checkBoxSFX.AutoSize = true;
+            this.checkBoxSFX.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBoxSFX.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxSFX.ForeColor = System.Drawing.Color.DodgerBlue;
             this.checkBoxSFX.Location = new System.Drawing.Point(77, 210);
@@ -201,6 +203,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;

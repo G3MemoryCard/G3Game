@@ -34,7 +34,7 @@
             this.btnScrBoard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelWinningPlayer = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonHS = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,6 +43,7 @@
             this.btnPlayAgain.BackColor = System.Drawing.Color.Transparent;
             this.btnPlayAgain.BackgroundImage = global::Gaame.Properties.Resources.bttn_playAgain;
             this.btnPlayAgain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnPlayAgain.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPlayAgain.FlatAppearance.BorderSize = 0;
             this.btnPlayAgain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayAgain.ForeColor = System.Drawing.Color.Transparent;
@@ -58,6 +59,7 @@
             // 
             this.btnExit.BackgroundImage = global::Gaame.Properties.Resources.bttn_Exit;
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -74,6 +76,7 @@
             // 
             this.btnScrBoard.BackgroundImage = global::Gaame.Properties.Resources.bttn_Scoreboard;
             this.btnScrBoard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnScrBoard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnScrBoard.FlatAppearance.BorderSize = 0;
             this.btnScrBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnScrBoard.Location = new System.Drawing.Point(192, 187);
@@ -107,20 +110,21 @@
             this.labelWinningPlayer.Text = "WinningPlayer";
             this.labelWinningPlayer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button1
+            // buttonHS
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::Gaame.Properties.Resources.bttn_Highscore;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(79, 187);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 37);
-            this.button1.TabIndex = 10;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonHS.BackColor = System.Drawing.Color.Transparent;
+            this.buttonHS.BackgroundImage = global::Gaame.Properties.Resources.bttn_Highscore;
+            this.buttonHS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonHS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonHS.FlatAppearance.BorderSize = 0;
+            this.buttonHS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHS.Location = new System.Drawing.Point(79, 187);
+            this.buttonHS.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonHS.Name = "buttonHS";
+            this.buttonHS.Size = new System.Drawing.Size(106, 37);
+            this.buttonHS.TabIndex = 10;
+            this.buttonHS.UseVisualStyleBackColor = false;
+            this.buttonHS.Click += new System.EventHandler(this.button1_Click);
             // 
             // EndScreen
             // 
@@ -131,7 +135,7 @@
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(384, 231);
             this.ControlBox = false;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonHS);
             this.Controls.Add(this.labelWinningPlayer);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnScrBoard);
@@ -157,7 +161,7 @@
         private System.Windows.Forms.Button btnScrBoard;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelWinningPlayer;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonHS;
     }
 }
 

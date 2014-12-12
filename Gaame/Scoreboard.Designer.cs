@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Scoreboard));
             this.listView1 = new System.Windows.Forms.ListView();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonSBClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -46,16 +46,17 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // button2
+            // buttonSBClose
             // 
-            this.button2.Image = global::Gaame.Properties.Resources.bttn_Close;
-            this.button2.Location = new System.Drawing.Point(70, 263);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(161, 23);
-            this.button2.TabIndex = 2;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonSBClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSBClose.Image = global::Gaame.Properties.Resources.bttn_Close;
+            this.buttonSBClose.Location = new System.Drawing.Point(70, 263);
+            this.buttonSBClose.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSBClose.Name = "buttonSBClose";
+            this.buttonSBClose.Size = new System.Drawing.Size(161, 23);
+            this.buttonSBClose.TabIndex = 2;
+            this.buttonSBClose.UseVisualStyleBackColor = true;
+            this.buttonSBClose.Click += new System.EventHandler(this.button2_Click);
             // 
             // Scoreboard
             // 
@@ -63,7 +64,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(309, 311);
             this.ControlBox = false;
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonSBClose);
             this.Controls.Add(this.listView1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
@@ -79,6 +80,6 @@
         #endregion
 
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonSBClose;
     }
 }
