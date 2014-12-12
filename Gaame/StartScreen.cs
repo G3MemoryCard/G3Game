@@ -189,7 +189,7 @@ namespace Gaame
                 SaveGameSettings.addPlayer = 0;
                 textBoxPairs.Text = SaveGameSettings.Pairs.ToString();
                 comboBoxTheme.SelectedIndex = SaveGameSettings.Theme;
-                comboBoxDecks.SelectedIndex = SaveGameSettings.Deck;
+                this.comboBoxDecks.SelectedItem = "Theme";
                 comboBoxGameType.SelectedIndex = SaveGameSettings.GameType;
                 textBoxTimer.Text = SaveGameSettings.Timer.ToString();
         }
