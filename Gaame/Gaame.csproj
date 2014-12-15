@@ -481,6 +481,9 @@
     <None Include="Resources\Albania.png" />
     <None Include="Resources\Andorra.png" />
     <None Include="Resources\Austria.png" />
+    <Content Include="GameBoardTheme.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Backside\Backside1.png" />
     <Content Include="Resources\Backside\backside2.png" />
     <Content Include="Resources\Backside\backside3.png" />
