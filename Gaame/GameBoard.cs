@@ -59,7 +59,7 @@ namespace Gaame
             if (SaveGameSettings.music == true)
             {
                 checkBoxMusic.Checked = true;
-                WMPlayer.URL = (Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "GameBoardTheme.wav"));
+                WMPlayer.URL = (Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "GameBoardTheme.wma"));
                 WMPlayer.Ctlcontrols.play();
             }
             else
